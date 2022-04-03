@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'app/app.dart';
 
 void main() {
-  runApp( MyApp.internal());
+  runApp(MyApp.internal());
 
   // MyApp app1 = const MyApp();
   // MyApp app2 = const MyApp();
