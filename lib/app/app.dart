@@ -1,5 +1,6 @@
 import 'dart:html';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatefulWidget {
@@ -20,7 +21,14 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Padding(
+      padding: const EdgeInsets.all(30.0),
+      child: Container(
+        width: 200,
+        height: 200,
+        color: Colors.yellow,
+      ),
+    );
   }
 }
 
@@ -39,8 +47,13 @@ class test extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-        child: Text('/////////////${MyApp().appState}////////////////////'));
+    return Container(
+      width: 200,
+      height: 200,
+      color: Colors.green,
+      child: Text(
+          '//////testgreen///////${MyApp().appState}//////////testgreen//////////'),
+    );
   }
 }
 
@@ -49,7 +62,7 @@ class test33 extends StatelessWidget {
 
   //method updateAppState
   void updateAppState() {
-    MyApp().appState; // singleton or single instance
+    MyApp().appState =33; // singleton or single instance
   }
 
   void getAppState() {
@@ -58,7 +71,12 @@ class test33 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-        child: Text('/////////////${MyApp().appState}////////////////////'));
+    return Container(
+      width: 200,
+      height: 200,
+      color: Colors.red,
+      child: Text(
+          '//////test33red///////${MyApp().appState}//////////test33red//////////'),
+    );
   }
 }
