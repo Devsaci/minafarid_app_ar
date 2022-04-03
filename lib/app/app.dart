@@ -30,6 +30,10 @@ class test extends StatelessWidget {
     MyApp().appState = 11;
   }
 
+  void getAppState() {
+    print(MyApp().appState);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container();
