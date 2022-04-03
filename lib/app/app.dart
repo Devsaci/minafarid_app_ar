@@ -1,13 +1,12 @@
-import 'dart:html';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:minafarid_app_ar/presentation/color_manager.dart';
 
 class MyApp extends StatefulWidget {
+  MyApp.internal();
+
   int appState = 0;
 
   // named constructor
-  MyApp.internal();
 
   static final MyApp _instance =
       MyApp.internal(); // singleton or single instance
