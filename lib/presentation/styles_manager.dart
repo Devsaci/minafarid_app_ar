@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
@@ -17,3 +16,13 @@ TextStyle _getTextStyle(
 }
 
 // regular style
+TextStyle getRegularStyle({
+  double fontSize = FontSize.s12,
+  required Color color,
+}) {
+  return _getTextStyle(
+    fontSize,
+    FontWeightManager.regular,
+    color,
+  );
+}
