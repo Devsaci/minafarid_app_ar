@@ -5,5 +5,5 @@ class FontConstants {
 }
 
 class FontWeightManager {
-
+  static const FontWeight light = FontWeight.w300;
 }
