@@ -8,17 +8,12 @@ TextStyle _getTextStyle(
   double fontSize,
   FontWeight fontWeight,
   Color color,
-  FontConstants fontFamily,
 ) {
   return TextStyle(
-    fontSize: fontSize,
-    fontWeight: fontWeight,
-    color: color,
-    fontFamily: FontConstants.fontFamily,
-  );
+      fontSize: fontSize,
+      fontFamily: FontConstants.fontFamily,
+      color: color,
+      fontWeight: fontWeight);
 }
 
 // regular style
-TextStyle getRegularStyle(){
-  return TextStyle();
-}
