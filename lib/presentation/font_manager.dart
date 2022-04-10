@@ -11,3 +11,5 @@ class FontWeightManager {
   static const FontWeight semiBold = FontWeight.w600;
   static const FontWeight bold = FontWeight.w700;
 }
+
+class FontSize {}
