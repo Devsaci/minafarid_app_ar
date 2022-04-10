@@ -12,4 +12,7 @@ class FontWeightManager {
   static const FontWeight bold = FontWeight.w700;
 }
 
-class FontSize {}
+class FontSize {
+  static const double s12 = 12.0;
+
+}
