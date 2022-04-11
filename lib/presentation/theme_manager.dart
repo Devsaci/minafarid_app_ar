@@ -3,18 +3,19 @@ import 'package:minafarid_app_ar/presentation/color_manager.dart';
 
 ThemeData getApplicationTheme() {
   return ThemeData(
-      // main colors
-      primaryColor: ColorManager.primary,
-      primaryColorLight: ColorManager.lightPrimary,
-      primaryColorDark: ColorManager.darkPrimary,
-      // cardview theme
+    // main colors
+    primaryColor: ColorManager.primary,
+    primaryColorLight: ColorManager.lightPrimary,
+    primaryColorDark: ColorManager.darkPrimary,
+    disabledColor: ColorManager.grey1,
+    // cardview theme
 
-      // app bar theme
+    // app bar theme
 
-      // button theme
+    // button theme
 
-      // text theme
+    // text theme
 
-      // input decoration theme (text form field)
-      );
+    // input decoration theme (text form field)
+  );
 }
