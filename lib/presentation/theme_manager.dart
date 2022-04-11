@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:minafarid_app_ar/presentation/color_manager.dart';
 
 ThemeData getApplicationTheme() {
   return ThemeData(
-    // main colors
+      // main colors
+      primaryColor: ColorManager.primary
+      // cardview theme
 
-    // cardview theme
+      // app bar theme
 
-    // app bar theme
+      // button theme
 
-    // button theme
+      // text theme
 
-    // text theme
-
-    // input decoration theme (text form field)
-  );
+      // input decoration theme (text form field)
+      );
 }
