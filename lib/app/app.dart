@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:minafarid_app_ar/presentation/color_manager.dart';
+import 'package:minafarid_app_ar/presentation/theme_manager.dart';
 
 class MyApp extends StatefulWidget {
   MyApp.internal();
@@ -20,6 +21,8 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      theme: getApplicationTheme(),
+    );
   }
 }
