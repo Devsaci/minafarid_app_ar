@@ -4,7 +4,8 @@ import 'package:minafarid_app_ar/presentation/color_manager.dart';
 ThemeData getApplicationTheme() {
   return ThemeData(
       // main colors
-      primaryColor: ColorManager.primary
+      primaryColor: ColorManager.primary,
+      primaryColorLight: ColorManager.lightPrimary
       // cardview theme
 
       // app bar theme
