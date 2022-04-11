@@ -5,7 +5,8 @@ ThemeData getApplicationTheme() {
   return ThemeData(
       // main colors
       primaryColor: ColorManager.primary,
-      primaryColorLight: ColorManager.lightPrimary
+      primaryColorLight: ColorManager.lightPrimary,
+      primaryColorDark: ColorManager.darkPrimary,
       // cardview theme
 
       // app bar theme
