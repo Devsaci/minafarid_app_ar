@@ -18,7 +18,7 @@ ThemeData getApplicationTheme() {
     ),
 
     // app bar theme
-
+    appBarTheme: AppBarTheme(),
     // button theme
 
     // text theme
