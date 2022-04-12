@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:minafarid_app_ar/presentation/color_manager.dart';
+import 'package:minafarid_app_ar/presentation/values_manager.dart';
 
 ThemeData getApplicationTheme() {
   return ThemeData(
@@ -12,6 +13,7 @@ ThemeData getApplicationTheme() {
     cardTheme: CardTheme(
       color: ColorManager.white,
       shadowColor: ColorManager.grey,
+      elevation: AppSize.s4,
     ),
 
     // app bar theme
