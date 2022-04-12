@@ -9,11 +9,10 @@ ThemeData getApplicationTheme() {
     primaryColorDark: ColorManager.darkPrimary,
     disabledColor: ColorManager.grey1,
     // cardview theme
-      cardTheme: CardTheme(
-          color: ColorManager.white,
-
-      ),
-
+    cardTheme: CardTheme(
+      color: ColorManager.white,
+      shadowColor: ColorManager.grey,
+    ),
 
     // app bar theme
 
