@@ -32,7 +32,9 @@ ThemeData getApplicationTheme() {
       ),
     ),
     // button theme
-    buttonTheme: const ButtonThemeData(),
+    buttonTheme: const ButtonThemeData(
+      shape: StadiumBorder(),
+    ),
 
     // text theme
 
