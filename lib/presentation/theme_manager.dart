@@ -22,6 +22,7 @@ ThemeData getApplicationTheme() {
       centerTitle: true,
       color: ColorManager.primary,
       elevation: AppSize.s4,
+      shadowColor: ColorManager.lightPrimary,
     ),
     // button theme
 
