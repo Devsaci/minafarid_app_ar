@@ -32,9 +32,7 @@ ThemeData getApplicationTheme() {
       ),
     ),
     // button theme
-    buttonTheme: ButtonThemeData(
-
-    ),
+    buttonTheme: const ButtonThemeData(),
 
     // text theme
 
