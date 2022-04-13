@@ -20,6 +20,7 @@ ThemeData getApplicationTheme() {
     // app bar theme
     appBarTheme: AppBarTheme(
       centerTitle: true,
+      color: ColorManager.primary,
     ),
     // button theme
 
