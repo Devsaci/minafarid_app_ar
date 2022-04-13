@@ -32,6 +32,9 @@ ThemeData getApplicationTheme() {
       ),
     ),
     // button theme
+    buttonTheme: ButtonThemeData(
+
+    ),
 
     // text theme
 
