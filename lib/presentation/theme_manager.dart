@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:minafarid_app_ar/presentation/color_manager.dart';
+import 'package:minafarid_app_ar/presentation/styles_manager.dart';
 import 'package:minafarid_app_ar/presentation/values_manager.dart';
+
+import 'font_manager.dart';
 
 ThemeData getApplicationTheme() {
   return ThemeData(
@@ -23,6 +26,10 @@ ThemeData getApplicationTheme() {
       color: ColorManager.primary,
       elevation: AppSize.s4,
       shadowColor: ColorManager.lightPrimary,
+      titleTextStyle: getRegularStyle(
+        fontSize: FontSize.s16,
+        color: ColorManager.white,
+      ),
     ),
     // button theme
 
