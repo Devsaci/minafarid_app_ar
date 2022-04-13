@@ -36,7 +36,7 @@ ThemeData getApplicationTheme() {
       shape: const StadiumBorder(),
       disabledColor: ColorManager.grey1,
       buttonColor: ColorManager.primary,
-
+      splashColor: ColorManager.lightPrimary,
     ),
 
     // text theme
