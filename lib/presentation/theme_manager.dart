@@ -46,9 +46,8 @@ ThemeData getApplicationTheme() {
             primary: ColorManager.primary,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(AppSize.s12)))),
-
     // text theme
-
+      textTheme: TextTheme(),
     // input decoration theme (text form field)
   );
 }
