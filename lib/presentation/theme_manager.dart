@@ -96,7 +96,7 @@ ThemeData getApplicationTheme() {
         // focused border style
       focusedErrorBorder: OutlineInputBorder(
           borderSide: BorderSide(color: ColorManager.primary, width: AppSize.s1_5),
-          borderRadius: const BorderRadius.all(Radius.circular(AppSize.s8))))
+          borderRadius: const BorderRadius.all(Radius.circular(AppSize.s8)),
       ),
     ),
   );
