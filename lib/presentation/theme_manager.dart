@@ -89,7 +89,10 @@ ThemeData getApplicationTheme() {
         ),
       ),
       // error border style
-      errorBorder: OutlineInputBorder(),
+      errorBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: ColorManager.error, width: AppSize.s1_5),
+          borderRadius: const BorderRadius.all(Radius.circular(AppSize.s8))
+      ),
     ),
   );
 }
