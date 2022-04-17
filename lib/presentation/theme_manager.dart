@@ -78,6 +78,7 @@ ThemeData getApplicationTheme() {
           Radius.circular(AppSize.s8),
         ),
       ),
+      // focused border style
       focusedBorder:  OutlineInputBorder(
         borderSide: BorderSide(
           color: ColorManager.primary,
