@@ -78,7 +78,9 @@ ThemeData getApplicationTheme() {
           Radius.circular(AppSize.s8),
         ),
       ),
-      focusedBorder: const OutlineInputBorder(),
+      focusedBorder: const OutlineInputBorder(
+
+      ),
     ),
   );
 }
