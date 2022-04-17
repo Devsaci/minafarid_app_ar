@@ -59,5 +59,8 @@ ThemeData getApplicationTheme() {
     ),
 
     // input decoration theme (text form field)
+    inputDecorationTheme: InputDecorationTheme(
+
+    ),
   );
 }
