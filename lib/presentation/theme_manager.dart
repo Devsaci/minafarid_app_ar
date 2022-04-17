@@ -70,8 +70,13 @@ ThemeData getApplicationTheme() {
       errorStyle: getRegularStyle(color: ColorManager.error),
       // enabled border style
       enabledBorder: OutlineInputBorder(
-        borderSide:
-            BorderSide(color: ColorManager.primary, width: AppSize.s1_5),
+        borderSide: BorderSide(
+          color: ColorManager.primary,
+          width: AppSize.s1_5,
+        ),
+        borderRadius: const BorderRadius.all(
+          Radius.circular(AppSize.s8),
+        ),
       ),
     ),
   );
