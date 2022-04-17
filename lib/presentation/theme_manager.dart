@@ -68,6 +68,11 @@ ThemeData getApplicationTheme() {
       labelStyle:
           getMediumStyle(color: ColorManager.grey, fontSize: FontSize.s14),
       errorStyle: getRegularStyle(color: ColorManager.error),
+      // enabled border style
+      enabledBorder: OutlineInputBorder(
+        borderSide:
+            BorderSide(color: ColorManager.primary, width: AppSize.s1_5),
+      ),
     ),
   );
 }
