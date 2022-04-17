@@ -74,12 +74,15 @@ ThemeData getApplicationTheme() {
           color: ColorManager.primary,
           width: AppSize.s1_5,
         ),
-        borderRadius: const BorderRadius.all(
+        borderRadius:  BorderRadius.all(
           Radius.circular(AppSize.s8),
         ),
       ),
-      focusedBorder: const OutlineInputBorder(
-
+      focusedBorder:  OutlineInputBorder(
+        borderSide: BorderSide(
+          color: ColorManager.primary,
+          width: AppSize.s1_5,
+        ),
       ),
     ),
   );
