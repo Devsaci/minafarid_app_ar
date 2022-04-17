@@ -60,7 +60,8 @@ ThemeData getApplicationTheme() {
 
     // input decoration theme (text form field)
     inputDecorationTheme: InputDecorationTheme(
-
+      // content padding
+      contentPadding: const EdgeInsets.all(AppPadding.p8),
     ),
   );
 }
