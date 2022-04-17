@@ -66,7 +66,8 @@ ThemeData getApplicationTheme() {
       hintStyle:
           getRegularStyle(color: ColorManager.grey, fontSize: FontSize.s14),
       labelStyle:
-      getMediumStyle(color: ColorManager.grey, fontSize: FontSize.s14),
+          getMediumStyle(color: ColorManager.grey, fontSize: FontSize.s14),
+      errorStyle: getRegularStyle(color: ColorManager.error),
     ),
   );
 }
