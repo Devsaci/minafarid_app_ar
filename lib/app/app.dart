@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:minafarid_app_ar/presentation/color_manager.dart';
-import 'package:minafarid_app_ar/presentation/theme_manager.dart';
+import 'package:minafarid_app_ar/presentation/resources/color_manager.dart';
+import 'package:minafarid_app_ar/presentation/resources/theme_manager.dart';
 
 class MyApp extends StatefulWidget {
   MyApp.internal();

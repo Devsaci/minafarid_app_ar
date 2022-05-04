@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:minafarid_app_ar/presentation/color_manager.dart';
-import 'package:minafarid_app_ar/presentation/styles_manager.dart';
-import 'package:minafarid_app_ar/presentation/values_manager.dart';
-
+import 'package:minafarid_app_ar/presentation/resources/color_manager.dart';
+import 'package:minafarid_app_ar/presentation/resources/styles_manager.dart';
+import 'package:minafarid_app_ar/presentation/resources/values_manager.dart';
 import 'font_manager.dart';
 
 ThemeData getApplicationTheme() {
