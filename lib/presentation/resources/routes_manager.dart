@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:minafarid_app_ar/presentation/splash/splash_view.dart';
 
+import '../forgotPassword/forgotPassword_view.dart';
 import '../login/login_view.dart';
 import '../register/register_view.dart';
 
@@ -24,6 +25,7 @@ class RouteGenerator {
       case Routes.registerRoute:
         return MaterialPageRoute(builder: (_) => RegisterView());
       case Routes.forgotPasswordRoute:
+        return MaterialPageRoute(builder: (_) => ForgotPasswordView());
     }
     throw UnimplementedError();
   }
