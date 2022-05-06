@@ -1,4 +1,3 @@
-
 class Routes {
   static const String splashRoute = "/";
   static const String loginRoute = "/login";
@@ -6,6 +5,6 @@ class Routes {
   static const String forgotPasswordRoute = "/forgotPassword";
   static const String mainRoute = "/main";
   static const String storeDetailsRoute = "/storeDetails";
-
-
 }
+
+class RouteGenerator {}
