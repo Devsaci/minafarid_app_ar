@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:minafarid_app_ar/presentation/splash/splash_view.dart';
 
+import '../login/login_view.dart';
+
 class Routes {
   static const String splashRoute = "/";
   static const String loginRoute = "/login";
@@ -16,6 +18,7 @@ class RouteGenerator {
     switch (settings.name) {
       case Routes.splashRoute:
         return MaterialPageRoute(builder: (_) => SplashView());
+      case Routes.loginRoute:
     }
     throw UnimplementedError();
   }
