@@ -19,7 +19,8 @@ class RouteGenerator {
       case Routes.splashRoute:
         return MaterialPageRoute(builder: (_) => SplashView());
       case Routes.loginRoute:
-        return MaterialPageRoute(builder: (_) =>  LoginView());
+        return MaterialPageRoute(builder: (_) => LoginView());
+      case Routes.registerRoute:
     }
     throw UnimplementedError();
   }
