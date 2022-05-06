@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Main extends StatefulWidget {
-  const Main({Key? key}) : super(key: key);
+class MainView extends StatefulWidget {
+  const MainView({Key? key}) : super(key: key);
 
   @override
-  State<Main> createState() => _MainState();
+  State<MainView> createState() => _MainViewState();
 }
 
-class _MainState extends State<Main> {
+class _MainViewState extends State<MainView> {
   @override
   Widget build(BuildContext context) {
     return Container();

@@ -4,6 +4,7 @@ import 'package:minafarid_app_ar/presentation/splash/splash_view.dart';
 
 import '../forgotPassword/forgotPassword_view.dart';
 import '../login/login_view.dart';
+import '../main/main.dart';
 import '../register/register_view.dart';
 
 class Routes {
@@ -27,6 +28,7 @@ class RouteGenerator {
       case Routes.forgotPasswordRoute:
         return MaterialPageRoute(builder: (_) => ForgotPasswordView());
       case Routes.mainRoute:
+        return MaterialPageRoute(builder: (_) =>  MainView());
     }
     throw UnimplementedError();
   }
