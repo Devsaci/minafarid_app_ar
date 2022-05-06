@@ -29,6 +29,7 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => ForgotPasswordView());
       case Routes.mainRoute:
         return MaterialPageRoute(builder: (_) =>  MainView());
+      case Routes.storeDetailsRoute:
     }
     throw UnimplementedError();
   }
