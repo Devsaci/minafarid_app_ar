@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:minafarid_app_ar/presentation/resources/strings_manager.dart';
 import 'package:minafarid_app_ar/presentation/splash/splash_view.dart';
 import '../forgotPassword/forgotPassword_view.dart';
 import '../login/login_view.dart';
@@ -39,9 +40,9 @@ class RouteGenerator {
     return MaterialPageRoute(
         builder: (_) => Scaffold(
               appBar: AppBar(
-                title: const Text("No Route Found"), // todo move this string to strings manager
+                title: const Text(AppStrings.noRouteFound),
               ),
-              body: const Center(child: Text("No Route Found")), // todo move this string to strings manager
+              body: const Center(child: Text(AppStrings.noRouteFound)),
             ));
   }
 }
