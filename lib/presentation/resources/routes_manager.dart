@@ -6,6 +6,7 @@ import '../forgotPassword/forgotPassword_view.dart';
 import '../login/login_view.dart';
 import '../main/main.dart';
 import '../register/register_view.dart';
+import '../store_details/store_details_view.dart';
 
 class Routes {
   static const String splashRoute = "/";
@@ -30,6 +31,7 @@ class RouteGenerator {
       case Routes.mainRoute:
         return MaterialPageRoute(builder: (_) =>  MainView());
       case Routes.storeDetailsRoute:
+        return MaterialPageRoute(builder: (_) =>  StoreDetailsView());
     }
     throw UnimplementedError();
   }
