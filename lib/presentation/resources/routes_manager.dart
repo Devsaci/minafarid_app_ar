@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:minafarid_app_ar/presentation/splash/splash_view.dart';
 
 import '../login/login_view.dart';
+import '../register/register_view.dart';
 
 class Routes {
   static const String splashRoute = "/";
@@ -21,6 +22,7 @@ class RouteGenerator {
       case Routes.loginRoute:
         return MaterialPageRoute(builder: (_) => LoginView());
       case Routes.registerRoute:
+        return MaterialPageRoute(builder: (_) =>  RegisterView());
     }
     throw UnimplementedError();
   }
