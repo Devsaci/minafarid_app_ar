@@ -1,3 +1,5 @@
+import 'package:flutter/cupertino.dart';
+
 class Routes {
   static const String splashRoute = "/";
   static const String loginRoute = "/login";
@@ -7,4 +9,9 @@ class Routes {
   static const String storeDetailsRoute = "/storeDetails";
 }
 
-class RouteGenerator {}
+class RouteGenerator {
+  static Route<dynamic> getRoute() {
+    // TODO: implement getRoute
+    throw UnimplementedError();
+  }
+}
