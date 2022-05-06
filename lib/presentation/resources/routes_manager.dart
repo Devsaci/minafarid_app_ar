@@ -11,7 +11,9 @@ class Routes {
 
 class RouteGenerator {
   static Route<dynamic> getRoute(RouteSettings settings) {
-    switch(settings.name){}
+    switch(settings.name){
+
+    }
     throw UnimplementedError();
   }
 }
