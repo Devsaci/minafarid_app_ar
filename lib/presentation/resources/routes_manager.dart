@@ -10,8 +10,8 @@ class Routes {
 }
 
 class RouteGenerator {
-  static Route<dynamic> getRoute() {
-    // TODO: implement getRoute
+  static Route<dynamic> getRoute(RouteSettings settings) {
+    switch(settings.name){}
     throw UnimplementedError();
   }
 }
