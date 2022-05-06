@@ -29,10 +29,16 @@ class RouteGenerator {
       case Routes.forgotPasswordRoute:
         return MaterialPageRoute(builder: (_) => ForgotPasswordView());
       case Routes.mainRoute:
-        return MaterialPageRoute(builder: (_) =>  MainView());
+        return MaterialPageRoute(builder: (_) => MainView());
       case Routes.storeDetailsRoute:
-        return MaterialPageRoute(builder: (_) =>  StoreDetailsView());
+        return MaterialPageRoute(builder: (_) => StoreDetailsView());
+      default:
+        return unDefinedRoute();
     }
     throw UnimplementedError();
+  }
+
+  static Route<dynamic> unDefinedRoute() {
+    return MaterialPageRoute(builder: (_)=> Scaffold());
   }
 }
