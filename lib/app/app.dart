@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:minafarid_app_ar/presentation/resources/color_manager.dart';
+import 'package:minafarid_app_ar/presentation/resources/routes_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/theme_manager.dart';
 
 class MyApp extends StatefulWidget {
@@ -22,6 +23,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+     //20. Lecture 20 - Start Splash Screen20. Lecture 20 - Start Splash Screen
       theme: getApplicationTheme(),
     );
   }
