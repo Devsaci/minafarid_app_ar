@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:minafarid_app_ar/presentation/resources/color_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/routes_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/theme_manager.dart';
 
@@ -25,6 +24,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
      //20. Lecture 20 - Start Splash Screen20. Lecture 20 - Start Splash Screen
       onGenerateRoute: RouteGenerator.getRoute,
+      initialRoute: Routes.splashRoute,
       theme: getApplicationTheme(),
     );
   }
