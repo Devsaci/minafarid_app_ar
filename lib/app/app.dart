@@ -24,6 +24,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
      //20. Lecture 20 - Start Splash Screen20. Lecture 20 - Start Splash Screen
+      onGenerateRoute: RouteGenerator.getRoute,
       theme: getApplicationTheme(),
     );
   }
