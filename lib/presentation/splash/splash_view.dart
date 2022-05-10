@@ -14,7 +14,8 @@ class _SplashViewState extends State<SplashView> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorManager.primary,
-      body: const Center(child: Image(image: AssetImage(ImageAssets.splashLogo))),
+      body:
+          const Center(child: Image(image: AssetImage(ImageAssets.splashLogo))),
     );
   }
 }
