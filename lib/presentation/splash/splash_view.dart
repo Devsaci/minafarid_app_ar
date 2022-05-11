@@ -15,7 +15,9 @@ class _SplashViewState extends State<SplashView> {
   //21. Lecture 21 - Adding Timer to Splash Screen
   Timer? _timer;
 
-  _startDelay() {}
+  _startDelay() {
+    _timer = Timer(const Duration(seconds: 3), (){});
+  }
 
   @override
   Widget build(BuildContext context) {
