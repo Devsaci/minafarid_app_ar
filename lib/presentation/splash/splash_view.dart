@@ -38,4 +38,10 @@ class _SplashViewState extends State<SplashView> {
           const Center(child: Image(image: AssetImage(ImageAssets.splashLogo))),
     );
   }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+  }
 }
