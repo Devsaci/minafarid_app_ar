@@ -16,8 +16,10 @@ class _SplashViewState extends State<SplashView> {
   Timer? _timer;
 
   _startDelay() {
-    _timer = Timer(const Duration(seconds: 3), (){});
+    _timer = Timer(const Duration(seconds: 3), _goNext);
   }
+
+  void _goNext() {}
 
   @override
   Widget build(BuildContext context) {
