@@ -10,12 +10,14 @@ class SplashView extends StatefulWidget {
 }
 
 class _SplashViewState extends State<SplashView> {
+  //21. Lecture 21 - Adding Timer to Splash Screen
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorManager.primary,
       body:
-          const Center(child: Image(image: AssetImage(ImageAssets.splashLogo))),
+      const Center(child: Image(image: AssetImage(ImageAssets.splashLogo))),
     );
   }
 }
