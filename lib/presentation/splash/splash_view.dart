@@ -11,6 +11,7 @@ class SplashView extends StatefulWidget {
 
 class _SplashViewState extends State<SplashView> {
   //21. Lecture 21 - Adding Timer to Splash Screen
+  Timer? _timer;
 
   @override
   Widget build(BuildContext context) {
