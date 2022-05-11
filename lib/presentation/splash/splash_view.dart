@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:minafarid_app_ar/presentation/resources/assets_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/color_manager.dart';
+import 'package:minafarid_app_ar/presentation/resources/routes_manager.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({Key? key}) : super(key: key);
@@ -19,7 +20,9 @@ class _SplashViewState extends State<SplashView> {
     _timer = Timer(const Duration(seconds: 3), _goNext);
   }
 
-  void _goNext() {}
+  void _goNext() {
+    Navigator.pushReplacementNamed(context, Routes.onBoardingRoute);
+  }
 
   @override
   Widget build(BuildContext context) {
