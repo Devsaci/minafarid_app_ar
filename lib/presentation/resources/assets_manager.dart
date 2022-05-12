@@ -1,6 +1,6 @@
 
-const String IMAGE_PATH = "assets/images";
+const String imagePath = "assets/images";
 class ImageAssets {
-  static const String splashLogo = "$IMAGE_PATH/splash_logo.png";
+  static const String splashLogo = "$imagePath/splash_logo.png";
 }
 
