@@ -9,4 +9,6 @@ class AppStrings {
 
   static const onBoardingSubTitle1 =
       "Tut app is an awesome flutter application using clean architecture #1";
+  static const onBoardingSubTitle2 =
+      "Tut app is an awesome flutter application using clean architecture #2";
 }
