@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:minafarid_app_ar/presentation/resources/assets_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/strings_manager.dart';
 import '../resources/color_manager.dart';
+import '../resources/values_manager.dart';
 
 class OnBoardingView extends StatefulWidget {
   const OnBoardingView({Key? key}) : super(key: key);
@@ -75,6 +76,9 @@ class OnBoardingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
+      children: const [
+        SizedBox(height: AppSize.s20),
+      ],
 
     );
   }
