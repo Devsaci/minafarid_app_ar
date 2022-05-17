@@ -59,7 +59,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
           });
         },
         itemBuilder: (context, index) {
-          return Text("SliderObject");
+          return Center(child: Text("SliderObject"));
         },
       ),
     );
@@ -77,7 +77,7 @@ class OnBoardingPage extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: const [
-        SizedBox(height: AppSize.s20),
+        SizedBox(height: AppSize.s40),
       ],
 
     );
