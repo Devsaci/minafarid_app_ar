@@ -65,6 +65,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
       ),
       bottomSheet: Container(
         height: AppSize.s100,
+        color: ColorManager.white,
       ),
     );
   }
