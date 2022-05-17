@@ -94,6 +94,7 @@ class OnBoardingPage extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineMedium,
           ),
         ),
+        const SizedBox(height: AppSize.s60),
       ],
 
     );
