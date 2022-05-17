@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-
 import '../resources/color_manager.dart';
 
 class OnBoardingView extends StatefulWidget {
@@ -11,21 +9,17 @@ class OnBoardingView extends StatefulWidget {
 }
 
 class _OnBoardingViewState extends State<OnBoardingView> {
+  late final List<SliderObject> _list = _getSliderData();
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       backgroundColor: ColorManager.grey2,
       body: const Center(child: Text("Welcome to on boarding")),
     );
   }
 }
 
-//23. Lecture 23 - Implementation Onboarding Screen Part1
+List<SliderObject> _getSliderData() => [];
+
 class SliderObject {
-  String title;
-  String subTitle;
-  String image;
-
-  SliderObject(this.title, this.subTitle, this.image);
 }
-
