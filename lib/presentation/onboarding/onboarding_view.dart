@@ -66,7 +66,16 @@ class _OnBoardingViewState extends State<OnBoardingView> {
       bottomSheet: Container(
         height: AppSize.s100,
         color: ColorManager.white,
-        child: Column(),
+        child: Column(
+          children: [
+            Align(
+              child: TextButton(
+                onPressed: () {},
+                child: Text("Skip"),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
