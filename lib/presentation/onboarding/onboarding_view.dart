@@ -63,7 +63,9 @@ class _OnBoardingViewState extends State<OnBoardingView> {
           return OnBoardingPage(_list[index]);
         },
       ),
-      bottomSheet: Container(),
+      bottomSheet: Container(
+        height: AppSize.s100,
+      ),
     );
   }
 }
