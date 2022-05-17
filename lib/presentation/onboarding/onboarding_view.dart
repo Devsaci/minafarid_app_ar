@@ -50,6 +50,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
       ),
       body: PageView.builder(
         controller: _pageController,
+        itemCount: _list.length,
         itemBuilder: (context, index) {
           return const Text("SliderObject");
         },
