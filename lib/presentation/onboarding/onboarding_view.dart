@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:minafarid_app_ar/presentation/resources/assets_manager.dart';
@@ -47,7 +49,11 @@ class _OnBoardingViewState extends State<OnBoardingView> {
           statusBarBrightness: Brightness.dark,
         ),
       ),
-      body: const Center(child: Text("Welcome to on boarding")),
+      body: PageView.builder(
+        itemBuilder: (context, index) {
+          return const Text("SliderObject");
+        },
+      ),
     );
   }
 }
