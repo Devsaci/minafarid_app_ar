@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:minafarid_app_ar/presentation/resources/assets_manager.dart';
@@ -15,6 +13,7 @@ class OnBoardingView extends StatefulWidget {
 
 class _OnBoardingViewState extends State<OnBoardingView> {
   late final List<SliderObject> _list = _getSliderData();
+  final PageController _pageController = PageController();
 
   List<SliderObject> _getSliderData() => [
         SliderObject(
@@ -50,6 +49,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
         ),
       ),
       body: PageView.builder(
+        controller: _pageController,
         itemBuilder: (context, index) {
           return const Text("SliderObject");
         },
