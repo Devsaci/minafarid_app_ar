@@ -65,6 +65,17 @@ class _OnBoardingViewState extends State<OnBoardingView> {
   }
 }
 
+//24. Lecture 24- Implementation Onboarding Screen Part2
+class OnBoardingPage  extends StatelessWidget {
+  const OnBoardingPage ({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
+
 class SliderObject {
   String title;
   String subTitle;
