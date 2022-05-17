@@ -61,7 +61,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
           });
         },
         itemBuilder: (context, index) {
-          return Center(child: Text("SliderObject"));
+          return OnBoardingPage(_list[index]);
         },
       ),
     );
