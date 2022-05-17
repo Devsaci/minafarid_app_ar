@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:minafarid_app_ar/presentation/resources/assets_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/strings_manager.dart';
 import '../resources/color_manager.dart';
@@ -40,7 +41,12 @@ class _OnBoardingViewState extends State<OnBoardingView> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorManager.white,
-      appBar: AppBar(),
+      appBar: AppBar(
+        systemOverlayStyle: SystemUiOverlayStyle(
+          statusBarColor: ColorManager.white,
+          statusBarBrightness: Brightness.dark,
+        ),
+      ),
       body: const Center(child: Text("Welcome to on boarding")),
     );
   }
