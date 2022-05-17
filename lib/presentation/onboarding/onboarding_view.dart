@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:minafarid_app_ar/presentation/resources/assets_manager.dart';
+import 'package:minafarid_app_ar/presentation/resources/strings_manager.dart';
 import '../resources/color_manager.dart';
 
 class OnBoardingView extends StatefulWidget {
@@ -10,6 +12,15 @@ class OnBoardingView extends StatefulWidget {
 
 class _OnBoardingViewState extends State<OnBoardingView> {
   late final List<SliderObject> _list = _getSliderData();
+
+  List<SliderObject> _getSliderData() => [
+        SliderObject(
+          AppStrings.onBoardingSubTitle1,
+          AppStrings.onBoardingSubTitle1,
+          ImageAssets.splashLogo,
+        )
+      ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,8 +29,6 @@ class _OnBoardingViewState extends State<OnBoardingView> {
     );
   }
 }
-
-List<SliderObject> _getSliderData() => [];
 
 class SliderObject {
   String title;
