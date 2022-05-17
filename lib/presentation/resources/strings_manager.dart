@@ -5,6 +5,7 @@ class AppStrings {
   static const onBoardingTitle2 = "SEE THE BEST COURSE #2";
   static const onBoardingTitle3 = "SEE THE BEST COURSE #3";
   static const onBoardingTitle4 = "SEE THE BEST COURSE #4";
+  static const skip = "skip";
 
 
   static const onBoardingSubTitle1 =

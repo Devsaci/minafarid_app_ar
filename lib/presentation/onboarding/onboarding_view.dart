@@ -69,10 +69,11 @@ class _OnBoardingViewState extends State<OnBoardingView> {
         child: Column(
           children: [
             Align(
+              alignment: Alignment.centerRight,
               child: TextButton(
                 onPressed: () {},
                 child: const Text(
-                  "Skip",
+                  AppStrings.skip,
                   textAlign: TextAlign.end,
                 ),
               ),
