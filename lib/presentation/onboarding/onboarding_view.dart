@@ -86,6 +86,14 @@ class OnBoardingPage extends StatelessWidget {
             style: Theme.of(context).textTheme.displayLarge,
           ),
         ),
+        Padding(
+          padding: const EdgeInsets.all(AppPadding.p8),
+          child: Text(
+            _sliderObject.subTitle,
+            textAlign: TextAlign.center,
+            style: Theme.of(context).textTheme.headlineMedium,
+          ),
+        ),
       ],
 
     );
