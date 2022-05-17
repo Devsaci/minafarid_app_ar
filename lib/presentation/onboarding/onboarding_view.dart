@@ -71,7 +71,10 @@ class _OnBoardingViewState extends State<OnBoardingView> {
             Align(
               child: TextButton(
                 onPressed: () {},
-                child: Text("Skip"),
+                child: const Text(
+                  "Skip",
+                  textAlign: TextAlign.end,
+                ),
               ),
             )
           ],
