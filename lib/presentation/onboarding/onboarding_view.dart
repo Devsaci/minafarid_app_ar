@@ -77,11 +77,14 @@ class OnBoardingPage extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children:  [
-        SizedBox(height: AppSize.s40),
-        Text(
-          _sliderObject.title,
-          textAlign: TextAlign.center,
-          style: Theme.of(context).textTheme.displayLarge,
+        const SizedBox(height: AppSize.s40),
+        Padding(
+          padding: const EdgeInsets.all(AppPadding.p8),
+          child: Text(
+            _sliderObject.title,
+            textAlign: TextAlign.center,
+            style: Theme.of(context).textTheme.displayLarge,
+          ),
         ),
       ],
 
