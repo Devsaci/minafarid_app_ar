@@ -76,8 +76,13 @@ class OnBoardingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
-      children: const [
+      children:  [
         SizedBox(height: AppSize.s40),
+        Text(
+          _sliderObject.title,
+          textAlign: TextAlign.center,
+          style: Theme.of(context).textTheme.displayLarge,
+        ),
       ],
 
     );
