@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -64,6 +63,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
           return OnBoardingPage(_list[index]);
         },
       ),
+      bottomSheet: Container(),
     );
   }
 }
