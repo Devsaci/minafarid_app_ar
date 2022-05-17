@@ -17,8 +17,13 @@ class _OnBoardingViewState extends State<OnBoardingView> {
         SliderObject(
           AppStrings.onBoardingSubTitle1,
           AppStrings.onBoardingSubTitle1,
-          ImageAssets.splashLogo,
-        )
+          ImageAssets.onboardingLogo1,
+        ),
+        SliderObject(
+          AppStrings.onBoardingSubTitle2,
+          AppStrings.onBoardingSubTitle2,
+          ImageAssets.onboardingLogo2,
+        ),
       ];
 
   @override
