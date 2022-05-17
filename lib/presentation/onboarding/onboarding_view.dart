@@ -76,7 +76,7 @@ class OnBoardingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
-      children:  [
+      children: [
         const SizedBox(height: AppSize.s40),
         Padding(
           padding: const EdgeInsets.all(AppPadding.p8),
@@ -95,8 +95,8 @@ class OnBoardingPage extends StatelessWidget {
           ),
         ),
         const SizedBox(height: AppSize.s60),
+        // 25. Lecture 25 - Implementation of Onboarding Screen Part3
       ],
-
     );
   }
 }
