@@ -1,5 +1,7 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:minafarid_app_ar/presentation/resources/assets_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/strings_manager.dart';
 import '../resources/color_manager.dart';
@@ -95,6 +97,7 @@ class OnBoardingPage extends StatelessWidget {
           ),
         ),
         const SizedBox(height: AppSize.s60),
+        SvgPicture.asset(_sliderObject.image),
         // 25. Lecture 25 - Implementation of Onboarding Screen Part3
       ],
     );
