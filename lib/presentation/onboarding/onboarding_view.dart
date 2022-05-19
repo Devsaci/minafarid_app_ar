@@ -103,11 +103,10 @@ class _OnBoardingViewState extends State<OnBoardingView> {
         // circle indicator
         Row(
           children: [
-            for (int i = 0; i <= _list.length; i++)
+            for (int index = 0; index <= _list.length; index++)
               Padding(
-                padding: const EdgeInsets.all(AppPadding.p8),
-                child: SvgPicture.asset(ImageAssets.hollowCircleIc),
-              ),
+                  padding: const EdgeInsets.all(AppPadding.p8),
+                  child: _getProperCircle(index)),
           ],
         ),
         // right arrow
@@ -122,6 +121,14 @@ class _OnBoardingViewState extends State<OnBoardingView> {
         ),
       ],
     );
+  }
+
+  Widget _getProperCircle(int index) {
+    if (index == _currentIndex) {
+      return SvgPicture.asset(ImageAssets.hollowCircleIc);
+    } else {
+      return SvgPicture.asset(ImageAssets.hollowCircleIc);
+    }
   }
 }
 
