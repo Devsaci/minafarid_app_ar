@@ -71,6 +71,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
             Align(
               alignment: Alignment.centerRight,
               child: TextButton(
+                //27. Lecture 27 - Implementation of Onboarding Screen Part5
                 onPressed: () {},
                 child: const Text(
                   AppStrings.skip,
@@ -84,7 +85,6 @@ class _OnBoardingViewState extends State<OnBoardingView> {
         ),
       ),
     );
-    // _getBottomSheetWidget();// Errors Position
   }
 
   Widget _getBottomSheetWidget() {
