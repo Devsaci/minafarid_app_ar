@@ -127,7 +127,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
     if (index == _currentIndex) {
       return SvgPicture.asset(ImageAssets.hollowCircleIc);
     } else {
-      return SvgPicture.asset(ImageAssets.hollowCircleIc);
+      return SvgPicture.asset(ImageAssets.solidCircleIc);
     }
   }
 }
