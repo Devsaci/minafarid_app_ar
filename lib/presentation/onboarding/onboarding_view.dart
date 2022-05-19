@@ -87,7 +87,13 @@ class _OnBoardingViewState extends State<OnBoardingView> {
   }
 
   Widget _getBottomSheetWidget() {
-    return const Text("BottomSheetWidget");
+    return Row(
+      children: [
+        // left arrow
+        // circle indicator
+        // right arrow
+      ],
+    );
   }
 }
 
