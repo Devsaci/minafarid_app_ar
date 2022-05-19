@@ -102,7 +102,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
             onTap: () {
               // go to previous slide
               _pageController.animateToPage(
-                _getNextIndex()!,
+                _getPreviousIndex()!,
                 duration: const Duration(
                     milliseconds: AppConstants.sliderAnimationTime),
                 curve: Curves.bounceInOut,
@@ -146,7 +146,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
     }
   }
 
-  int? _getNextIndex() {
+  int? _getPreviousIndex() {
     return null;
   }
 }
