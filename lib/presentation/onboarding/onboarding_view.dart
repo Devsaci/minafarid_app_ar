@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -64,8 +66,8 @@ class _OnBoardingViewState extends State<OnBoardingView> {
         },
       ),
       bottomSheet: Container(
-        height: AppSize.s100,
-        color: ColorManager.white,
+        height: AppSize.s80,
+        color: ColorManager.lightPrimary,
         child: Column(
           children: [
             Align(
@@ -77,7 +79,8 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                   textAlign: TextAlign.end,
                 ),
               ),
-            )
+            ),
+            // widgets indicator and arrows
           ],
         ),
       ),
