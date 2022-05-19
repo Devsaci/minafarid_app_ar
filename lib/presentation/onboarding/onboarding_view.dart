@@ -95,58 +95,61 @@ class _OnBoardingViewState extends State<OnBoardingView> {
   }
 
   Widget _getBottomSheetWidget() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        // left arrow
-        Padding(
-          padding: const EdgeInsets.all(AppPadding.p14),
-          child: GestureDetector(
-            onTap: () {
-              // go to previous slide
-              _pageController.animateToPage(
-                _getPreviousIndex(),
-                duration: const Duration(
-                    milliseconds: AppConstants.sliderAnimationTime),
-                curve: Curves.bounceInOut,
-              );
-            },
-            child: SizedBox(
-              width: AppSize.s20,
-              height: AppSize.s20,
-              child: SvgPicture.asset(ImageAssets.leftArrowIc),
-            ),
-          ),
-        ),
-        // circle indicator
-        Row(
-          children: [
-            for (int index = 0; index <= _list.length; index++)
-              Padding(
-                  padding: const EdgeInsets.all(AppPadding.p8),
-                  child: _getProperCircle(index)),
-          ],
-        ),
-        // right arrow
-        Padding(
-          padding: const EdgeInsets.all(AppPadding.p14),
-          child: GestureDetector(
-            child: SizedBox(
-                width: AppSize.s20,
-                height: AppSize.s20,
-                child: SvgPicture.asset(
-                  ImageAssets.rightArrowIc,
-                )),
-            onTap: () {
-              // go to previous slide
-              _pageController.animateToPage(_getNextIndex(),
+    return Container(
+      color: ColorManager.primary,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          // left arrow
+          Padding(
+            padding: const EdgeInsets.all(AppPadding.p14),
+            child: GestureDetector(
+              onTap: () {
+                // go to previous slide
+                _pageController.animateToPage(
+                  _getPreviousIndex(),
                   duration: const Duration(
                       milliseconds: AppConstants.sliderAnimationTime),
-                  curve: Curves.bounceInOut);
-            },
+                  curve: Curves.bounceInOut,
+                );
+              },
+              child: SizedBox(
+                width: AppSize.s20,
+                height: AppSize.s20,
+                child: SvgPicture.asset(ImageAssets.leftArrowIc),
+              ),
+            ),
           ),
-        ),
-      ],
+          // circle indicator
+          Row(
+            children: [
+              for (int index = 0; index <= _list.length; index++)
+                Padding(
+                    padding: const EdgeInsets.all(AppPadding.p8),
+                    child: _getProperCircle(index)),
+            ],
+          ),
+          // right arrow
+          Padding(
+            padding: const EdgeInsets.all(AppPadding.p14),
+            child: GestureDetector(
+              child: SizedBox(
+                  width: AppSize.s20,
+                  height: AppSize.s20,
+                  child: SvgPicture.asset(
+                    ImageAssets.rightArrowIc,
+                  )),
+              onTap: () {
+                // go to previous slide
+                _pageController.animateToPage(_getNextIndex(),
+                    duration: const Duration(
+                        milliseconds: AppConstants.sliderAnimationTime),
+                    curve: Curves.bounceInOut);
+              },
+            ),
+          ),
+        ],
+      ),
     );
   }
 
