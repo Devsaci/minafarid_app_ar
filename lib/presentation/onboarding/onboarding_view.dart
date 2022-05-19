@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -18,7 +16,7 @@ class OnBoardingView extends StatefulWidget {
 class _OnBoardingViewState extends State<OnBoardingView> {
   late final List<SliderObject> _list = _getSliderData();
   final PageController _pageController = PageController();
-  int _currentIndex = 0;
+  final int _currentIndex = 0;
 
   List<SliderObject> _getSliderData() => [
         SliderObject(
@@ -85,6 +83,11 @@ class _OnBoardingViewState extends State<OnBoardingView> {
         ),
       ),
     );
+    _getBottomSheetWidget();
+  }
+
+  Widget _getBottomSheetWidget() {
+    return const Text("BottomSheetWidget");
   }
 }
 
