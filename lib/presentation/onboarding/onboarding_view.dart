@@ -19,7 +19,8 @@ class _OnBoardingViewState extends State<OnBoardingView> {
   final PageController _pageController = PageController();
   final int _currentIndex = 0;
 
-  List<SliderObject> _getSliderData() => [
+  List<SliderObject> _getSliderData() =>
+      [
         SliderObject(
           AppStrings.onBoardingSubTitle1,
           AppStrings.onBoardingSubTitle1,
@@ -98,7 +99,14 @@ class _OnBoardingViewState extends State<OnBoardingView> {
         Padding(
           padding: const EdgeInsets.all(AppPadding.p14),
           child: GestureDetector(
-            onTap: (){},
+            onTap: () {
+              // go to previous slide
+              _pageController.animateToPage(
+                  _getNextIndex()!,
+                duration: const Duration(
+                    milliseconds: 300),
+                curve: Curves.bounceInOut,);
+            },
             child: SizedBox(
               width: AppSize.s20,
               height: AppSize.s20,
@@ -136,6 +144,10 @@ class _OnBoardingViewState extends State<OnBoardingView> {
       return SvgPicture.asset(ImageAssets.solidCircleIc);
     }
   }
+
+  int? _getNextIndex() {
+    return null;
+  }
 }
 
 //24. Lecture 24- Implementation Onboarding Screen Part2
@@ -155,7 +167,10 @@ class OnBoardingPage extends StatelessWidget {
           child: Text(
             _sliderObject.title,
             textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.displayLarge,
+            style: Theme
+                .of(context)
+                .textTheme
+                .displayLarge,
           ),
         ),
         Padding(
@@ -163,7 +178,10 @@ class OnBoardingPage extends StatelessWidget {
           child: Text(
             _sliderObject.subTitle,
             textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.headlineMedium,
+            style: Theme
+                .of(context)
+                .textTheme
+                .headlineMedium,
           ),
         ),
         const SizedBox(height: AppSize.s60),
