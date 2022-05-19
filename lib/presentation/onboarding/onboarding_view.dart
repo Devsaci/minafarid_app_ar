@@ -70,7 +70,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
       ),
       bottomSheet: Container(
         height: AppSize.s100,
-        color: ColorManager.primary,
+        color: ColorManager.white,
         child: Column(
           children: [
             Align(
@@ -80,8 +80,9 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                 onPressed: () {
                   Navigator.pushReplacementNamed(context, Routes.loginRoute);
                 },
-                child: const Text(
+                child:  Text(
                   AppStrings.skip,
+                  style: Theme.of(context).textTheme.titleMedium,
                   textAlign: TextAlign.end,
                 ),
               ),
