@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:minafarid_app_ar/presentation/resources/assets_manager.dart';
+import 'package:minafarid_app_ar/presentation/resources/routes_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/strings_manager.dart';
 import '../resources/color_manager.dart';
 import '../resources/values_manager.dart';
@@ -72,7 +73,9 @@ class _OnBoardingViewState extends State<OnBoardingView> {
               alignment: Alignment.centerRight,
               child: TextButton(
                 //27. Lecture 27 - Implementation of Onboarding Screen Part5
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacementNamed(context, Routes.loginRoute);
+                },
                 child: const Text(
                   AppStrings.skip,
                   textAlign: TextAlign.end,
