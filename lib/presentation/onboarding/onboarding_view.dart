@@ -127,12 +127,17 @@ class _OnBoardingViewState extends State<OnBoardingView> {
         // right arrow
         Padding(
           padding: const EdgeInsets.all(AppPadding.p14),
-          child: SizedBox(
-              width: AppSize.s20,
-              height: AppSize.s20,
-              child: SvgPicture.asset(
-                ImageAssets.rightArrowIc,
-              )),
+          child: GestureDetector(
+            child: SizedBox(
+                width: AppSize.s20,
+                height: AppSize.s20,
+                child: SvgPicture.asset(
+                  ImageAssets.rightArrowIc,
+                )),
+            onTap: (){
+
+            },
+          ),
         ),
       ],
     );
