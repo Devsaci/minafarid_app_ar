@@ -18,8 +18,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
   final PageController _pageController = PageController();
   final int _currentIndex = 0;
 
-  List<SliderObject> _getSliderData() =>
-      [
+  List<SliderObject> _getSliderData() => [
         SliderObject(
           AppStrings.onBoardingSubTitle1,
           AppStrings.onBoardingSubTitle1,
@@ -104,8 +103,11 @@ class _OnBoardingViewState extends State<OnBoardingView> {
         // circle indicator
         Row(
           children: [
-            for(int i = 0 ; i <= _list.length; i++)
-              SvgPicture.asset(ImageAssets.hollowCircleIc),
+            for (int i = 0; i <= _list.length; i++)
+              Padding(
+                padding: const EdgeInsets.all(AppPadding.p8),
+                child: SvgPicture.asset(ImageAssets.hollowCircleIc),
+              ),
           ],
         ),
         // right arrow
@@ -140,10 +142,7 @@ class OnBoardingPage extends StatelessWidget {
           child: Text(
             _sliderObject.title,
             textAlign: TextAlign.center,
-            style: Theme
-                .of(context)
-                .textTheme
-                .displayLarge,
+            style: Theme.of(context).textTheme.displayLarge,
           ),
         ),
         Padding(
@@ -151,10 +150,7 @@ class OnBoardingPage extends StatelessWidget {
           child: Text(
             _sliderObject.subTitle,
             textAlign: TextAlign.center,
-            style: Theme
-                .of(context)
-                .textTheme
-                .headlineMedium,
+            style: Theme.of(context).textTheme.headlineMedium,
           ),
         ),
         const SizedBox(height: AppSize.s60),
