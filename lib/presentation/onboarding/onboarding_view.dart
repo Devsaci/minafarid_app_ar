@@ -101,10 +101,11 @@ class _OnBoardingViewState extends State<OnBoardingView> {
           ),
         ),
         // circle indicator
-        SizedBox(child: SvgPicture.asset(ImageAssets.hollowCircleIc)),
-        SizedBox(child: SvgPicture.asset(ImageAssets.solidCircleIc)),
-        SizedBox(child: SvgPicture.asset(ImageAssets.hollowCircleIc)),
-        SizedBox(child: SvgPicture.asset(ImageAssets.hollowCircleIc)),
+        Row(
+          children: [
+
+          ],
+        ),
         // right arrow
         Padding(
           padding: const EdgeInsets.all(AppPadding.p14),
@@ -112,8 +113,8 @@ class _OnBoardingViewState extends State<OnBoardingView> {
               width: AppSize.s20,
               height: AppSize.s20,
               child: SvgPicture.asset(
-            ImageAssets.rightArrowIc,
-          )),
+                ImageAssets.rightArrowIc,
+              )),
         ),
       ],
     );
