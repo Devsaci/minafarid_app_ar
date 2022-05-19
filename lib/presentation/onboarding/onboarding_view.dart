@@ -134,8 +134,13 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                 child: SvgPicture.asset(
                   ImageAssets.rightArrowIc,
                 )),
-            onTap: (){
-
+            onTap: () {
+              // go to previous slide
+              _pageController.animateToPage(
+                  _getNextIndex()!,
+                  duration: const Duration(
+                      milliseconds: AppConstants.sliderAnimationTime),
+                  curve:  Curves.bounceInOut);
             },
           ),
         ),
@@ -157,6 +162,10 @@ class _OnBoardingViewState extends State<OnBoardingView> {
       previousIndex = _list.length - 1;
     }
     return previousIndex;
+  }
+
+  int? _getNextIndex() {
+    return null;
   }
 }
 
