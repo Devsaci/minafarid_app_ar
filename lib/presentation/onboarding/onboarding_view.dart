@@ -64,8 +64,8 @@ class _OnBoardingViewState extends State<OnBoardingView> {
         },
       ),
       bottomSheet: Container(
-        height: AppSize.s80,
-        color: ColorManager.lightPrimary,
+        height: AppSize.s100,
+        color: ColorManager.primary,
         child: Column(
           children: [
             Align(
@@ -79,19 +79,42 @@ class _OnBoardingViewState extends State<OnBoardingView> {
               ),
             ),
             // widgets indicator and arrows
+            _getBottomSheetWidget()
           ],
         ),
       ),
     );
-    _getBottomSheetWidget();
+    // _getBottomSheetWidget();// Errors Position
   }
 
   Widget _getBottomSheetWidget() {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         // left arrow
+        Padding(
+          padding: const EdgeInsets.all(AppPadding.p14),
+          child: SizedBox(
+            width: AppSize.s20,
+            height: AppSize.s20,
+            child: SvgPicture.asset(ImageAssets.leftArrowIc),
+          ),
+        ),
         // circle indicator
+        SizedBox(child: SvgPicture.asset(ImageAssets.hollowCircleIc)),
+        SizedBox(child: SvgPicture.asset(ImageAssets.solidCircleIc)),
+        SizedBox(child: SvgPicture.asset(ImageAssets.hollowCircleIc)),
+        SizedBox(child: SvgPicture.asset(ImageAssets.hollowCircleIc)),
         // right arrow
+        Padding(
+          padding: const EdgeInsets.all(AppPadding.p14),
+          child: SizedBox(
+              width: AppSize.s20,
+              height: AppSize.s20,
+              child: SvgPicture.asset(
+            ImageAssets.rightArrowIc,
+          )),
+        ),
       ],
     );
   }
