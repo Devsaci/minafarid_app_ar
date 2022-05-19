@@ -97,10 +97,13 @@ class _OnBoardingViewState extends State<OnBoardingView> {
         // left arrow
         Padding(
           padding: const EdgeInsets.all(AppPadding.p14),
-          child: SizedBox(
-            width: AppSize.s20,
-            height: AppSize.s20,
-            child: SvgPicture.asset(ImageAssets.leftArrowIc),
+          child: GestureDetector(
+            onTap: (){},
+            child: SizedBox(
+              width: AppSize.s20,
+              height: AppSize.s20,
+              child: SvgPicture.asset(ImageAssets.leftArrowIc),
+            ),
           ),
         ),
         // circle indicator
