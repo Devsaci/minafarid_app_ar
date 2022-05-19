@@ -18,7 +18,7 @@ class OnBoardingView extends StatefulWidget {
 class _OnBoardingViewState extends State<OnBoardingView> {
   late final List<SliderObject> _list = _getSliderData();
   final PageController _pageController = PageController();
-  final int _currentIndex = 0;
+  int _currentIndex = 0;
 
   List<SliderObject> _getSliderData() => [
         SliderObject(
@@ -102,7 +102,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
             onTap: () {
               // go to previous slide
               _pageController.animateToPage(
-                _getPreviousIndex()!,
+                _getPreviousIndex(),
                 duration: const Duration(
                     milliseconds: AppConstants.sliderAnimationTime),
                 curve: Curves.bounceInOut,
@@ -146,8 +146,12 @@ class _OnBoardingViewState extends State<OnBoardingView> {
     }
   }
 
-  int? _getPreviousIndex() {
-    return null;
+  int _getPreviousIndex() {
+    int previousIndex = _currentIndex--;
+    if (previousIndex == -1) {
+      previousIndex = _list.length - 1;
+    }
+    return previousIndex;
   }
 }
 
