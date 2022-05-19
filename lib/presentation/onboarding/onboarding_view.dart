@@ -5,6 +5,7 @@ import 'package:minafarid_app_ar/presentation/resources/assets_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/routes_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/strings_manager.dart';
 import '../resources/color_manager.dart';
+import '../resources/constants_manager.dart';
 import '../resources/values_manager.dart';
 
 class OnBoardingView extends StatefulWidget {
@@ -19,8 +20,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
   final PageController _pageController = PageController();
   final int _currentIndex = 0;
 
-  List<SliderObject> _getSliderData() =>
-      [
+  List<SliderObject> _getSliderData() => [
         SliderObject(
           AppStrings.onBoardingSubTitle1,
           AppStrings.onBoardingSubTitle1,
@@ -102,10 +102,11 @@ class _OnBoardingViewState extends State<OnBoardingView> {
             onTap: () {
               // go to previous slide
               _pageController.animateToPage(
-                  _getNextIndex()!,
+                _getNextIndex()!,
                 duration: const Duration(
-                    milliseconds: 300),
-                curve: Curves.bounceInOut,);
+                    milliseconds: AppConstants.sliderAnimationTime),
+                curve: Curves.bounceInOut,
+              );
             },
             child: SizedBox(
               width: AppSize.s20,
@@ -167,10 +168,7 @@ class OnBoardingPage extends StatelessWidget {
           child: Text(
             _sliderObject.title,
             textAlign: TextAlign.center,
-            style: Theme
-                .of(context)
-                .textTheme
-                .displayLarge,
+            style: Theme.of(context).textTheme.displayLarge,
           ),
         ),
         Padding(
@@ -178,10 +176,7 @@ class OnBoardingPage extends StatelessWidget {
           child: Text(
             _sliderObject.subTitle,
             textAlign: TextAlign.center,
-            style: Theme
-                .of(context)
-                .textTheme
-                .headlineMedium,
+            style: Theme.of(context).textTheme.headlineMedium,
           ),
         ),
         const SizedBox(height: AppSize.s60),
