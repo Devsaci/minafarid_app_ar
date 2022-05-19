@@ -124,10 +124,10 @@ class _OnBoardingViewState extends State<OnBoardingView> {
           // circle indicator
           Row(
             children: [
-              for (int index = 0; index <= _list.length; index++)
+              for (int i = 0; i < _list.length; i++)
                 Padding(
                     padding: const EdgeInsets.all(AppPadding.p8),
-                    child: _getProperCircle(index)),
+                    child: _getProperCircle(i)),
             ],
           ),
           // right arrow
