@@ -22,22 +22,22 @@ class _OnBoardingViewState extends State<OnBoardingView> {
 
   List<SliderObject> _getSliderData() => [
         SliderObject(
-          AppStrings.onBoardingSubTitle1,
+          AppStrings.onBoardingTitle1,
           AppStrings.onBoardingSubTitle1,
           ImageAssets.onboardingLogo1,
         ),
         SliderObject(
-          AppStrings.onBoardingSubTitle2,
+          AppStrings.onBoardingTitle2,
           AppStrings.onBoardingSubTitle2,
           ImageAssets.onboardingLogo2,
         ),
         SliderObject(
-          AppStrings.onBoardingSubTitle3,
+          AppStrings.onBoardingTitle3,
           AppStrings.onBoardingSubTitle3,
           ImageAssets.onboardingLogo3,
         ),
         SliderObject(
-          AppStrings.onBoardingSubTitle4,
+          AppStrings.onBoardingTitle4,
           AppStrings.onBoardingSubTitle4,
           ImageAssets.onboardingLogo4,
         ),
