@@ -69,9 +69,10 @@ class _OnBoardingViewState extends State<OnBoardingView> {
         },
       ),
       bottomSheet: Container(
-        height: AppSize.s100,
+        // height: AppSize.s100,
         color: ColorManager.white,
         child: Column(
+          mainAxisSize:  MainAxisSize.min,
           children: [
             Align(
               alignment: Alignment.centerRight,
