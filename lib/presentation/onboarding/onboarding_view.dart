@@ -164,7 +164,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
   }
 
   int _getPreviousIndex() {
-    int previousIndex = _currentIndex--;
+    int previousIndex = -- _currentIndex;
     if (previousIndex == -1) {
       previousIndex = _list.length - 1;
     }
@@ -172,7 +172,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
   }
 
   int _getNextIndex() {
-    int nextIndex = _currentIndex++;
+    int nextIndex = _currentIndex ++;
     if (nextIndex == _list.length) {
       nextIndex = 0;
     }
