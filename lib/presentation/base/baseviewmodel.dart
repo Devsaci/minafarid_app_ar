@@ -1,5 +1,14 @@
 // 31. Lecture 31 - Creating Base ViewModel
-abstract class BaseViewModel extends BaseViewModelInputs with BaseViewModelOutputs {
+ class BaseViewModel extends BaseViewModelInputs with BaseViewModelOutputs {
+  @override
+  void dispose() {
+    // TODO: implement dispose
+  }
+
+  @override
+  void start() {
+    // TODO: implement start
+  }
   // shared variables and function that will be used through any view model.
 }
 
