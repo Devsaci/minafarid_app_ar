@@ -1,5 +1,5 @@
 //32. Lecture 32 - Creating Onboarding Screen ViewModel
-import 'package:minafarid_app_ar/presentation/base/baseviewmodel.dart';
+import 'package:minafarid_app_ar/presentation/base/base_view_model.dart';
 
 class OnBoardingViewModel extends BaseViewModel {
   //OnBoarding ViewModel Inputs
