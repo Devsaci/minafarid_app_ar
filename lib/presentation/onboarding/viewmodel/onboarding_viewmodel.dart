@@ -17,6 +17,7 @@ class OnBoardingViewModel extends BaseViewModel {
 // inputs mean that "Orders" that our view model will receive from view
 abstract class OnBoardingViewModelInputs {
   void goNext(); // when user clicks on right arrow or swipe left
+  void goPrevious(); // when user clicks on left arrow or swipe right
 }
 
 abstract class OnBoardingViewModelOutputs {}
