@@ -1,7 +1,10 @@
 //32. Lecture 32 - Creating Onboarding Screen ViewModel
 import 'package:minafarid_app_ar/presentation/base/base_view_model.dart';
 
-class OnBoardingViewModel extends BaseViewModel with OnBoardingViewModelInputs, OnBoardingViewModelOutputs{
+class OnBoardingViewModel extends BaseViewModel
+    with OnBoardingViewModelInputs, OnBoardingViewModelOutputs {
+  // stream controllers outputs
+
   //OnBoarding ViewModel Inputs
   @override
   void dispose() {
