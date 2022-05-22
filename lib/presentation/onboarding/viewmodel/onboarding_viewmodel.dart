@@ -18,6 +18,7 @@ class OnBoardingViewModel extends BaseViewModel {
 abstract class OnBoardingViewModelInputs {
   void goNext(); // when user clicks on right arrow or swipe left
   void goPrevious(); // when user clicks on left arrow or swipe right
+  void onPageChanged(int index);
 }
 
 abstract class OnBoardingViewModelOutputs {}
