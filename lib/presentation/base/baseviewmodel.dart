@@ -1,5 +1,5 @@
 // 31. Lecture 31 - Creating Base ViewModel
-abstract class BaseViewModel {
+abstract class BaseViewModel extends BaseViewModelInputs with BaseViewModelOutputs {
   // shared variables and function that will be used through any view model.
 }
 
@@ -9,4 +9,6 @@ abstract class BaseViewModelInputs {
 }
 
 //32. Lecture 32 - Creating Onboarding Screen ViewModel
-abstract class BaseViewModelOutputs {}
+abstract class BaseViewModelOutputs {
+  // will be implemented later
+}
