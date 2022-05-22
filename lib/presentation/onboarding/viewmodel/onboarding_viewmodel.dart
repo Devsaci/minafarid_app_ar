@@ -13,3 +13,5 @@ class OnBoardingViewModel extends BaseViewModel {
     // TODO: implement start
   }
 }
+
+abstract class OnBoardingViewModelInputs {}
