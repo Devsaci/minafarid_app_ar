@@ -15,3 +15,5 @@ class OnBoardingViewModel extends BaseViewModel {
 }
 
 abstract class OnBoardingViewModelInputs {}
+
+abstract class OnBoardingViewModelOutputs {}
