@@ -4,9 +4,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:minafarid_app_ar/presentation/resources/assets_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/routes_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/strings_manager.dart';
-import '../resources/color_manager.dart';
-import '../resources/constants_manager.dart';
-import '../resources/values_manager.dart';
+import '../../resources/color_manager.dart';
+import '../../resources/constants_manager.dart';
+import '../../resources/values_manager.dart';
 
 class OnBoardingView extends StatefulWidget {
   const OnBoardingView({Key? key}) : super(key: key);
