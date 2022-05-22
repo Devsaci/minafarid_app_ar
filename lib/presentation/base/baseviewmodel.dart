@@ -8,4 +8,5 @@ abstract class BaseViewModelInputs {
   void dispose(); // will be called when view model dies
 }
 
+//32. Lecture 32 - Creating Onboarding Screen ViewModel
 abstract class BaseViewModelOutputs {}
