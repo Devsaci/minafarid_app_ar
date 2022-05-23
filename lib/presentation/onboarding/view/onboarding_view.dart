@@ -28,7 +28,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
   }
   @override
   void initState() {
-    // TODO: implement initState
+    _bind();
     super.initState();
   }
 
