@@ -179,6 +179,12 @@ class _OnBoardingViewState extends State<OnBoardingView> {
     }
     return nextIndex;
   }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+  }
 }
 
 //24. Lecture 24- Implementation Onboarding Screen Part2
