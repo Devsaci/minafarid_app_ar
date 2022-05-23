@@ -35,7 +35,9 @@ class _OnBoardingViewState extends State<OnBoardingView> {
   @override
   Widget build(BuildContext context) {
     // 38. Lecture 38 - How to Recive Data in View From Viewmodel?
-    return StreamBuilder<SliderViewObject>(builder: builder);
+    return StreamBuilder<SliderViewObject>(
+        stream: _viewModel.outputSliderViewObject,
+        builder: builder);
   }
   Widget _getContentWidget(){
     return Scaffold(
