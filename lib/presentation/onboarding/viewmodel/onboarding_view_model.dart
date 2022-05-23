@@ -45,7 +45,7 @@ class OnBoardingViewModel extends BaseViewModel
 
   //OnBoarding ViewModel outputs
   @override
-  Stream get outputSliderViewObject => _streamController.stream.map((event) => event);
+  Stream<SliderViewObject> get outputSliderViewObject => _streamController.stream.map((event) => event);
 }
 
 // onboarding private functions
@@ -84,5 +84,5 @@ abstract class OnBoardingViewModelInputs {
 
 abstract class OnBoardingViewModelOutputs {
   // stream controller output
-  Stream get outputSliderViewObject;
+  Stream<SliderViewObject> get outputSliderViewObject;
 }
