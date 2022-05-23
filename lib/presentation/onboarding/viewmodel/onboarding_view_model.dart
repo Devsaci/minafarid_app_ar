@@ -13,7 +13,7 @@ class OnBoardingViewModel extends BaseViewModel
   //OnBoarding ViewModel Inputs
   @override
   void dispose() {
-    //35. Lecture 35 - Onboarding Viewmodel Logic Implemenation
+  _streamController.close();
   }
 
   @override
