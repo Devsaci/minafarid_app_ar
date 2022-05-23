@@ -42,55 +42,62 @@ class _OnBoardingViewState extends State<OnBoardingView> {
         });
   }
   Widget _getContentWidget(SliderViewObject? sliderViewObject){
-    return Scaffold(
-      backgroundColor: ColorManager.white,
-      appBar: AppBar(
-        // 28. Lecture 28 - Implementation Onboarding Screen Part6
+    if (sliderViewObject == null)
+    {
+      return Container();
+    }else{
+      return Scaffold(
         backgroundColor: ColorManager.white,
-        elevation: AppSize.s0,
-        systemOverlayStyle: SystemUiOverlayStyle(
-          statusBarColor: ColorManager.white,
-          statusBarBrightness: Brightness.dark,
+        appBar: AppBar(
+          // 28. Lecture 28 - Implementation Onboarding Screen Part6
+          backgroundColor: ColorManager.white,
+          elevation: AppSize.s0,
+          systemOverlayStyle: SystemUiOverlayStyle(
+            statusBarColor: ColorManager.white,
+            statusBarBrightness: Brightness.dark,
+          ),
         ),
-      ),
-      body: PageView.builder(
-        controller: _pageController,
-        itemCount: _list.length,
-        onPageChanged: (index) {
-          setState(() {
-            int _currentIndex = index;
-          });
-        },
-        itemBuilder: (context, index) {
-          return OnBoardingPage(_list[index]);
-        },
-      ),
-      bottomSheet: Container(
-        // height: AppSize.s100,
-        color: ColorManager.white,
-        child: Column(
-          mainAxisSize:  MainAxisSize.min,
-          children: [
-            Align(
-              alignment: Alignment.centerRight,
-              child: TextButton(
-                //27. Lecture 27 - Implementation of Onboarding Screen Part5
-                onPressed: () {
-                  Navigator.pushReplacementNamed(context, Routes.loginRoute);
-                },
-                child:  Text(
-                  AppStrings.skip,
-                  style: Theme.of(context).textTheme.titleMedium,
-                  textAlign: TextAlign.end,
+        body: PageView.builder(
+          controller: _pageController,
+          itemCount: _list.length,
+          onPageChanged: (index) {
+            setState(() {
+              int _currentIndex = index;
+            });
+          },
+          itemBuilder: (context, index) {
+            return OnBoardingPage(_list[index]);
+          },
+        ),
+        bottomSheet: Container(
+          // height: AppSize.s100,
+          color: ColorManager.white,
+          child: Column(
+            mainAxisSize:  MainAxisSize.min,
+            children: [
+              Align(
+                alignment: Alignment.centerRight,
+                child: TextButton(
+                  //27. Lecture 27 - Implementation of Onboarding Screen Part5
+                  onPressed: () {
+                    Navigator.pushReplacementNamed(context, Routes.loginRoute);
+                  },
+                  child:  Text(
+                    AppStrings.skip,
+                    style: Theme.of(context).textTheme.titleMedium,
+                    textAlign: TextAlign.end,
+                  ),
                 ),
               ),
-            ),
-            // widgets indicator and arrows
-            _getBottomSheetWidget()
-          ],
+              // widgets indicator and arrows
+              _getBottomSheetWidget()
+            ],
+          ),
         ),
-      ),
-    );
+      );
+    }
+
+
   }
 
   Widget _getBottomSheetWidget() {
