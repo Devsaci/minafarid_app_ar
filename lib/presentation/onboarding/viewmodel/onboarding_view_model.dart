@@ -40,6 +40,7 @@ class OnBoardingViewModel extends BaseViewModel
   @override
   void onPageChanged(int index) {
     _currentIndex = index;
+    _postDataToView();
     //36. Lecture 36: Continue Onboarding Viewmodel Logic Implemenation
   }
 
