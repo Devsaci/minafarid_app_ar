@@ -88,7 +88,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                 ),
               ),
               // widgets indicator and arrows
-              _getBottomSheetWidget()
+              _getBottomSheetWidget(sliderViewObject)
             ],
           ),
         ),
@@ -98,7 +98,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
 
   }
 
-  Widget _getBottomSheetWidget() {
+  Widget _getBottomSheetWidget(SliderViewObject sliderViewObject) {
     return Container(
       color: ColorManager.primary,
       child: Row(
