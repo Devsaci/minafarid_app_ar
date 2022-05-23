@@ -41,7 +41,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
           return _getContentWidget(snapShot.data);
         });
   }
-  Widget _getContentWidget(SliderViewObject? data){
+  Widget _getContentWidget(SliderViewObject? sliderViewObject){
     return Scaffold(
       backgroundColor: ColorManager.white,
       appBar: AppBar(
