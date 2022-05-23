@@ -39,6 +39,10 @@ class OnBoardingViewModel extends BaseViewModel
   @override
   // TODO: implement inputSliderViewObject
   Sink get inputSliderViewObject => throw UnimplementedError();
+
+  @override
+  // TODO: implement outputSliderViewObject
+  Stream get outputSliderViewObject => throw UnimplementedError();
 }
 
 // inputs mean that "Orders" that our view model will receive from view
@@ -51,4 +55,7 @@ abstract class OnBoardingViewModelInputs {
   Sink get inputSliderViewObject;
 }
 
-abstract class OnBoardingViewModelOutputs {}
+abstract class OnBoardingViewModelOutputs {
+  // stream controller output
+  Stream get outputSliderViewObject;
+}
