@@ -12,6 +12,7 @@ class OnBoardingViewModel extends BaseViewModel
   // stream controllers outputs
   StreamController _streamController = StreamController<SliderViewObject>();
   late final List<SliderObject> _list;
+  int _currentIndex = 0;
 
   //OnBoarding ViewModel Inputs
   @override
@@ -48,10 +49,10 @@ class OnBoardingViewModel extends BaseViewModel
   @override
   Stream<SliderViewObject> get outputSliderViewObject =>
       _streamController.stream.map((silderViewObject) => silderViewObject);
-}
 
-// onboarding private functions
-void _postDataToView() {}
+  // onboarding private functions
+  void _postDataToView() {}
+}
 
 List<SliderObject> _getSliderData() => [
       SliderObject(
