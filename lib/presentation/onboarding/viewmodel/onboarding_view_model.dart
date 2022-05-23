@@ -40,6 +40,7 @@ class OnBoardingViewModel extends BaseViewModel
   // TODO: implement inputSliderViewObject
   Sink get inputSliderViewObject => throw UnimplementedError();
 
+  //OnBoarding ViewModel outputs
   @override
   // TODO: implement outputSliderViewObject
   Stream get outputSliderViewObject => throw UnimplementedError();
