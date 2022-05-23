@@ -59,7 +59,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
         ),
         body: PageView.builder(
           controller: _pageController,
-          itemCount: _list.length,
+          itemCount: sliderViewObject.numOfSlides,
           onPageChanged: (index) {
             setState(() {
               int _currentIndex = index;
