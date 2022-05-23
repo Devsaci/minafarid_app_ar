@@ -130,7 +130,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
               for (int i = 0; i < sliderViewObject.numOfSlides; i++)
                 Padding(
                     padding: const EdgeInsets.all(AppPadding.p8),
-                    child: _getProperCircle(i)),
+                    child: _getProperCircle(i,sliderViewObject.currentIndex)),
             ],
           ),
           // right arrow
@@ -157,7 +157,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
     );
   }
 
-  Widget _getProperCircle(int index) {
+  Widget _getProperCircle(int index,int _currentIndex) {
     if (index == _currentIndex) {
       return SvgPicture.asset(ImageAssets.hollowCircleIc);
     } else {
