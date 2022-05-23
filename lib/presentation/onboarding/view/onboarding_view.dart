@@ -145,7 +145,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                   )),
               onTap: () {
                 // go to previous slide
-                _pageController.animateToPage(_getNextIndex(),
+                _pageController.animateToPage(_viewModel.goNext(),
                     duration: const Duration(
                         milliseconds: AppConstants.sliderAnimationTime),
                     curve: Curves.bounceInOut);
