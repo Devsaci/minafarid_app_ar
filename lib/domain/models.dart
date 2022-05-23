@@ -1,5 +1,6 @@
 // 34. Lecture 34 - Adding Stream Controller to Onboarding Viewmodel
 
+// onboarding models
 class SliderObject {
   String title;
   String subTitle;
