@@ -8,8 +8,10 @@ class SliderObject {
   SliderObject(this.title, this.subTitle, this.image);
 }
 
-class SliderViewObject{
+class SliderViewObject {
   late SliderObject sliderObject;
   late int numOfSlides;
   late int currentIndex;
+
+  SliderViewObject(this.sliderObject, this.numOfSlides, this.currentIndex);
 }
