@@ -127,7 +127,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
           // circle indicator
           Row(
             children: [
-              for (int i = 0; i < _list.length; i++)
+              for (int i = 0; i < sliderViewObject.numOfSlides; i++)
                 Padding(
                     padding: const EdgeInsets.all(AppPadding.p8),
                     child: _getProperCircle(i)),
