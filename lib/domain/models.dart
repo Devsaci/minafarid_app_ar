@@ -7,3 +7,5 @@ class SliderObject {
 
   SliderObject(this.title, this.subTitle, this.image);
 }
+
+class SliderViewObject{}
