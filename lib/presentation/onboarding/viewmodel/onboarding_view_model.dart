@@ -29,7 +29,7 @@ class OnBoardingViewModel extends BaseViewModel
 
   @override
   int goNext() {
-    int nextIndex = ++ _currentIndex;
+    int nextIndex = ++_currentIndex;
     if (nextIndex == _list.length) {
       nextIndex = 0;
     }
@@ -38,7 +38,7 @@ class OnBoardingViewModel extends BaseViewModel
 
   @override
   int goPrevious() {
-    int previousIndex = -- _currentIndex;
+    int previousIndex = --_currentIndex;
     if (previousIndex == -1) {
       previousIndex = _list.length - 1;
     }

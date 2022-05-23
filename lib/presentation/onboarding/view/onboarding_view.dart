@@ -143,13 +143,9 @@ class _OnBoardingViewState extends State<OnBoardingView> {
     }
   }
 
-  int _getPreviousIndex() {
 
-  }
 
-  int _getNextIndex() {
 
-  }
 
   @override
   void dispose() {
