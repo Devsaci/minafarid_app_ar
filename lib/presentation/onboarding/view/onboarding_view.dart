@@ -38,10 +38,10 @@ class _OnBoardingViewState extends State<OnBoardingView> {
     return StreamBuilder<SliderViewObject>(
         stream: _viewModel.outputSliderViewObject,
         builder: (context,snapShot){
-          return _getContentWidget();
+          return _getContentWidget(snapShot.data);
         });
   }
-  Widget _getContentWidget(){
+  Widget _getContentWidget(SliderViewObject? data){
     return Scaffold(
       backgroundColor: ColorManager.white,
       appBar: AppBar(
