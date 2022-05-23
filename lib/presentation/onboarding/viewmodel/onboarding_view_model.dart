@@ -23,6 +23,7 @@ class OnBoardingViewModel extends BaseViewModel
   void start() {
     // view model start your job
     _list = _getSliderData();
+    _postDataToView();
   }
 
   @override
@@ -50,6 +51,8 @@ class OnBoardingViewModel extends BaseViewModel
 }
 
 // onboarding private functions
+void _postDataToView() {}
+
 List<SliderObject> _getSliderData() => [
       SliderObject(
         AppStrings.onBoardingTitle1,
