@@ -1,9 +1,14 @@
 //32. Lecture 32 - Creating Onboarding Screen ViewModel
+import 'dart:async';
+
 import 'package:minafarid_app_ar/presentation/base/base_view_model.dart';
+
+import '../../../domain/models.dart';
 
 class OnBoardingViewModel extends BaseViewModel
     with OnBoardingViewModelInputs, OnBoardingViewModelOutputs {
   // stream controllers outputs
+  StreamController _streamController = StreamController<SliderViewObject>();
 
   //OnBoarding ViewModel Inputs
   @override
