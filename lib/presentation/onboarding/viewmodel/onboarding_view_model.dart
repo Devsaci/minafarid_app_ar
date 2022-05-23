@@ -28,8 +28,12 @@ class OnBoardingViewModel extends BaseViewModel
   }
 
   @override
-  void goNext() {
-    // TODO: implement goNext
+  int goNext() {
+    int nextIndex = ++ _currentIndex;
+    if (nextIndex == _list.length) {
+      nextIndex = 0;
+    }
+    return nextIndex;
   }
 
   @override
@@ -88,7 +92,7 @@ List<SliderObject> _getSliderData() => [
 
 // inputs mean that "Orders" that our view model will receive from view
 abstract class OnBoardingViewModelInputs {
-  void goNext(); // when user clicks on right arrow or swipe left
+  int goNext(); // when user clicks on right arrow or swipe left
   int goPrevious(); // when user clicks on left arrow or swipe right
   void onPageChanged(int index);
 
