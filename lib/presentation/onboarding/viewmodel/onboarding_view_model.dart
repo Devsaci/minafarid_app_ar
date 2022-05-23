@@ -51,7 +51,10 @@ class OnBoardingViewModel extends BaseViewModel
       _streamController.stream.map((silderViewObject) => silderViewObject);
 
   // onboarding private functions
-  void _postDataToView() {}
+  void _postDataToView() {
+    inputSliderViewObject.add(
+        SliderViewObject(_list[_currentIndex], _list.length, _currentIndex));
+  }
 }
 
 List<SliderObject> _getSliderData() => [
