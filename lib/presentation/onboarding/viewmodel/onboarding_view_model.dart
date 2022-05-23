@@ -45,8 +45,7 @@ class OnBoardingViewModel extends BaseViewModel
 
   //OnBoarding ViewModel outputs
   @override
-  // TODO: implement outputSliderViewObject
-  Stream get outputSliderViewObject => throw UnimplementedError();
+  Stream get outputSliderViewObject => _streamController.stream.map((event) => event);
 }
 
 // onboarding private functions
