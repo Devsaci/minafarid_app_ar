@@ -26,6 +26,11 @@ class _OnBoardingViewState extends State<OnBoardingView> {
   _bind() {
     _viewModel.start();
   }
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
