@@ -11,4 +11,5 @@ class SliderObject {
 class SliderViewObject{
   late SliderObject sliderObject;
   late int numOfSlides;
+  late int currentIndex;
 }
