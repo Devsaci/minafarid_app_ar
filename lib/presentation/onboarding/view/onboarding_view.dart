@@ -61,9 +61,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
           controller: _pageController,
           itemCount: sliderViewObject.numOfSlides,
           onPageChanged: (index) {
-            setState(() {
-              int _currentIndex = index;
-            });
+              _viewModel.onPageChanged(index);
           },
           itemBuilder: (context, index) {
             return OnBoardingPage(_list[index]);
