@@ -35,6 +35,10 @@ class OnBoardingViewModel extends BaseViewModel
   void onPageChanged(int index) {
     // TODO: implement onPageChanged
   }
+
+  @override
+  // TODO: implement inputSliderViewObject
+  Sink get inputSliderViewObject => throw UnimplementedError();
 }
 
 // inputs mean that "Orders" that our view model will receive from view
@@ -44,7 +48,7 @@ abstract class OnBoardingViewModelInputs {
   void onPageChanged(int index);
 
   // stream controller input;
-  Sink? inputSliderViewObject; // Can not Override with OnBoardingViewModel
+  Sink get inputSliderViewObject;
 }
 
 abstract class OnBoardingViewModelOutputs {}
