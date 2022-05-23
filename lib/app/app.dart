@@ -22,7 +22,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-     //20. Lecture 20 - Start Splash Screen20. Lecture 20 - Start Splash Screen
+      //20. Lecture 20 - Start Splash Screen20. Lecture 20 - Start Splash Screen
       debugShowCheckedModeBanner: false,
       onGenerateRoute: RouteGenerator.getRoute,
       initialRoute: Routes.splashRoute,

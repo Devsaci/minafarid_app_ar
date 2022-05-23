@@ -1,5 +1,6 @@
 // 31. Lecture 31 - Creating Base ViewModel
-abstract class BaseViewModel extends BaseViewModelInputs with BaseViewModelOutputs {
+abstract class BaseViewModel extends BaseViewModelInputs
+    with BaseViewModelOutputs {
   // shared variables and function that will be used through any view model.
 }
 

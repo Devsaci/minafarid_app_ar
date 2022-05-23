@@ -18,14 +18,13 @@ class OnBoardingView extends StatefulWidget {
 }
 
 class _OnBoardingViewState extends State<OnBoardingView> {
-
   final PageController _pageController = PageController();
   final OnBoardingViewModel _viewModel = OnBoardingViewModel();
-
 
   _bind() {
     _viewModel.start();
   }
+
   @override
   void initState() {
     _bind();
@@ -37,15 +36,15 @@ class _OnBoardingViewState extends State<OnBoardingView> {
     // 38. Lecture 38 - How to Recive Data in View From Viewmodel?
     return StreamBuilder<SliderViewObject>(
         stream: _viewModel.outputSliderViewObject,
-        builder: (context,snapShot){
+        builder: (context, snapShot) {
           return _getContentWidget(snapShot.data);
         });
   }
-  Widget _getContentWidget(SliderViewObject? sliderViewObject){
-    if (sliderViewObject == null)
-    {
+
+  Widget _getContentWidget(SliderViewObject? sliderViewObject) {
+    if (sliderViewObject == null) {
       return Container();
-    }else{
+    } else {
       return Scaffold(
         backgroundColor: ColorManager.white,
         appBar: AppBar(
@@ -61,7 +60,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
           controller: _pageController,
           itemCount: sliderViewObject.numOfSlides,
           onPageChanged: (index) {
-              _viewModel.onPageChanged(index);
+            _viewModel.onPageChanged(index);
           },
           itemBuilder: (context, index) {
             return OnBoardingPage(sliderViewObject.sliderObject);
@@ -71,7 +70,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
           // height: AppSize.s100,
           color: ColorManager.white,
           child: Column(
-            mainAxisSize:  MainAxisSize.min,
+            mainAxisSize: MainAxisSize.min,
             children: [
               Align(
                 alignment: Alignment.centerRight,
@@ -80,7 +79,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, Routes.loginRoute);
                   },
-                  child:  Text(
+                  child: Text(
                     AppStrings.skip,
                     style: Theme.of(context).textTheme.titleMedium,
                     textAlign: TextAlign.end,
@@ -94,8 +93,6 @@ class _OnBoardingViewState extends State<OnBoardingView> {
         ),
       );
     }
-
-
   }
 
   Widget _getBottomSheetWidget(SliderViewObject sliderViewObject) {
@@ -130,7 +127,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
               for (int i = 0; i < sliderViewObject.numOfSlides; i++)
                 Padding(
                     padding: const EdgeInsets.all(AppPadding.p8),
-                    child: _getProperCircle(i,sliderViewObject.currentIndex)),
+                    child: _getProperCircle(i, sliderViewObject.currentIndex)),
             ],
           ),
           // right arrow
@@ -157,17 +154,13 @@ class _OnBoardingViewState extends State<OnBoardingView> {
     );
   }
 
-  Widget _getProperCircle(int index,int _currentIndex) {
+  Widget _getProperCircle(int index, int _currentIndex) {
     if (index == _currentIndex) {
       return SvgPicture.asset(ImageAssets.hollowCircleIc);
     } else {
       return SvgPicture.asset(ImageAssets.solidCircleIc);
     }
   }
-
-
-
-
 
   @override
   void dispose() {

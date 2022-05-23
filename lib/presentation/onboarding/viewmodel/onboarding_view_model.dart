@@ -10,8 +10,9 @@ import '../../resources/strings_manager.dart';
 class OnBoardingViewModel extends BaseViewModel
     with OnBoardingViewModelInputs, OnBoardingViewModelOutputs {
   // stream controllers outputs
- // 37. Lecture 37 - Binding Onboarding Viewmodel to View
- final StreamController _streamController = StreamController<SliderViewObject>();
+  // 37. Lecture 37 - Binding Onboarding Viewmodel to View
+  final StreamController _streamController =
+      StreamController<SliderViewObject>();
   late final List<SliderObject> _list;
   int _currentIndex = 0;
 
