@@ -44,7 +44,7 @@ abstract class OnBoardingViewModelInputs {
   void onPageChanged(int index);
 
   // stream controller input;
-  Sink? inputSliderViewObject;
+  Sink? inputSliderViewObject; // Can not Override with OnBoardingViewModel
 }
 
 abstract class OnBoardingViewModelOutputs {}
