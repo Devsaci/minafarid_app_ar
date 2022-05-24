@@ -30,6 +30,7 @@ class ContactsResponse {
 }
 
 class AuthenticationResponse {
+  @JsonKey(name: "customer")
   CustomerResponse? customer;
   ContactsResponse? contacts;
 }
