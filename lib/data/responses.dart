@@ -9,7 +9,7 @@ class BaseResponse {
   String? message;
 }
 
-
+@JsonSerializable()
 class CustomerResponse{
   String? id;
   String? name;
