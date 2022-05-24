@@ -35,5 +35,8 @@ class AuthenticationResponse extends BaseResponse {
   CustomerResponse? customer;
   @JsonKey(name: "contacts")
   ContactsResponse? contacts;
-  //  44. Lecture 44 - Data Layer - Json Serialization
+//  44. Lecture 44 - Data Layer - Json Serialization
+  AuthenticationResponse(this.customer, this.contacts);
+
+
 }
