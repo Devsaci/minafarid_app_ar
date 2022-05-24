@@ -20,5 +20,6 @@ class CustomerResponse {
 }
 @JsonSerializable()
 class ContactsResponse {
+  @JsonKey(name: "phone")
   String? phone;
 }
