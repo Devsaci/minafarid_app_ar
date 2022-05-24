@@ -10,7 +10,7 @@ class BaseResponse {
 }
 
 @JsonSerializable()
-class CustomerResponse{
+class CustomerResponse {
   @JsonKey(name: "id")
   String? id;
   @JsonKey(name: "name")
@@ -18,3 +18,5 @@ class CustomerResponse{
   @JsonKey(name: "numOfNotifications")
   int? numOfNotifications;
 }
+
+class ContactsResponse {}
