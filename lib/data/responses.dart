@@ -8,3 +8,6 @@ class BaseResponse {
   @JsonKey(name: "message")
   String? message;
 }
+
+
+class CustomerResponse{}
