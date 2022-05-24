@@ -13,6 +13,7 @@ class BaseResponse {
 class CustomerResponse{
   @JsonKey(name: "id")
   String? id;
+  @JsonKey(name: "name")
   String? name;
   int? numOfNotifications;
 }
