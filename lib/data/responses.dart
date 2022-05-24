@@ -13,4 +13,5 @@ class BaseResponse {
 class CustomerResponse{
   String? id;
   String? name;
+  int? numOfNotifications;
 }
