@@ -24,4 +24,6 @@ class ContactsResponse {
   String? phone;
   @JsonKey(name: "email")
   String? email;
+  @JsonKey(name: "link")
+  String? link;
 }
