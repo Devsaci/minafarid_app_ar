@@ -46,6 +46,8 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  retrofit_generator: ^4.0.1
+
 
 
 
