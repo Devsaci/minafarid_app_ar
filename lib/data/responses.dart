@@ -28,4 +28,6 @@ class ContactsResponse {
   String? link;
 }
 
-class AuthenticationResponse{}
+class AuthenticationResponse{
+  CustomerResponse? customer;
+}
