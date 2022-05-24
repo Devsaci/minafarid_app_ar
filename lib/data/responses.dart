@@ -18,5 +18,5 @@ class CustomerResponse {
   @JsonKey(name: "numOfNotifications")
   int? numOfNotifications;
 }
-
+@JsonSerializable()
 class ContactsResponse {}
