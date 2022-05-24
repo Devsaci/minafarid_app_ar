@@ -22,5 +22,6 @@ class CustomerResponse {
 class ContactsResponse {
   @JsonKey(name: "phone")
   String? phone;
+  @JsonKey(name: "email")
   String? email;
 }
