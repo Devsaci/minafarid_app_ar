@@ -27,3 +27,5 @@ class ContactsResponse {
   @JsonKey(name: "link")
   String? link;
 }
+
+class AuthenticationResponse{}
