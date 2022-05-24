@@ -26,6 +26,7 @@ environment:
 # dependencies can be manually updated by changing the version numbers below to
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
+# 42. Lecture 42 - Data Layer - Adding Dependencies for network layer
 dependencies:
   flutter:
     sdk: flutter
