@@ -19,4 +19,6 @@ class CustomerResponse {
   int? numOfNotifications;
 }
 @JsonSerializable()
-class ContactsResponse {}
+class ContactsResponse {
+  String? phone;
+}
