@@ -28,10 +28,12 @@ class ContactsResponse {
   @JsonKey(name: "link")
   String? link;
 }
+
 @JsonSerializable()
-class AuthenticationResponse extends BaseResponse{
+class AuthenticationResponse extends BaseResponse {
   @JsonKey(name: "customer")
   CustomerResponse? customer;
   @JsonKey(name: "contacts")
   ContactsResponse? contacts;
+  //  44. Lecture 44 - Data Layer - Json Serialization
 }
