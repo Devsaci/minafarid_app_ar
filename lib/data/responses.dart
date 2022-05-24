@@ -12,4 +12,5 @@ class BaseResponse {
 
 class CustomerResponse{
   String? id;
+  String? name;
 }
