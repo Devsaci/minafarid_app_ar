@@ -29,7 +29,7 @@ class ContactsResponse {
   String? link;
 }
 
-class AuthenticationResponse {
+class AuthenticationResponse extends BaseResponse{
   @JsonKey(name: "customer")
   CustomerResponse? customer;
   @JsonKey(name: "contacts")
