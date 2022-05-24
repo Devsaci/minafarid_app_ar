@@ -10,4 +10,6 @@ class BaseResponse {
 }
 
 
-class CustomerResponse{}
+class CustomerResponse{
+  String? id;
+}
