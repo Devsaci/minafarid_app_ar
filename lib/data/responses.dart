@@ -18,6 +18,7 @@ class CustomerResponse {
   @JsonKey(name: "numOfNotifications")
   int? numOfNotifications;
 }
+
 @JsonSerializable()
 class ContactsResponse {
   @JsonKey(name: "phone")
@@ -28,6 +29,7 @@ class ContactsResponse {
   String? link;
 }
 
-class AuthenticationResponse{
+class AuthenticationResponse {
   CustomerResponse? customer;
+  ContactsResponse? contacts;
 }
