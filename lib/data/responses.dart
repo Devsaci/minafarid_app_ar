@@ -32,5 +32,6 @@ class ContactsResponse {
 class AuthenticationResponse {
   @JsonKey(name: "customer")
   CustomerResponse? customer;
+  @JsonKey(name: "contacts")
   ContactsResponse? contacts;
 }
