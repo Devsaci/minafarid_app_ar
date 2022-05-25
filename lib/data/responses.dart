@@ -37,6 +37,9 @@ class ContactsResponse {
   // from json
   factory ContactsResponse.fromJson(Map<String, dynamic> json) =>
       _$ContactsResponseFromJson(json);
+
+  // to json
+  Map<String, dynamic> toJson() => _$ContactsResponseToJson(this);
 }
 
 @JsonSerializable()
