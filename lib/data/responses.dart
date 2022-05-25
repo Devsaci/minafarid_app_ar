@@ -27,6 +27,8 @@ class ContactsResponse {
   String? email;
   @JsonKey(name: "link")
   String? link;
+
+  ContactsResponse(this.phone, this.email, this.link);
 }
 
 @JsonSerializable()
@@ -35,8 +37,7 @@ class AuthenticationResponse extends BaseResponse {
   CustomerResponse? customer;
   @JsonKey(name: "contacts")
   ContactsResponse? contacts;
+
 //  44. Lecture 44 - Data Layer - Json Serialization
   AuthenticationResponse(this.customer, this.contacts);
-
-
 }
