@@ -33,6 +33,10 @@ class ContactsResponse {
   String? link;
 
   ContactsResponse(this.phone, this.email, this.link);
+
+  // from json
+  factory ContactsResponse.fromJson(Map<String, dynamic> json) =>
+      _$ContactsResponseFromJson(json);
 }
 
 @JsonSerializable()
