@@ -2,7 +2,9 @@
 
 import 'package:retrofit/http.dart';
 
-@RestApi(baseUrl: "")
+import '../app/constants.dart';
+
+@RestApi(baseUrl: Constants.baseUrl)
 abstract class AppServiceClient{
 
 }
