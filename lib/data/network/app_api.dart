@@ -16,6 +16,7 @@ abstract class AppServiceClient {
     @Field("email") String email,
     @Field("password") String password,
   );
+  // ( Future<AuthenticationResponse>) flutter pub get && flutter pub run build_runner build --delete-conflicting-outputs ing-output
 }
 
 // D:\MinaFarid_App\minafarid_app_ar>flutter pub get && flutter pub run build_runner build --delete-conflicting-outputs ing-output
@@ -96,3 +97,29 @@ abstract class AppServiceClient {
 // [INFO] Caching finalized dependency graph completed, took 54ms
 //
 // [INFO] Succeeded after 3.7s with 2 outputs (3 actions)
+
+
+
+// ( Future<AuthenticationResponse>)
+// D:\MinaFarid_App\minafarid_app_ar>flutter pub get && flutter pub run build_runner build --delete-conflicting-outputs ing-output
+// Running "flutter pub get" in minafarid_app_ar...                 2 970ms
+// [INFO] Generating build script...
+// [INFO] Generating build script completed, took 828ms
+//
+// [INFO] Initializing inputs
+// [INFO] Reading cached asset graph...
+// [INFO] Reading cached asset graph completed, took 122ms
+//
+// [INFO] Checking for updates since last build...
+// [INFO] Checking for updates since last build completed, took 1.4s
+//
+// [INFO] Running build...
+// [INFO] 1.1s elapsed, 0/1 actions completed.
+// [INFO] 3.3s elapsed, 0/1 actions completed.
+// [INFO] 4.4s elapsed, 2/3 actions completed.
+// [INFO] Running build completed, took 4.5s
+//
+// [INFO] Caching finalized dependency graph...
+// [INFO] Caching finalized dependency graph completed, took 115ms
+//
+// [INFO] Succeeded after 4.6s with 2 outputs (4 actions)
