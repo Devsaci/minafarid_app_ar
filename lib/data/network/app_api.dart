@@ -2,7 +2,7 @@
 
 import 'package:retrofit/http.dart';
 import 'package:dio/dio.dart';
-import '../app/constants.dart';
+import '../../app/constants.dart';
 
 part 'app_api.g.dart';
 
