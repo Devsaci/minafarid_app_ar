@@ -42,6 +42,12 @@ class AuthenticationResponse extends BaseResponse {
 
 //  44. Lecture 44 - Data Layer - Json Serialization
   AuthenticationResponse(this.customer, this.contacts);
+
+  // from json
+  factory AuthenticationResponse.fromJson(Map<String, dynamic> json) =>
+      _$AuthenticationResponseFromJson(json);
+
+
 }
 
 // >flutter pub get && flutter pub run build_runner build --delete-conflicting-outputs ing-output
