@@ -1,6 +1,8 @@
 //  43. Lecture 43 - Data Layer - Adding APIs Responses
 import 'package:json_annotation/json_annotation.dart';
+
 part 'responses.g.dart';
+
 @JsonSerializable()
 class BaseResponse {
   @JsonKey(name: "status")
@@ -47,7 +49,8 @@ class AuthenticationResponse extends BaseResponse {
   factory AuthenticationResponse.fromJson(Map<String, dynamic> json) =>
       _$AuthenticationResponseFromJson(json);
 
-
+  // to json
+  Map<String, dynamic> toJson() => _$AuthenticationResponseToJson(this);
 }
 
 // >flutter pub get && flutter pub run build_runner build --delete-conflicting-outputs ing-output
@@ -125,8 +128,6 @@ class AuthenticationResponse extends BaseResponse {
 // [INFO] Caching finalized dependency graph completed, took 55ms
 //
 // [INFO] Succeeded after 1.8s with 1 outputs (3 actions)
-
-
 
 // part 'responses.g.dart';
 // D:\MinaFarid_App\minafarid_app_ar>>flutter pub get && flutter pub run build_runner build --delete-conflicting-outputs ing-output
