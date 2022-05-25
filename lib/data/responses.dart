@@ -1,6 +1,6 @@
 //  43. Lecture 43 - Data Layer - Adding APIs Responses
 import 'package:json_annotation/json_annotation.dart';
-
+part 'responses.g.dart';
 @JsonSerializable()
 class BaseResponse {
   @JsonKey(name: "status")
@@ -119,3 +119,60 @@ class AuthenticationResponse extends BaseResponse {
 // [INFO] Caching finalized dependency graph completed, took 55ms
 //
 // [INFO] Succeeded after 1.8s with 1 outputs (3 actions)
+
+
+
+// part 'responses.g.dart';
+// D:\MinaFarid_App\minafarid_app_ar>>flutter pub get && flutter pub run build_runner build --delete-conflicting-outputs ing-output
+// 'pub' n’est pas reconnu en tant que commande interne
+// ou externe, un programme exécutable ou un fichier de commandes.
+//
+// D:\MinaFarid_App\minafarid_app_ar>flutter pub get && flutter pub run build_runner build --delete-conflicting-outputs ing-output
+// Running "flutter pub get" in minafarid_app_ar...                 2 587ms
+// [INFO] Generating build script...
+// [INFO] Generating build script completed, took 663ms
+//
+// [INFO] Initializing inputs
+// [INFO] Reading cached asset graph...
+// [INFO] Reading cached asset graph completed, took 105ms
+//
+// [INFO] Checking for updates since last build...
+// [INFO] Checking for updates since last build completed, took 1.1s
+//
+// [INFO] Running build...
+// [INFO] 1.2s elapsed, 0/1 actions completed.
+// [WARNING] json_serializable:json_serializable on lib/data/responses.dart:
+// You are missing a required dependency on json_annotation in the "dependencies" section of your pubspec with a lower bound of at least "4.5.0".
+// [WARNING] source_gen:combining_builder on lib/data/responses.dart:
+// responses.g.dart must be included as a part directive in the input library with:
+// part 'responses.g.dart';
+// [INFO] Running build completed, took 1.7s
+//
+// [INFO] Caching finalized dependency graph...
+// [INFO] Caching finalized dependency graph completed, took 55ms
+//
+// [INFO] Succeeded after 1.8s with 1 outputs (3 actions)
+//
+//
+// D:\MinaFarid_App\minafarid_app_ar>flutter pub get && flutter pub run build_runner build --delete-conflicting-outputs ing-output
+// Running "flutter pub get" in minafarid_app_ar...                 1 797ms
+// [INFO] Generating build script...
+// [INFO] Generating build script completed, took 651ms
+//
+// [INFO] Initializing inputs
+// [INFO] Reading cached asset graph...
+// [INFO] Reading cached asset graph completed, took 109ms
+//
+// [INFO] Checking for updates since last build...
+// [INFO] Checking for updates since last build completed, took 1.0s
+//
+// [INFO] Running build...
+// [INFO] 1.2s elapsed, 0/1 actions completed.
+// [WARNING] json_serializable:json_serializable on lib/data/responses.dart:
+// You are missing a required dependency on json_annotation in the "dependencies" section of your pubspec with a lower bound of at least "4.5.0".
+// [INFO] Running build completed, took 1.7s
+//
+// [INFO] Caching finalized dependency graph...
+// [INFO] Caching finalized dependency graph completed, took 57ms
+//
+// [INFO] Succeeded after 1.8s with 2 outputs (3 actions)
