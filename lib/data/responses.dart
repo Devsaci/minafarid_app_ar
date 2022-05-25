@@ -21,6 +21,10 @@ class CustomerResponse {
   int? numOfNotifications;
 
   CustomerResponse(this.id, this.name, this.numOfNotifications);
+
+  // from json
+  factory CustomerResponse.fromJson(Map<String, dynamic> json) =>
+      _$CustomerResponseFromJson(json);
 }
 
 @JsonSerializable()
