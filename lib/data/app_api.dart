@@ -8,7 +8,7 @@ part 'app_api.g.dart';
 
 @RestApi(baseUrl: Constants.baseUrl)
 abstract class AppServiceClient{
-factory AppServiceClient(Dio dio, {String baseUrl}) = _AppServiceClient; // Error
+factory AppServiceClient(Dio dio, {String baseUrl}) = _AppServiceClient;
 }
 
 
