@@ -1,5 +1,6 @@
 //  45. Lecture 45 - Data Layer - Add API Service Client (Retrofit)
 
+import 'package:minafarid_app_ar/data/respons/responses.dart';
 import 'package:retrofit/http.dart';
 import 'package:dio/dio.dart';
 import '../../app/constants.dart';
@@ -7,10 +8,11 @@ import '../../app/constants.dart';
 part 'app_api.g.dart';
 
 @RestApi(baseUrl: Constants.baseUrl)
-abstract class AppServiceClient{
-factory AppServiceClient(Dio dio, {String baseUrl}) = _AppServiceClient;
-}
+abstract class AppServiceClient {
+  factory AppServiceClient(Dio dio, {String baseUrl}) = _AppServiceClient;
 
+  Future<AuthenticationResponse> login();
+}
 
 // D:\MinaFarid_App\minafarid_app_ar>flutter pub get && flutter pub run build_runner build --delete-conflicting-outputs ing-output
 // Running "flutter pub get" in minafarid_app_ar...                    8,0s
@@ -39,7 +41,6 @@ factory AppServiceClient(Dio dio, {String baseUrl}) = _AppServiceClient;
 // [INFO] Caching finalized dependency graph completed, took 54ms
 //
 // [INFO] Succeeded after 4.5s with 3 outputs (10 actions)
-
 
 //part 'app_api.g.dart';
 // D:\MinaFarid_App\minafarid_app_ar>flutter pub get && flutter pub run build_runner build --delete-conflicting-outputs ing-output
