@@ -17,6 +17,8 @@ class CustomerResponse {
   String? name;
   @JsonKey(name: "numOfNotifications")
   int? numOfNotifications;
+
+  CustomerResponse(this.id, this.name, this.numOfNotifications);
 }
 
 @JsonSerializable()
