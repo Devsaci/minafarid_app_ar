@@ -36,4 +36,5 @@ class Contacts {
 
 class Authentication {
   Customer customer; // no nullable
+  Contacts contacts; // no nullable
 }
