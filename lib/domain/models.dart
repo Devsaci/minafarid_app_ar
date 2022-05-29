@@ -21,4 +21,5 @@ class SliderViewObject {
 //login models
 class Customer {
   String id; // no nullable
+  String name; // no nullable
 }
