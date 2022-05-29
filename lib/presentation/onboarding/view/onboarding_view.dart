@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:minafarid_app_ar/app/app.dart';
+import 'package:minafarid_app_ar/app/extensions.dart';
 import 'package:minafarid_app_ar/presentation/onboarding/viewmodel/onboarding_view_model.dart';
 import 'package:minafarid_app_ar/presentation/resources/assets_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/routes_manager.dart';
@@ -177,6 +179,7 @@ class OnBoardingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    test();
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
