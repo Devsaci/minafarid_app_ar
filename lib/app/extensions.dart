@@ -10,7 +10,7 @@ extension NonNullString on String? {
   }
 }
 
-extension NonNullInteger on int?{
+extension NonNullInteger on int? {
   int orZero() {
     if (this == null) {
       return 0;
@@ -18,3 +18,4 @@ extension NonNullInteger on int?{
       return this!;
     }
   }
+}
