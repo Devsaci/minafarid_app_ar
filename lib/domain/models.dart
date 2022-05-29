@@ -19,4 +19,6 @@ class SliderViewObject {
 
 // 46. Lecture 46 - Domain Layer - Creating Models
 //login models
-class Customer {}
+class Customer {
+  String id; // no nullable
+}
