@@ -10,4 +10,6 @@ extension NonNullString on String? {
   }
 }
 
-extension NonNullInteger on int{}
+extension NonNullInteger on int{
+  int orZero(){return 0;}
+}
