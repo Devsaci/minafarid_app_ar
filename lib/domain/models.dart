@@ -22,4 +22,5 @@ class SliderViewObject {
 class Customer {
   String id; // no nullable
   String name; // no nullable
+  int numOfNotifications; // no nullable
 }
