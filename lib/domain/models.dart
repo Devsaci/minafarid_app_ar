@@ -16,4 +16,7 @@ class SliderViewObject {
 
   SliderViewObject(this.sliderObject, this.numOfSlides, this.currentIndex);
 }
+
 // 46. Lecture 46 - Domain Layer - Creating Models
+//login models
+class Customer {}
