@@ -2,6 +2,10 @@
 
 extension NonNullString on String {
   String orEmpty() {
-    return "string";
+    if (this == null{ // Error
+      return "";
+    } else {
+      return this;
+    }
   }
 }
