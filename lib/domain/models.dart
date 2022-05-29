@@ -28,4 +28,5 @@ class Customer {
 
 class Contacts {
   String phone; // no nullable
+  String email; // no nullable
 }
