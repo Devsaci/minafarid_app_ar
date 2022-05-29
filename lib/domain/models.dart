@@ -23,4 +23,6 @@ class Customer {
   String id; // no nullable
   String name; // no nullable
   int numOfNotifications; // no nullable
+  Customer(this.id, this.name, this.numOfNotifications);
+
 }
