@@ -33,3 +33,5 @@ class Contacts {
 
   Contacts(this.phone, this.email, this.link);
 }
+
+class Authentication {}
