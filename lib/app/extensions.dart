@@ -1,11 +1,11 @@
 //  47. Lecture 47 - Application Layer - Creating Extensions Functions
 
-extension NonNullString on String {
+extension NonNullString on String ?{
   String orEmpty() {
-    if (this == null{ // Error
+    if (this == null){
       return "";
     } else {
-      return this;
+      return this !;
     }
   }
 }
