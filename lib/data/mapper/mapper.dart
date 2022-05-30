@@ -2,6 +2,10 @@
 
 import 'package:minafarid_app_ar/data/response/responses.dart';
 
-extension CustomerResponseMapper on CustomerResponse? {
+import '../../domain/models.dart';
 
+extension CustomerResponseMapper on CustomerResponse? {
+  Customer toDomain() {
+    return Customer(this.id, name, numOfNotifications); // ERROR
+  }
 }
