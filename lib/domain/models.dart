@@ -35,7 +35,7 @@ class Contacts {
 }
 
 class Authentication {
-  Customer customer; // no nullable
+  Customer? customer; // no nullable
   Contacts contacts; // no nullable
 
   Authentication(this.customer, this.contacts);
