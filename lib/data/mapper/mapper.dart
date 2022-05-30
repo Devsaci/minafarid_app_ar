@@ -6,6 +6,6 @@ import '../../domain/models.dart';
 
 extension CustomerResponseMapper on CustomerResponse? {
   Customer toDomain() {
-    return Customer(this.id, name, numOfNotifications); // ERROR
+    return Customer(this?.id ?? "",  this?.name ?? "",  this?.numOfNotifications ?? 0 );
   }
 }
