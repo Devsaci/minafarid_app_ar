@@ -8,7 +8,7 @@ extension CustomerResponseMapper on CustomerResponse? {
   Customer toDomain() {
     return Customer(
       this?.id.orEmpty() ?? "",
-      this?.name ?? "",
+      this?.name.orEmpty() ?? "",
       this?.numOfNotifications ?? 0,
     );
   }
