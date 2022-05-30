@@ -17,9 +17,9 @@ extension CustomerResponseMapper on CustomerResponse? {
 extension ContactsResponseMapper on ContactsResponse? {
   Contacts toDomain() {
     return Contacts(
-      this!.phone??"",
-      this!.email??"",
-      this.link,//error
+      this?.phone??"",
+      this?.email??"",
+      this?.link??"",
     );
   }
 }
