@@ -1,9 +1,10 @@
 //  45. Lecture 45 - Data Layer - Add API Service Client (Retrofit)
 
-import 'package:minafarid_app_ar/data/respons/responses.dart';
+import 'package:minafarid_app_ar/data/response/responses.dart';
 import 'package:retrofit/http.dart';
 import 'package:dio/dio.dart';
 import '../../app/constants.dart';
+import '../response/responses.dart';
 
 part 'app_api.g.dart';
 
