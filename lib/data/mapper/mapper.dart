@@ -2,6 +2,6 @@
 
 import 'package:minafarid_app_ar/data/response/responses.dart';
 
-extension CustomerResponseMapper on CustomerResponse {
+extension CustomerResponseMapper on CustomerResponse? {
 
 }
