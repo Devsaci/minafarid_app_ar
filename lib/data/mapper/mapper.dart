@@ -18,7 +18,7 @@ extension ContactsResponseMapper on ContactsResponse? {
   Contacts toDomain() {
     return Contacts(
       this!.phone??"",
-      this.email,//error
+      this!.email??"",
       this.link,//error
     );
   }
