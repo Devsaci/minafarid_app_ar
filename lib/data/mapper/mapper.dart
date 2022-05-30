@@ -28,7 +28,7 @@ extension AuthenticationResponseMapper on AuthenticationResponse? {
   Authentication toDomain() {
     return Authentication(
       this?.customer.toDomain(),
-      contacts, // Error
-    ); //Error
+      this?.contacts.toDomain(),
+    );
   }
 }
