@@ -9,7 +9,7 @@ extension CustomerResponseMapper on CustomerResponse? {
     return Customer(
       this?.id.orEmpty() ?? "",
       this?.name.orEmpty() ?? "",
-      this?.numOfNotifications ?? 0,
+      this?.numOfNotifications.orZero() ?? 0,
     );
   }
 }
