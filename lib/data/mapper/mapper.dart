@@ -1,5 +1,6 @@
 // 48. Lecture 48 - Data Layer - Creating Mappers and Applying Null Safety
 
+import 'package:minafarid_app_ar/app/constants.dart';
 import 'package:minafarid_app_ar/data/response/responses.dart';
 import '../../domain/models.dart';
 import 'package:minafarid_app_ar/app/extensions.dart';
@@ -7,9 +8,9 @@ import 'package:minafarid_app_ar/app/extensions.dart';
 extension CustomerResponseMapper on CustomerResponse? {
   Customer toDomain() {
     return Customer(
-      this?.id.orEmpty() ?? "",
-      this?.name.orEmpty() ?? "",
-      this?.numOfNotifications.orZero() ?? 0,
+      this?.id.orEmpty() ?? Constants.empty,
+      this?.name.orEmpty() ?? Constants.empty,
+      this?.numOfNotifications.orZero() ?? Constants.zero,
     );
   }
 }
@@ -17,9 +18,9 @@ extension CustomerResponseMapper on CustomerResponse? {
 extension ContactsResponseMapper on ContactsResponse? {
   Contacts toDomain() {
     return Contacts(
-      this?.phone ?? "",
-      this?.email ?? "",
-      this?.link ?? "",
+      this?.phone ?? Constants.empty,
+      this?.email ?? Constants.empty,
+      this?.link ?? Constants.empty,
     );
   }
 }
