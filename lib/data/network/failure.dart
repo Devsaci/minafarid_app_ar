@@ -1,4 +1,7 @@
 class Failure {
-  late int code; // 200, 201, 400, 303..500 and so on
-  late String message; // error , success
+  int code; // 200, 201, 400, 303..500 and so on
+  String message;
+
+  Failure(this.code, this.message); // error , success
+
 }
