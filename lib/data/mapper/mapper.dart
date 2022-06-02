@@ -2,7 +2,7 @@
 
 import 'package:minafarid_app_ar/app/constants.dart';
 import 'package:minafarid_app_ar/data/response/responses.dart';
-import '../../domain/models.dart';
+import '../../domain/model/models.dart';
 import 'package:minafarid_app_ar/app/extensions.dart';
 
 extension CustomerResponseMapper on CustomerResponse? {

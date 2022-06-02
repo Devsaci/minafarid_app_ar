@@ -3,7 +3,7 @@ import 'dart:async';
 
 import 'package:minafarid_app_ar/presentation/base/base_view_model.dart';
 
-import '../../../domain/models.dart';
+import '../../../domain/model/models.dart';
 import '../../resources/assets_manager.dart';
 import '../../resources/strings_manager.dart';
 
