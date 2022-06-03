@@ -5,9 +5,9 @@ abstract class NetworkInfo {
 }
 
 class NetworkInfoImpl implements NetworkInfo {
-  final InternetConnectionChecker internetConnectionChecker;
+  final InternetConnectionChecker _internetConnectionChecker;
 
-  NetworkInfoImpl(this.internetConnectionChecker);
+  NetworkInfoImpl(this._internetConnectionChecker);
 
   @override
   // TODO: implement isConnected
