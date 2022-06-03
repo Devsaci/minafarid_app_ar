@@ -36,6 +36,7 @@ class RepositoryImpl implements Repository {
 
     }else{
       // return internet connection error
+      // return either left
     }
     return Left(Failure(501, "please check your internet connection"));
   }
