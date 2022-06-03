@@ -27,9 +27,11 @@ class RepositoryImpl implements Repository {
 
       if (response.status == 0) {
         // success
+        // return either right
         // return data
       } else {
         // failure --return business error
+        // return either left
       }
 
     }else{
