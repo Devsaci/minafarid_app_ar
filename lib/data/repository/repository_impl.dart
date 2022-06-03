@@ -34,6 +34,7 @@ class RepositoryImpl implements Repository {
       } else {
         // failure --return business error
         // return either left
+        return Left(Failure(409, response.message ?? "business error message"));
       }
 
     }else{
