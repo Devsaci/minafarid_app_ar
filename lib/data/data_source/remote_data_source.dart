@@ -15,6 +15,6 @@ class RemoteDataSourceImpl implements RemoteDataSource {
 
   @override
   Future<AuthenticationResponse> login(LoginRequest loginRequest) async {
-    return _appServiceClient.login(loginRequest.email, loginRequest.password);
+    return await _appServiceClient.login(loginRequest.email, loginRequest.password);
   }
 }
