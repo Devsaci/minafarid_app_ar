@@ -9,9 +9,12 @@ import 'package:minafarid_app_ar/domain/model/models.dart';
 
 import '../../domain/repository/repository.dart';
 import '../data_source/remote_data_source.dart';
+import '../network/network_info.dart';
 
 class RepositoryImpl implements Repository {
   late RemoteDataSource _remoteDataSource;
+  late NetworkInfo _networkInfo;
+
 
   @override
   Future<Either<Failure, Authentication>> login(LoginRequest loginRequest) {
