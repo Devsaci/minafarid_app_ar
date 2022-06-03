@@ -23,7 +23,7 @@ class RepositoryImpl implements Repository {
       LoginRequest loginRequest) async {
     if (await _networkInfo.isConnected) {
       // its connected to internet, its safe to call API
-      _remoteDataSource.login(loginRequest);
+      final response  = await _remoteDataSource.login(loginRequest);
     }else{
       // return internet connection error
     }
