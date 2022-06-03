@@ -9,7 +9,7 @@ abstract class RemoteDataSource {
 
 class RemoteDataSourceImpl implements RemoteDataSource{
   @override
-  Future<AuthenticationResponse> login(LoginRequest loginRequest) {
+  Future<AuthenticationResponse> login(LoginRequest loginRequest) async{
     // TODO: implement login
     throw UnimplementedError();
   }
