@@ -12,9 +12,10 @@ import '../data_source/remote_data_source.dart';
 import '../network/network_info.dart';
 
 class RepositoryImpl implements Repository {
-  late RemoteDataSource _remoteDataSource;
-  late NetworkInfo _networkInfo;
+  late final RemoteDataSource _remoteDataSource;
+  late final NetworkInfo _networkInfo;
 
+  RepositoryImpl(this._remoteDataSource, this._networkInfo);
 
   @override
   Future<Either<Failure, Authentication>> login(LoginRequest loginRequest) {
