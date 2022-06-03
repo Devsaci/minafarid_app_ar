@@ -19,12 +19,14 @@ class RepositoryImpl implements Repository {
   RepositoryImpl(this._remoteDataSource, this._networkInfo);
 
   @override
-  Future<Either<Failure, Authentication>> login(// Error return
+  Future<Either<Failure, Authentication>> login(
       LoginRequest loginRequest) async {
-    if (await _networkInfo.isConnected) {
-      // its connected to internet, its safe to call API
-    }else{
-      // return internet connection error
-    }
+    // if (await _networkInfo.isConnected) {
+    //   // its connected to internet, its safe to call API
+    //   _remoteDataSource.login(loginRequest);
+    // }else{
+    //   // return internet connection error
+    // }
+    return Left(Failure(501, "please check your internet connection"));
   }
 }
