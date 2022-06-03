@@ -8,8 +8,11 @@ import 'package:minafarid_app_ar/data/network/requests.dart';
 import 'package:minafarid_app_ar/domain/model/models.dart';
 
 import '../../domain/repository/repository.dart';
+import '../data_source/remote_data_source.dart';
 
-class RepositoryImpl implements Repository{
+class RepositoryImpl implements Repository {
+  late RemoteDataSource _remoteDataSource;
+
   @override
   Future<Either<Failure, Authentication>> login(LoginRequest loginRequest) {
     // TODO: implement login
