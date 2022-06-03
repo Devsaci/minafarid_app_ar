@@ -1,6 +1,5 @@
 // 53. Lecture 53 - Data Layer - Adding Repository Implementer
 import 'package:dartz/dartz.dart';
-import 'package:minafarid_app_ar/data/mapper/mapper.dart';
 
 import 'package:minafarid_app_ar/data/network/failure.dart';
 
@@ -24,6 +23,14 @@ class RepositoryImpl implements Repository {
     if (await _networkInfo.isConnected) {
       // its connected to internet, its safe to call API
       final response  = await _remoteDataSource.login(loginRequest);
+
+
+      if (response.status == 0) {
+        // success
+      } else {
+        // failure --return business error
+      }
+
     }else{
       // return internet connection error
     }
