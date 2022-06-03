@@ -6,3 +6,11 @@ import 'package:minafarid_app_ar/data/response/responses.dart';
 abstract class RemoteDataSource {
   Future<AuthenticationResponse>  login(LoginRequest loginRequest);
 }
+
+class RemoteDataSourceImpl implements RemoteDataSource{
+  @override
+  Future<AuthenticationResponse> login(LoginRequest loginRequest) {
+    // TODO: implement login
+    throw UnimplementedError();
+  }
+}
