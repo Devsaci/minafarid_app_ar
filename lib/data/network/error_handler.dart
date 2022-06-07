@@ -17,4 +17,5 @@ enum DataSource {
 // 55. Lecture 55 - Data Layer - Adding Responses Codes
 class ResponseCode{
   static const int SUCCESS = 200; // success with data
+  static const int NO_CONTENT = 201; // success with no data (no content)
 }
