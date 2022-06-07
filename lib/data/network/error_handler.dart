@@ -15,4 +15,6 @@ enum DataSource {
   NO_INTERNET_CONNECTION
 }
 // 55. Lecture 55 - Data Layer - Adding Responses Codes
-class ResponseCode{}
+class ResponseCode{
+  static const int SUCCESS = 200; // success with data
+}
