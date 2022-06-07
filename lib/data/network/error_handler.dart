@@ -5,4 +5,5 @@ enum DataSource {
   BAD_REQUEST,
   FORBIDDEN,
   UNAUTORISED,
+  NOT_FOUND,
 }
