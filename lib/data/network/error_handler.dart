@@ -27,5 +27,6 @@ class ResponseCode{
   static const int CONNECT_TIMEOUT = -1; //
   static const int CANCEL = -2; //
   static const int RECIEVE_TIMEOUT = -3; //
+  static const int SEND_TIMEOUT = -4; //
 
 }
