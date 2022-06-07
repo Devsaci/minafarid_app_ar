@@ -8,4 +8,5 @@ enum DataSource {
   NOT_FOUND,
   INTERNAL_SERVER_ERROR,
   CONNECT_TIMEOUT,
+  CANCEL,
 }
