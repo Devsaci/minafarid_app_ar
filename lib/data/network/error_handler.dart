@@ -2,4 +2,5 @@
 enum DataSource {
   SUCCESS,
   NO_CONTENT,
+  BAD_REQUEST,
 }
