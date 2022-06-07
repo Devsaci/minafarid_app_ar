@@ -28,5 +28,6 @@ class ResponseCode{
   static const int CANCEL = -2; //
   static const int RECIEVE_TIMEOUT = -3; //
   static const int SEND_TIMEOUT = -4; //
+  static const int CACHE_ERROR = -5; //
 
 }
