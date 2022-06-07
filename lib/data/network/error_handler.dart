@@ -6,4 +6,5 @@ enum DataSource {
   FORBIDDEN,
   UNAUTORISED,
   NOT_FOUND,
+  INTERNAL_SERVER_ERROR,
 }
