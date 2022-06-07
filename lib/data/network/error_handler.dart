@@ -11,4 +11,5 @@ enum DataSource {
   CANCEL,
   RECIEVE_TIMEOUT,
   SEND_TIMEOUT,
+  CACHE_ERROR,
 }
