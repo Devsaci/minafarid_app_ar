@@ -30,5 +30,6 @@ class ResponseCode{
   static const int SEND_TIMEOUT = -4; //
   static const int CACHE_ERROR = -5; //
   static const int NO_INTERNET_CONNECTION = -6; //
+  static const int UNKNOWN = -7; //
 
 }
