@@ -10,4 +10,5 @@ enum DataSource {
   CONNECT_TIMEOUT,
   CANCEL,
   RECIEVE_TIMEOUT,
+  SEND_TIMEOUT,
 }
