@@ -34,7 +34,7 @@ extension DataSourceExtension on DataSource {
       case DataSource.UNAUTORISED:
         return Failure(ResponseCode.UNAUTORISED, ResponseMessage.UNAUTORISED);
       case DataSource.NOT_FOUND:
-        return Failure(ResponseCode.SUCCESS, ResponseMessage.SUCCESS);
+        return Failure(ResponseCode.NOT_FOUND, ResponseMessage.NOT_FOUND);
       case DataSource.INTERNAL_SERVER_ERROR:
         return Failure(ResponseCode.INTERNAL_SERVER_ERROR,
             ResponseMessage.INTERNAL_SERVER_ERROR);
@@ -100,4 +100,6 @@ class ResponseMessage {
   static const String NO_INTERNET_CONNECTION =
       "Please check your internet connection";
   static const String UNKNOWN = "Some thing went wrong, Try again later";
+  static const String NOT_FOUND =
+      "Some thing went wrong, Try again later"; // failure, crash in server side
 }
