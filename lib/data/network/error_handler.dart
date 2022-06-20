@@ -20,7 +20,6 @@ enum DataSource {
 // Lecture 57 Data layer Adding Extension on Data Sources #47
 extension DataSourceExtension on DataSource {
   Failure getFailure() {
-    // ERROR
     switch (this) {
       case DataSource.SUCCESS:
         return Failure(ResponseCode.SUCCESS, ResponseMessage.SUCCESS);
@@ -49,6 +48,9 @@ extension DataSourceExtension on DataSource {
         return Failure(ResponseCode.SEND_TIMEOUT, ResponseMessage.SEND_TIMEOUT);
       case DataSource.CACHE_ERROR:
         return Failure(ResponseCode.CACHE_ERROR, ResponseMessage.CACHE_ERROR);
+      case DataSource.NO_INTERNET_CONNECTION:
+        return Failure(ResponseCode.NO_INTERNET_CONNECTION,
+            ResponseMessage.NO_INTERNET_CONNECTION);
     }
   }
 }
