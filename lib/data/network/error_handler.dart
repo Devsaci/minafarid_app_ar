@@ -43,4 +43,6 @@ class ResponseMessage {
       "Bad request, Try again later"; // failure, API rejected request
   static const String UNAUTORISED =
       "User is unauthorised, Try again later"; // failure, user is not authorised
+  static const String FORBIDDEN =
+      "Forbidden request, Try again later"; //  failure, API rejected request
 }
