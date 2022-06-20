@@ -14,8 +14,9 @@ enum DataSource {
   CACHE_ERROR,
   NO_INTERNET_CONNECTION
 }
+
 // 55. Lecture 55 - Data Layer - Adding Responses Codes
-class ResponseCode{
+class ResponseCode {
   static const int SUCCESS = 200; // success with data
   static const int NO_CONTENT = 201; // success with no data (no content)
   static const int BAD_REQUEST = 400; // failure, API rejected request
@@ -31,5 +32,7 @@ class ResponseCode{
   static const int CACHE_ERROR = -5; //
   static const int NO_INTERNET_CONNECTION = -6; //
   static const int UNKNOWN = -7; //
-
 }
+
+
+// Lecture 56 Data Layer Adding Responses Messages #46
