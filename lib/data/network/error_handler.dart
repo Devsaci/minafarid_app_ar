@@ -37,6 +37,9 @@ extension DataSourceExtension on DataSource {
       case DataSource.INTERNAL_SERVER_ERROR:
         return Failure(ResponseCode.INTERNAL_SERVER_ERROR,
             ResponseMessage.INTERNAL_SERVER_ERROR);
+      case DataSource.CONNECT_TIMEOUT:
+        return Failure(
+            ResponseCode.CONNECT_TIMEOUT, ResponseMessage.CONNECT_TIMEOUT);
     }
   }
 }
