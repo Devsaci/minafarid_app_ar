@@ -31,6 +31,8 @@ extension DataSourceExtension on DataSource{
         return Failure(ResponseCode.FORBIDDEN, ResponseMessage.FORBIDDEN);
       case DataSource.UNAUTORISED:
         return Failure(ResponseCode.UNAUTORISED, ResponseMessage.UNAUTORISED);
+      case DataSource.NOT_FOUND:
+        return Failure(ResponseCode.SUCCESS, ResponseMessage.SUCCESS);
 
     }
   }
