@@ -54,4 +54,6 @@ class ResponseMessage {
   static const String RECIEVE_TIMEOUT = "Time out error, Try again later";
   static const String SEND_TIMEOUT = "Time out error, Try again later";
   static const String CACHE_ERROR = "Cache error, Try again later";
+  static const String NO_INTERNET_CONNECTION =
+      "Please check your internet connection";
 }
