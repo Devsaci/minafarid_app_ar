@@ -23,6 +23,8 @@ extension DataSourceExtension on DataSource{
     switch (this){
       case DataSource.SUCCESS:
         return Failure(ResponseCode.SUCCESS, ResponseMessage.SUCCESS);
+      case DataSource.NO_CONTENT:
+        return Failure(ResponseCode.NO_CONTENT, ResponseMessage.NO_CONTENT);
 
     }
   }
