@@ -65,6 +65,7 @@ class ResponseCode {
   static const int UNAUTORISED = 401; // failure, user is not authorised
   static const int FORBIDDEN = 403; //  failure, API rejected request
   static const int INTERNAL_SERVER_ERROR = 500; // failure, crash in server side
+  static const int NOT_FOUND = 404; // failure, not found
 
 // local status code
   static const int CONNECT_TIMEOUT = -1; //
