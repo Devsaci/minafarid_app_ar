@@ -18,9 +18,10 @@ enum DataSource {
 }
 
 // Lecture 57 Data layer Adding Extension on Data Sources #47
-extension DataSourceExtension on DataSource{
-  Failure getFailure(){ // ERROR
-    switch (this){
+extension DataSourceExtension on DataSource {
+  Failure getFailure() {
+    // ERROR
+    switch (this) {
       case DataSource.SUCCESS:
         return Failure(ResponseCode.SUCCESS, ResponseMessage.SUCCESS);
       case DataSource.NO_CONTENT:
@@ -33,12 +34,12 @@ extension DataSourceExtension on DataSource{
         return Failure(ResponseCode.UNAUTORISED, ResponseMessage.UNAUTORISED);
       case DataSource.NOT_FOUND:
         return Failure(ResponseCode.SUCCESS, ResponseMessage.SUCCESS);
-
+      case DataSource.INTERNAL_SERVER_ERROR:
+        return Failure(ResponseCode.INTERNAL_SERVER_ERROR,
+            ResponseMessage.INTERNAL_SERVER_ERROR);
     }
   }
 }
-
-
 
 // 55. Lecture 55 - Data Layer - Adding Responses Codes
 class ResponseCode {
