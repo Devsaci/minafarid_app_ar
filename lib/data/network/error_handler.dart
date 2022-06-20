@@ -47,6 +47,8 @@ extension DataSourceExtension on DataSource {
             ResponseCode.RECIEVE_TIMEOUT, ResponseMessage.RECIEVE_TIMEOUT);
       case DataSource.SEND_TIMEOUT:
         return Failure(ResponseCode.SEND_TIMEOUT, ResponseMessage.SEND_TIMEOUT);
+      case DataSource.CACHE_ERROR:
+        return Failure(ResponseCode.CACHE_ERROR, ResponseMessage.CACHE_ERROR);
     }
   }
 }
