@@ -29,6 +29,8 @@ extension DataSourceExtension on DataSource{
         return Failure(ResponseCode.BAD_REQUEST, ResponseMessage.BAD_REQUEST);
       case DataSource.FORBIDDEN:
         return Failure(ResponseCode.FORBIDDEN, ResponseMessage.FORBIDDEN);
+      case DataSource.UNAUTORISED:
+        return Failure(ResponseCode.UNAUTORISED, ResponseMessage.UNAUTORISED);
 
     }
   }
