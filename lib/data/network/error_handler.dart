@@ -36,3 +36,4 @@ class ResponseCode {
 
 
 // Lecture 56 Data Layer Adding Responses Messages #46
+class ResponseMessage{}
