@@ -39,4 +39,6 @@ class ResponseMessage {
   static const String SUCCESS = "success"; // success with data
   static const String NO_CONTENT =
       "success"; // success with no data (no content)
+  static const String BAD_REQUEST =
+      "Bad request, Try again later"; // failure, API rejected request
 }
