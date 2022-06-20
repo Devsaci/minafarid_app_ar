@@ -1,4 +1,6 @@
 // 54. Lecture 54 - Data Layer - Adding Data Source Enum
+import 'failure.dart';
+
 enum DataSource {
   SUCCESS,
   NO_CONTENT,
@@ -16,7 +18,13 @@ enum DataSource {
 }
 
 // Lecture 57 Data layer Adding Extension on Data Sources #47
-extension DataSourceExtension on DataSource{}
+extension DataSourceExtension on DataSource{
+  Failure getFailure(){ // ERROR
+    switch (this){
+
+    }
+  }
+}
 
 
 
