@@ -42,6 +42,9 @@ extension DataSourceExtension on DataSource {
             ResponseCode.CONNECT_TIMEOUT, ResponseMessage.CONNECT_TIMEOUT);
       case DataSource.CANCEL:
         return Failure(ResponseCode.CANCEL, ResponseMessage.CANCEL);
+      case DataSource.RECIEVE_TIMEOUT:
+        return Failure(
+            ResponseCode.RECIEVE_TIMEOUT, ResponseMessage.RECIEVE_TIMEOUT);
     }
   }
 }
