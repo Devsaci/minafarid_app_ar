@@ -45,4 +45,6 @@ class ResponseMessage {
       "User is unauthorised, Try again later"; // failure, user is not authorised
   static const String FORBIDDEN =
       "Forbidden request, Try again later"; //  failure, API rejected request
+  static const String INTERNAL_SERVER_ERROR =
+      "Some thing went wrong, Try again later"; // failure, crash in server side
 }
