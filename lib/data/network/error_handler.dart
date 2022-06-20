@@ -41,4 +41,6 @@ class ResponseMessage {
       "success"; // success with no data (no content)
   static const String BAD_REQUEST =
       "Bad request, Try again later"; // failure, API rejected request
+  static const String UNAUTORISED =
+      "User is unauthorised, Try again later"; // failure, user is not authorised
 }
