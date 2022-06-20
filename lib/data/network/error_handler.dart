@@ -1,4 +1,6 @@
 // 54. Lecture 54 - Data Layer - Adding Data Source Enum
+// ignore_for_file: constant_identifier_names
+
 import 'failure.dart';
 
 enum DataSource {
