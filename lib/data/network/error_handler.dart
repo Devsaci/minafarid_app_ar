@@ -34,8 +34,9 @@ class ResponseCode {
   static const int UNKNOWN = -7; //
 }
 
-
 // Lecture 56 Data Layer Adding Responses Messages #46
-class ResponseMessage{
+class ResponseMessage {
   static const String SUCCESS = "success"; // success with data
+  static const String NO_CONTENT =
+      "success"; // success with no data (no content)
 }
