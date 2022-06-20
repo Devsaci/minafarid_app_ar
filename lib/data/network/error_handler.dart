@@ -45,6 +45,8 @@ extension DataSourceExtension on DataSource {
       case DataSource.RECIEVE_TIMEOUT:
         return Failure(
             ResponseCode.RECIEVE_TIMEOUT, ResponseMessage.RECIEVE_TIMEOUT);
+      case DataSource.SEND_TIMEOUT:
+        return Failure(ResponseCode.SEND_TIMEOUT, ResponseMessage.SEND_TIMEOUT);
     }
   }
 }
