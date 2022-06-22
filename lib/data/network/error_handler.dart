@@ -6,6 +6,7 @@ import 'failure.dart';
 //Lecture 58 Data Layer Adding Error Handler Class #48
 class ErrorHandler implements Exception{
   late Failure failure;
+  ErrorHandler.handle(){}
 }
 
 enum DataSource {
