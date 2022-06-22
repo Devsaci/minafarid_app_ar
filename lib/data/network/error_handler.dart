@@ -31,7 +31,11 @@ Failure _handleError(DioError error) {
     case DioErrorType.response:
       if (error.response != null &&
           error.response?.statusCode != null &&
-          error.response?.statusMessage != null) {}
+          error.response?.statusMessage != null)
+      {
+        return Failure(error.response?.statusCode ?? 0,
+            error.response?.statusMessage ?? "");
+      }
       break;
     case DioErrorType.cancel:
       return DataSource.CANCEL.getFailure();
