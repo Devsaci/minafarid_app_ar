@@ -32,8 +32,7 @@ Failure _handleError(DioError error) {
       // TODO: Handle this case.
       break;
     case DioErrorType.cancel:
-      // TODO: Handle this case.
-      break;
+      return DataSource.CANCEL.getFailure();
     case DioErrorType.other:
       // TODO: Handle this case.
       break;
