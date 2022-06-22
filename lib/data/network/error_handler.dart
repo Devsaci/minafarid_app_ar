@@ -1,12 +1,20 @@
 // 54. Lecture 54 - Data Layer - Adding Data Source Enum
 // ignore_for_file: constant_identifier_names
 
+import 'package:dio/dio.dart';
+
 import 'failure.dart';
 
 //Lecture 58 Data Layer Adding Error Handler Class #48
-class ErrorHandler implements Exception{
+class ErrorHandler implements Exception {
   late Failure failure;
-  ErrorHandler.handle(dynamic error){}
+
+  ErrorHandler.handle(dynamic error) {
+    if (error is DioError) {
+    } else {
+
+    }
+  }
 }
 
 enum DataSource {
