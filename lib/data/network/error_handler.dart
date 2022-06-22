@@ -29,7 +29,8 @@ Failure _handleError(DioError error) {
     case DioErrorType.receiveTimeout:
       return DataSource.RECIEVE_TIMEOUT.getFailure();
     case DioErrorType.response:
-      if (error.response != null )
+      if (error.response != null &&
+          error.response?.statusCode != null )
       {
 
       }
