@@ -23,8 +23,7 @@ class ErrorHandler implements Exception {
 Failure _handleError(DioError error) {
   switch (error.type) {
     case DioErrorType.connectTimeout:
-      // TODO: Handle this case.
-      break;
+      return DataSource.CONNECT_TIMEOUT.getFailure();
     case DioErrorType.sendTimeout:
       // TODO: Handle this case.
       break;
