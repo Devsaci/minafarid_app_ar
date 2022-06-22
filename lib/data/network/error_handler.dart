@@ -20,7 +20,27 @@ class ErrorHandler implements Exception {
   }
 }
 
-Failure _handleError(DioError error){
+Failure _handleError(DioError error) {
+  switch (error.type) {
+    case DioErrorType.connectTimeout:
+      // TODO: Handle this case.
+      break;
+    case DioErrorType.sendTimeout:
+      // TODO: Handle this case.
+      break;
+    case DioErrorType.receiveTimeout:
+      // TODO: Handle this case.
+      break;
+    case DioErrorType.response:
+      // TODO: Handle this case.
+      break;
+    case DioErrorType.cancel:
+      // TODO: Handle this case.
+      break;
+    case DioErrorType.other:
+      // TODO: Handle this case.
+      break;
+  }
   return DataSource.DEFAULT.getFailure();
 }
 
