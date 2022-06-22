@@ -27,8 +27,7 @@ Failure _handleError(DioError error) {
     case DioErrorType.sendTimeout:
       return DataSource.SEND_TIMEOUT.getFailure();
     case DioErrorType.receiveTimeout:
-      // TODO: Handle this case.
-      break;
+      return DataSource.RECIEVE_TIMEOUT.getFailure();
     case DioErrorType.response:
       // TODO: Handle this case.
       break;
