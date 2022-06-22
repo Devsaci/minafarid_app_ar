@@ -31,7 +31,8 @@ enum DataSource {
   RECIEVE_TIMEOUT,
   SEND_TIMEOUT,
   CACHE_ERROR,
-  NO_INTERNET_CONNECTION
+  NO_INTERNET_CONNECTION,
+  DEFAULT,
 }
 
 // Lecture 57 Data layer Adding Extension on Data Sources #47
@@ -68,6 +69,8 @@ extension DataSourceExtension on DataSource {
       case DataSource.NO_INTERNET_CONNECTION:
         return Failure(ResponseCode.NO_INTERNET_CONNECTION,
             ResponseMessage.NO_INTERNET_CONNECTION);
+      case DataSource.DEFAULT:
+        return Failure(ResponseCode.DEFAULT, ResponseMessage.DEFAULT);
     }
   }
 }
@@ -81,6 +84,7 @@ class ResponseCode {
   static const int FORBIDDEN = 403; //  failure, API rejected request
   static const int INTERNAL_SERVER_ERROR = 500; // failure, crash in server side
   static const int NOT_FOUND = 404; // failure, not found
+  static const int DEFAULT = -7;
 
 // local status code
   static const int CONNECT_TIMEOUT = -1; //
@@ -117,4 +121,5 @@ class ResponseMessage {
   static const String UNKNOWN = "Some thing went wrong, Try again later";
   static const String NOT_FOUND =
       "Some thing went wrong, Try again later"; // failure, crash in server side
+  static const String DEFAULT = "Some thing went wrong, Try again later";
 }
