@@ -11,8 +11,9 @@ class ErrorHandler implements Exception {
 
   ErrorHandler.handle(dynamic error) {
     if (error is DioError) {
+      // dio error so its an error from response of the API or from dio itself
     } else {
-
+      // default error
     }
   }
 }
