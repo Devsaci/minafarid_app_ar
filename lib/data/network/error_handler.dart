@@ -14,6 +14,7 @@ class ErrorHandler implements Exception {
       // dio error so its an error from response of the API or from dio itself
     } else {
       // default error
+      failure = DataSource.DEFAULT.getFailure();
     }
   }
 }
