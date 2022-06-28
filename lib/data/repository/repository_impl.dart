@@ -28,7 +28,7 @@ class RepositoryImpl implements Repository {
       try {
         final response = await _remoteDataSource.login(loginRequest);
 
-        if (response.status == 0) {
+        if (response.status == ApiInternalStatus.SUCCESS) {
           // success
           // return either right
           // return data
