@@ -23,8 +23,9 @@ class RepositoryImpl implements Repository {
       LoginRequest loginRequest) async {
     if (await _networkInfo.isConnected) {
       // its connected to internet, its safe to call API
-      final response  = await _remoteDataSource.login(loginRequest);
+// Lecture 59 Data Layer Applying ErrorHandler on Repository Implementer #49
 
+      final response = await _remoteDataSource.login(loginRequest);
 
       if (response.status == 0) {
         // success
@@ -36,8 +37,7 @@ class RepositoryImpl implements Repository {
         // return either left
         return Left(Failure(409, response.message ?? "business error message"));
       }
-
-    }else{
+    } else {
       // return internet connection error
       // return either left
     }
