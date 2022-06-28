@@ -23,6 +23,7 @@ class DioFactory {
     dio.options = BaseOptions(
       baseUrl: Constants.baseUrl,
       headers: headers,
+      receiveTimeout: _timeOut,
     );
 
     return dio;
