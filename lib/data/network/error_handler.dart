@@ -149,3 +149,5 @@ class ResponseMessage {
       "Some thing went wrong, Try again later"; // failure, crash in server side
   static const String DEFAULT = "Some thing went wrong, Try again later";
 }
+
+class ApiInternalStatus {}
