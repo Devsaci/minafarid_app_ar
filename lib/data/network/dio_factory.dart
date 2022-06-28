@@ -24,6 +24,7 @@ class DioFactory {
       baseUrl: Constants.baseUrl,
       headers: headers,
       receiveTimeout: _timeOut,
+      sendTimeout: _timeOut,
     );
 
     return dio;
