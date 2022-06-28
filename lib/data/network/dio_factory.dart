@@ -3,7 +3,8 @@
 import 'package:dio/dio.dart';
 
 class DioFactory {
-  Future<Dio?> getDio() async {
-    return null;
+  Future<Dio> getDio() async {
+    Dio dio = Dio();
+    return dio;
   }
 }
