@@ -16,6 +16,7 @@ class DioFactory {
       CONTENT_TYPE: APPLICATION_JSON,
       ACCEPT: APPLICATION_JSON,
       AUTHORIZATION: "SEND TOKEN HERE",
+      DEFAULT_LANGUAGE: "en" // todo get lang from app prefs
     };
     return dio;
   }
