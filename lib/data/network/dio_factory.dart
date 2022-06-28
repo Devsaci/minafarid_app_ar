@@ -2,6 +2,8 @@
 
 import 'package:dio/dio.dart';
 
+import '../../app/constants.dart';
+
 const String APPLICATION_JSON = "application/json";
 const String CONTENT_TYPE = "content-type";
 const String ACCEPT = "accept";
@@ -18,7 +20,9 @@ class DioFactory {
       AUTHORIZATION: "SEND TOKEN HERE",
       DEFAULT_LANGUAGE: "en" // todo get lang from app prefs
     };
-    dio.options = BaseOptions();
+    dio.options = BaseOptions(
+      baseUrl: Constants.baseUrl,
+    );
 
     return dio;
   }
