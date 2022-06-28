@@ -2,6 +2,9 @@
 
 import 'package:dio/dio.dart';
 
+const String APPLICATION_JSON = "application/json";
+
+
 class DioFactory {
   Future<Dio> getDio() async {
     Dio dio = Dio();
