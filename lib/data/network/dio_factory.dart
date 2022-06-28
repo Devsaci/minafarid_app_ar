@@ -30,8 +30,6 @@ class DioFactory {
     );
     // Lecture 61 Data Layer Adding Dio Logger Interceptor #52
     if (kReleaseMode) {
-      print("no logs in release mode");
-    } else {
       dio.interceptors.add(PrettyDioLogger(
         requestHeader: true,
         requestBody: true,
