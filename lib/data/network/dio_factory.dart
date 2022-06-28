@@ -8,14 +8,13 @@ const String ACCEPT = "accept";
 const String AUTHORIZATION = "authorization";
 const String DEFAULT_LANGUAGE = "langauge";
 
-
 class DioFactory {
   Future<Dio> getDio() async {
     Dio dio = Dio();
 
     Map<String, String> headers = {
       CONTENT_TYPE: APPLICATION_JSON,
-
+      ACCEPT: APPLICATION_JSON,
     };
     return dio;
   }
