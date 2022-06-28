@@ -2,6 +2,7 @@
 
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
+import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
 import '../../app/constants.dart';
 
@@ -28,11 +29,10 @@ class DioFactory {
       sendTimeout: _timeOut,
     );
     // Lecture 61 Data Layer Adding Dio Logger Interceptor #52
-    if (kReleaseMode)
-    {
-
-    } else{
-
+    if (kReleaseMode) {
+      print("no logs in release mode");
+    } else {
+      dio.interceptors.add(PrettyDioLogger());
     }
 
     return dio;
