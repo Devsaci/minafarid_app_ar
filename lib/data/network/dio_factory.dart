@@ -34,6 +34,8 @@ class DioFactory {
     } else {
       dio.interceptors.add(PrettyDioLogger(
         requestHeader: true,
+        requestBody: true,
+        responseHeader: true,
       ));
     }
 
