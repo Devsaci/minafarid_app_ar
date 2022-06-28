@@ -18,6 +18,8 @@ class DioFactory {
       AUTHORIZATION: "SEND TOKEN HERE",
       DEFAULT_LANGUAGE: "en" // todo get lang from app prefs
     };
+    dio.options = BaseOptions();
+
     return dio;
   }
 }
