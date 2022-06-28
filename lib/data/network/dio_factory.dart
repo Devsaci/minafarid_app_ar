@@ -1,6 +1,7 @@
 //  Lecture 60 Data Layer Adding Dio Factory #51
 
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 
 import '../../app/constants.dart';
 
@@ -26,7 +27,14 @@ class DioFactory {
       receiveTimeout: _timeOut,
       sendTimeout: _timeOut,
     );
-// Lecture 61 Data Layer Adding Dio Logger Interceptor #52
+    // Lecture 61 Data Layer Adding Dio Logger Interceptor #52
+    if (kReleaseMode)
+    {
+
+    } else{
+
+    }
+
     return dio;
   }
 }
