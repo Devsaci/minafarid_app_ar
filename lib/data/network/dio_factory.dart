@@ -13,7 +13,10 @@ class DioFactory {
   Future<Dio> getDio() async {
     Dio dio = Dio();
 
-    Map<String, String> headers = {};
+    Map<String, String> headers = {
+      CONTENT_TYPE: APPLICATION_JSON,
+
+    };
     return dio;
   }
 }
