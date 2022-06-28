@@ -24,19 +24,21 @@ class RepositoryImpl implements Repository {
     if (await _networkInfo.isConnected) {
       // its connected to internet, its safe to call API
 // Lecture 59 Data Layer Applying ErrorHandler on Repository Implementer #49
-      try {} catch (error) {}
-      final response = await _remoteDataSource.login(loginRequest);
+      try {
+        final response = await _remoteDataSource.login(loginRequest);
 
-      if (response.status == 0) {
-        // success
-        // return either right
-        // return data
-        return Right(response.toDomain());
-      } else {
-        // failure --return business error
-        // return either left
-        return Left(Failure(409, response.message ?? "business error message"));
-      }
+        if (response.status == 0) {
+          // success
+          // return either right
+          // return data
+          return Right(response.toDomain());
+        } else {
+          // failure --return business error
+          // return either left
+          return Left(
+              Failure(409, response.message ?? "business error message"));
+        }
+      } catch (error) {}
     } else {
       // return internet connection error
       // return either left
