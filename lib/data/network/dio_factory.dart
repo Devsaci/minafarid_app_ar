@@ -22,6 +22,7 @@ class DioFactory {
     };
     dio.options = BaseOptions(
       baseUrl: Constants.baseUrl,
+      headers: headers,
     );
 
     return dio;
