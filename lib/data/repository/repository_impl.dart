@@ -46,6 +46,6 @@ class RepositoryImpl implements Repository {
       // return internet connection error
       // return either left
     }
-    return Left(Failure(ResponseCode.NO_INTERNET_CONNECTION, "please check your internet connection"));
+    return Left(Failure(ResponseCode.NO_INTERNET_CONNECTION, ResponseMessage.NO_INTERNET_CONNECTION));
   }
 }
