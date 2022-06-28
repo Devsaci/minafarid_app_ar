@@ -24,7 +24,7 @@ class RepositoryImpl implements Repository {
     if (await _networkInfo.isConnected) {
       // its connected to internet, its safe to call API
 // Lecture 59 Data Layer Applying ErrorHandler on Repository Implementer #49
-
+      try {} catch (error) {}
       final response = await _remoteDataSource.login(loginRequest);
 
       if (response.status == 0) {
