@@ -1,6 +1,7 @@
 // 53. Lecture 53 - Data Layer - Adding Repository Implementer
 import 'package:dartz/dartz.dart';
 import 'package:minafarid_app_ar/data/mapper/mapper.dart';
+import 'package:minafarid_app_ar/data/network/error_handler.dart';
 
 import 'package:minafarid_app_ar/data/network/failure.dart';
 
@@ -38,7 +39,9 @@ class RepositoryImpl implements Repository {
           return Left(
               Failure(409, response.message ?? "business error message"));
         }
-      } catch (error) {}
+      } catch (error) {
+        return Left(ErrorHandler.handle(error).failure);
+      }
     } else {
       // return internet connection error
       // return either left
