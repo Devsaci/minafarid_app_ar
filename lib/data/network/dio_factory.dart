@@ -15,7 +15,7 @@ const String DEFAULT_LANGUAGE = "langauge";
 class DioFactory {
   Future<Dio> getDio() async {
     Dio dio = Dio();
-    int _timeOut = 60 * 1000; // a min time out
+    // int _timeOut = 60 * 1000; // a min time out
     Map<String, String> headers = {
       CONTENT_TYPE: APPLICATION_JSON,
       ACCEPT: APPLICATION_JSON,
@@ -25,8 +25,8 @@ class DioFactory {
     dio.options = BaseOptions(
       baseUrl: Constants.baseUrl,
       headers: headers,
-      receiveTimeout: _timeOut,
-      sendTimeout: _timeOut,
+      receiveTimeout: Constants.apiTimeOut,
+      sendTimeout: Constants.apiTimeOut,
     );
     // Lecture 61 Data Layer Adding Dio Logger Interceptor #52
     if (kReleaseMode) {  // its debug mode so print app logs
