@@ -2,8 +2,8 @@
 
 import 'package:minafarid_app_ar/presentation/resources/langauge_manager.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../../app/constants.dart';
-// const String PREFS_KEY_LANG = "PREFS_KEY_LANG";
+
+const String PREFS_KEY_LANG = "PREFS_KEY_LANG";
 
 class AppPreferences {
   final SharedPreferences _sharedPreferences;
@@ -11,7 +11,7 @@ class AppPreferences {
   AppPreferences(this._sharedPreferences);
 
   Future<String?> getAppLanguage() async {
-    String? language = _sharedPreferences.getString(Constants.PREFS_KEY_LANG);
+    String? language = _sharedPreferences.getString(PREFS_KEY_LANG);
     if (language != null && language.isEmpty) {
       return language;
     } else {

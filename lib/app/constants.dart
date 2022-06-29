@@ -8,5 +8,5 @@ class Constants {
   // Lecture 62 Presentation Layer Adding Language Manager #53
   static const int apiTimeOut = 60000;
 
-  static const String PREFS_KEY_LANG = "PREFS_KEY_LANG";
+  // static const String PREFS_KEY_LANG = "PREFS_KEY_LANG";
 }
