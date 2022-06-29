@@ -4,4 +4,8 @@ class AppPreferences {
   final SharedPreferences _sharedPreferences;
 
   AppPreferences(this._sharedPreferences);
+
+  Future<String?> getAppLanguage() async {
+    return null;
+  }
 }
