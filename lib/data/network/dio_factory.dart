@@ -19,7 +19,7 @@ class DioFactory {
     Map<String, String> headers = {
       CONTENT_TYPE: APPLICATION_JSON,
       ACCEPT: APPLICATION_JSON,
-      AUTHORIZATION: "SEND TOKEN HERE",
+      AUTHORIZATION: Constants.token,
       DEFAULT_LANGUAGE: "en" // todo get lang from app prefs
     };
     dio.options = BaseOptions(
