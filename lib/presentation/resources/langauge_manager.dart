@@ -2,4 +2,8 @@
 
 enum LanguageType { ENGLISH, ARABIC }
 
-extension LanguageTypeExtension on LanguageType{}
+extension LanguageTypeExtension on LanguageType {
+  String? getValue() {
+    return null;
+  }
+}
