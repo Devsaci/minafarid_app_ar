@@ -11,9 +11,7 @@ extension LanguageTypeExtension on LanguageType {
       case LanguageType.ENGLISH:
         return ENGLISH;
       case LanguageType.ARABIC:
-        // TODO: Handle this case.
-        break;
+        return ARABIC;
     }
-    return null;
   }
 }
