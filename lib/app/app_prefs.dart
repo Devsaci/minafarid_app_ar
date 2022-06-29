@@ -6,6 +6,8 @@ class AppPreferences {
   AppPreferences(this._sharedPreferences);
 
   Future<String?> getAppLanguage() async {
+    String? language = _sharedPreferences.getString("key");
+
     return null;
   }
 }
