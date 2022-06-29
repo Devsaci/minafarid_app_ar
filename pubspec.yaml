@@ -45,7 +45,7 @@ dependencies:
 # CLI...D:\MinaFarid_App\minafarid_app_ar>flutter pub add internet_connection_checker
   pretty_dio_logger: ^1.1.1
 #  Lecture 63 Application Layer Adding Application Preferences #54
-
+  shared_preferences: ^2.0.13
 
 
 dev_dependencies:
