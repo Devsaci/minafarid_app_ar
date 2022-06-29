@@ -2,6 +2,8 @@
 
 enum LanguageType { ENGLISH, ARABIC }
 
+const String ARABIC = "ar";
+
 extension LanguageTypeExtension on LanguageType {
   String? getValue() {
     switch (this) {
