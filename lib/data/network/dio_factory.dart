@@ -29,7 +29,7 @@ class DioFactory {
       sendTimeout: Constants.apiTimeOut,
     );
     // Lecture 61 Data Layer Adding Dio Logger Interceptor #52
-    if (kReleaseMode) {  // its debug mode so print app logs
+    if (!kReleaseMode) {  // its debug mode so print app logs
       dio.interceptors.add(PrettyDioLogger(
         requestHeader: true,
         requestBody: true,
