@@ -11,7 +11,7 @@ const String APPLICATION_JSON = "application/json";
 const String CONTENT_TYPE = "content-type";
 const String ACCEPT = "accept";
 const String AUTHORIZATION = "authorization";
-const String DEFAULT_LANGUAGE = "langauge";
+const String DEFAULT_LANGUAGE = "language";
 
 class DioFactory {
   final AppPreferences _appPreferences;
@@ -20,12 +20,13 @@ class DioFactory {
 
   Future<Dio> getDio() async {
     Dio dio = Dio();
+    String? language = await _appPreferences.getAppLanguage();
     // int _timeOut = 60 * 1000; // a min time out
-    Map<String, String> headers = {
+    Map<String, String?> headers = {
       CONTENT_TYPE: APPLICATION_JSON,
       ACCEPT: APPLICATION_JSON,
       AUTHORIZATION: Constants.token,
-      DEFAULT_LANGUAGE: "en" // todo get lang from app prefs
+      DEFAULT_LANGUAGE: language,
     };
     dio.options = BaseOptions(
       baseUrl: Constants.baseUrl,
