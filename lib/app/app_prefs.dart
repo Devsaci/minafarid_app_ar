@@ -16,9 +16,7 @@ class AppPreferences {
       return language;
     } else {
       // return default lan
-      LanguageType.ENGLISH.getValue();
+      return LanguageType.ENGLISH.getValue(); //Lecture 64 Update Dio Factory with App Preferenceses #55
     }
-
-    return null;
   }
 }
