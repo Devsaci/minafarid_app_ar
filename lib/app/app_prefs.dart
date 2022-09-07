@@ -12,7 +12,7 @@ class AppPreferences {
 
   Future<String?> getAppLanguage() async {
     String? language = _sharedPreferences.getString(PREFS_KEY_LANG);
-    if (language != null && language.isEmpty) {
+    if (language != null && language.isNotEmpty) {
       return language;
     } else {
       // return default lan
