@@ -4,6 +4,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
+import '../../app/app_prefs.dart';
 import '../../app/constants.dart';
 
 const String APPLICATION_JSON = "application/json";
@@ -13,6 +14,10 @@ const String AUTHORIZATION = "authorization";
 const String DEFAULT_LANGUAGE = "langauge";
 
 class DioFactory {
+  final AppPreferences _appPreferences;
+
+  DioFactory(this._appPreferences);
+
   Future<Dio> getDio() async {
     Dio dio = Dio();
     // int _timeOut = 60 * 1000; // a min time out
@@ -29,7 +34,8 @@ class DioFactory {
       sendTimeout: Constants.apiTimeOut,
     );
     // Lecture 61 Data Layer Adding Dio Logger Interceptor #52
-    if (!kReleaseMode) {  // its debug mode so print app logs
+    if (!kReleaseMode) {
+      // its debug mode so print app logs
       dio.interceptors.add(PrettyDioLogger(
         requestHeader: true,
         requestBody: true,
