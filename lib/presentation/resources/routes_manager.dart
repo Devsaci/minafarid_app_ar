@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:minafarid_app_ar/presentation/resources/strings_manager.dart';
 import 'package:minafarid_app_ar/presentation/splash/splash_view.dart';
 import '../forgotPassword/forgotPassword_view.dart';
-import '../login/login_view.dart';
+import '../login/view/login_view.dart';
 import '../main/main.dart';
 import '../onboarding/view/onboarding_view.dart';
 import '../register/register_view.dart';
