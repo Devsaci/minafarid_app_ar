@@ -14,6 +14,7 @@ class LoginViewModel extends BaseViewModel
   @override
   void dispose() {
     _userNameStreamController.close();
+    _passwordStreamController.close();
   }
 
   @override
