@@ -4,6 +4,7 @@ import 'package:minafarid_app_ar/presentation/base/base_view_model.dart';
 
 class LoginViewModel extends BaseViewModel
     with LoginViewModelInputs, LoginViewModelOutputs {
+  // inputs
   @override
   void dispose() {
     // TODO: implement dispose
