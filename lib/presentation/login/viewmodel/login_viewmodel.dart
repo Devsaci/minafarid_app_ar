@@ -8,6 +8,7 @@ class LoginViewModel extends BaseViewModel
     with LoginViewModelInputs, LoginViewModelOutputs {
   //Lecture 68 - Adding Streams to Login ViewModel #59
   final StreamController _userNameStreamController = StreamController<String>.broadcast();
+  final StreamController _passwordStreamController = StreamController<String>.broadcast();
 
   // inputs
   @override
