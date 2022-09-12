@@ -24,7 +24,7 @@ class LoginViewModel extends BaseViewModel
 
   @override
   // TODO: implement inputPassword
-  Sink get inputPassword => throw UnimplementedError();
+  Sink get inputPassword => _passwordStreamController.sink;
 
   @override
   // TODO: implement inputUserName
