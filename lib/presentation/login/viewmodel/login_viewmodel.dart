@@ -24,6 +24,18 @@ class LoginViewModel extends BaseViewModel
   Sink get inputUserName => throw UnimplementedError();
 
   @override
+  setPassword(String password) {
+    // TODO: implement setPassword
+    throw UnimplementedError();
+  }
+
+  @override
+  setUserName(String userName) {
+    // TODO: implement setUserName
+    throw UnimplementedError();
+  }
+
+  @override
   login() {
     // TODO: implement login
     throw UnimplementedError();
@@ -36,18 +48,6 @@ class LoginViewModel extends BaseViewModel
   @override
   // TODO: implement outIsUserNameValid
   Stream<bool> get outIsUserNameValid => throw UnimplementedError();
-
-  @override
-  setPassword(String password) {
-    // TODO: implement setPassword
-    throw UnimplementedError();
-  }
-
-  @override
-  setUserName(String userName) {
-    // TODO: implement setUserName
-    throw UnimplementedError();
-  }
 }
 
 abstract class LoginViewModelInputs {
