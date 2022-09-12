@@ -14,4 +14,6 @@ class LoginViewModel extends BaseViewModel {
   }
 }
 
-abstract class LoginViewModelInputs{}
+abstract class LoginViewModelInputs {}
+
+abstract class LoginViewModelOutputs {}
