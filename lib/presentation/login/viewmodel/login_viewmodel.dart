@@ -7,7 +7,7 @@ import 'package:minafarid_app_ar/presentation/base/base_view_model.dart';
 class LoginViewModel extends BaseViewModel
     with LoginViewModelInputs, LoginViewModelOutputs {
   //Lecture 68 - Adding Streams to Login ViewModel #59
-  final StreamController _userNameStreamController = StreamController<String>();
+  final StreamController _userNameStreamController = StreamController<String>.broadcast();
 
   // inputs
   @override
