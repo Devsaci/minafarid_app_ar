@@ -20,6 +20,8 @@ abstract class LoginViewModelInputs {
   setPassword(String password);
 
   login();
+
+  Sink get inputUserName;
 }
 
 abstract class LoginViewModelOutputs {}
