@@ -13,7 +13,7 @@ class LoginViewModel extends BaseViewModel
   // inputs
   @override
   void dispose() {
-    // TODO: implement dispose
+    _userNameStreamController.close();
   }
 
   @override
