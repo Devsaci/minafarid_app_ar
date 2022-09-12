@@ -22,6 +22,8 @@ abstract class LoginViewModelInputs {
   login();
 
   Sink get inputUserName;
+
+  Sink get inputPassword;
 }
 
 abstract class LoginViewModelOutputs {}
