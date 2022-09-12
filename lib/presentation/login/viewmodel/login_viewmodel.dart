@@ -14,6 +14,8 @@ class LoginViewModel extends BaseViewModel {
   }
 }
 
-abstract class LoginViewModelInputs {}
+abstract class LoginViewModelInputs {
+  setUserName(String userName);
+}
 
 abstract class LoginViewModelOutputs {}
