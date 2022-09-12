@@ -13,3 +13,5 @@ class LoginViewModel extends BaseViewModel {
     // TODO: implement start
   }
 }
+
+abstract class LoginViewModelInputs{}
