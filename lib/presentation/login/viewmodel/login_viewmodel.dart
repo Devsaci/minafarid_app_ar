@@ -26,6 +26,8 @@ abstract class LoginViewModelInputs {
   Sink get inputPassword;
 
   Stream<bool> get outIsUserNameValid;
+
+  Stream<bool> get outIsPasswordValid;
 }
 
 abstract class LoginViewModelOutputs {}
