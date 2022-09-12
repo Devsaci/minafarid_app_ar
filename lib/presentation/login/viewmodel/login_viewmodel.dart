@@ -41,6 +41,7 @@ class LoginViewModel extends BaseViewModel
     throw UnimplementedError();
   }
 
+  // outputs
   @override
   // TODO: implement outIsPasswordValid
   Stream<bool> get outIsPasswordValid => throw UnimplementedError();
