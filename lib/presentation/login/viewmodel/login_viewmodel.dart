@@ -58,7 +58,8 @@ class LoginViewModel extends BaseViewModel
   }
 
   @override
-  Stream<bool> get outIsUserNameValid => throw UnimplementedError();
+  Stream<bool> get outIsUserNameValid =>
+      _userNameStreamController.stream.map((event) => true);
 }
 
 abstract class LoginViewModelInputs {
