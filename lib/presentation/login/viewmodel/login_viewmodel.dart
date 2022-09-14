@@ -38,6 +38,7 @@ class LoginViewModel extends BaseViewModel
   setPassword(String password) {
     inputPassword.add(password);
     //Lecture 70 - Usage of Data Classes #61
+    loginObject = loginObject.copyWith(password: password);
   }
 
   @override
