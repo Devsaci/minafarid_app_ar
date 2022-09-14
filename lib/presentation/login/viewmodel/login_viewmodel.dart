@@ -72,6 +72,7 @@ abstract class LoginViewModelInputs {
   }
 
   setUserName(String userName) {
+    inputUserName.add(userName);
   }
 
   login();
