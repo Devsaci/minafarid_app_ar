@@ -4,6 +4,8 @@ import 'dart:async';
 
 import 'package:minafarid_app_ar/presentation/base/base_view_model.dart';
 
+import '../../common/freezed_data_classes.dart';
+
 class LoginViewModel extends BaseViewModel
     with LoginViewModelInputs, LoginViewModelOutputs {
   //Lecture 68 - Adding Streams to Login ViewModel #59
@@ -11,6 +13,8 @@ class LoginViewModel extends BaseViewModel
       StreamController<String>.broadcast();
   final StreamController _passwordStreamController =
       StreamController<String>.broadcast();
+
+  var loginObject = LoginObject("","");
 
   // inputs
   @override
