@@ -50,8 +50,8 @@ class LoginViewModel extends BaseViewModel
 
   // outputs
   @override
-  Stream<bool> get outIsPasswordValid =>
-      _passwordStreamController.stream.map((password) => true);
+  Stream<bool> get outIsPasswordValid => _passwordStreamController.stream
+      .map((password) => _isPasswordValid(password));
 
   bool _isPasswordValid(String password) {
     return password.isNotEmpty;
