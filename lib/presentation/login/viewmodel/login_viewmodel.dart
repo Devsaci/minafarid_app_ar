@@ -67,7 +67,9 @@ class LoginViewModel extends BaseViewModel
 }
 
 abstract class LoginViewModelInputs {
-  setUserName(String userName);
+  setUserName(String userName) {
+    inputPassword.add(userName);
+  }
 
   setPassword(String password);
 
