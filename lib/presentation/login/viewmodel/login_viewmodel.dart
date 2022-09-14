@@ -14,7 +14,7 @@ class LoginViewModel extends BaseViewModel
   final StreamController _passwordStreamController =
       StreamController<String>.broadcast();
 
-  var loginObject = LoginObject("","");
+  var loginObject = LoginObject("", "");
 
   // inputs
   @override
