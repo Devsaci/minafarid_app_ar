@@ -58,11 +58,11 @@ class LoginViewModel extends BaseViewModel
   }
 
   @override
-  Stream<bool> get outIsUserNameValid =>
-      _userNameStreamController.stream.map((event) => true);
+  Stream<bool> get outIsUserNameValid => _userNameStreamController.stream
+      .map((username) => _isUserNameValide(username));
 
   bool _isUserNameValide(String username) {
-    return true;
+    return username.isNotEmpty;
   }
 }
 
