@@ -7,8 +7,10 @@ import 'package:minafarid_app_ar/presentation/base/base_view_model.dart';
 class LoginViewModel extends BaseViewModel
     with LoginViewModelInputs, LoginViewModelOutputs {
   //Lecture 68 - Adding Streams to Login ViewModel #59
-  final StreamController _userNameStreamController = StreamController<String>.broadcast();
-  final StreamController _passwordStreamController = StreamController<String>.broadcast();
+  final StreamController _userNameStreamController =
+      StreamController<String>.broadcast();
+  final StreamController _passwordStreamController =
+      StreamController<String>.broadcast();
 
   // inputs
   @override
@@ -23,11 +25,9 @@ class LoginViewModel extends BaseViewModel
   }
 
   @override
-  // TODO: implement inputPassword
   Sink get inputPassword => _passwordStreamController.sink;
 
   @override
-  // TODO: implement inputUserName
   Sink get inputUserName => _userNameStreamController.sink;
 
   @override
@@ -50,11 +50,14 @@ class LoginViewModel extends BaseViewModel
 
   // outputs
   @override
-  // TODO: implement outIsPasswordValid
-  Stream<bool> get outIsPasswordValid => throw UnimplementedError();
+  Stream<bool> get outIsPasswordValid =>
+      _passwordStreamController.stream.map((password) => true);
+
+  bool _isPasswordValid(String password) {
+    return password.isNotEmpty;
+  }
 
   @override
-  // TODO: implement outIsUserNameValid
   Stream<bool> get outIsUserNameValid => throw UnimplementedError();
 }
 
