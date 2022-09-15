@@ -13,6 +13,8 @@ class _LoginViewState extends State<LoginView> {
 // Lecture 72 - Adding Login UseCase to Login ViewModel #63
 // - Binding Login ViewModel to Login View
    late final LoginViewModel _viewModel;
+   // final LoginViewModel _viewModel = LoginViewModel(_loginUseCase);
+   // ERROR : _loginUseCase Solution Injection dependence
 
   @override
   Widget build(BuildContext context) {
