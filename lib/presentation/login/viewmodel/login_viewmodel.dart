@@ -18,6 +18,11 @@ class LoginViewModel extends BaseViewModel
   var loginObject = LoginObject("", "");
 
   //Lecture 71 - Adding Login UseCase to Login ViewModel #62
+  final LoginUseCase _loginUseCase;
+
+  LoginViewModel(this._loginUseCase);
+
+  // inputs
 
   @override
   void dispose() {
