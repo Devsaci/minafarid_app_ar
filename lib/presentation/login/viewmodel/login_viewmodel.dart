@@ -55,9 +55,8 @@ class LoginViewModel extends BaseViewModel
   }
 
   @override
-  login() {
-    // TODO: implement login
-    throw UnimplementedError();
+  login() async {
+
   }
 
   // outputs
