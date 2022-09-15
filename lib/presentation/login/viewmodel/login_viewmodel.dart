@@ -65,6 +65,7 @@ class LoginViewModel extends BaseViewModel
                 },
             (data) => {
                   // right -> data success (Authentication data)
+              print(data.customer?.name)
                 });
   }
 
