@@ -17,7 +17,9 @@ class _LoginViewState extends State<LoginView> {
   // final LoginViewModel _viewModel = LoginViewModel(_loginUseCase);
   // ERROR : _loginUseCase Solution Injection dependence
 
-  _bind() {}
+  _bind() {
+    _viewModel.start(); // tell viewmodel, start ur job
+  }
 
   @override
   Widget build(BuildContext context) {
