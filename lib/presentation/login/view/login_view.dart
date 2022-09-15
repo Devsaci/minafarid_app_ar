@@ -10,18 +10,18 @@ class LoginView extends StatefulWidget {
 }
 
 class _LoginViewState extends State<LoginView> {
-
 // Lecture 72 - Adding Login UseCase to Login ViewModel #63
 // - Binding Login ViewModel to Login View
+  late final LoginViewModel _viewModel;
 
   @override
   Widget build(BuildContext context) {
     return Container();
   }
 
-@override
+  @override
   void dispose() {
-    // TODO: implement dispose
+    _viewModel.dispose();
     super.dispose();
   }
 }
