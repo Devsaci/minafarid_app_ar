@@ -4,6 +4,7 @@ import 'dart:async';
 
 import 'package:minafarid_app_ar/presentation/base/base_view_model.dart';
 
+import '../../../domain/usecase/login_usecase.dart';
 import '../../common/freezed_data_classes.dart';
 
 class LoginViewModel extends BaseViewModel
@@ -16,7 +17,8 @@ class LoginViewModel extends BaseViewModel
 
   var loginObject = LoginObject("", "");
 
-  // inputs
+  //Lecture 71 - Adding Login UseCase to Login ViewModel #62
+
   @override
   void dispose() {
     _userNameStreamController.close();
