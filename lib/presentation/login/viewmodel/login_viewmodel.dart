@@ -60,10 +60,10 @@ class LoginViewModel extends BaseViewModel
             LoginUseCaseInput(loginObject.userName, loginObject.password)))
         .fold(
             (left) => {
-                  // left -> failure
+                  // left -> failure (Failure left )
                 },
             (data) => {
-                  // right -> data success
+                  // right -> data success (Authentication data)
                 });
   }
 
