@@ -23,6 +23,8 @@ class _LoginViewState extends State<LoginView> {
     _viewModel.start(); // tell viewmodel, start ur job
     _userNameController
         .addListener(() => _viewModel.setUserName(_userNameController.text));
+    _userPasswordController.addListener(
+        () => _viewModel.setPassword(_userPasswordController.text));
   }
 
   @override
