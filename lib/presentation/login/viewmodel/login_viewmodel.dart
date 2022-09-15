@@ -59,10 +59,10 @@ class LoginViewModel extends BaseViewModel
     (await _loginUseCase.execute(
             LoginUseCaseInput(loginObject.userName, loginObject.password)))
         .fold(
-            (l) => {
+            (left) => {
                   // left -> failure
                 },
-            (r) => {
+            (data) => {
                   // right -> data success
                 });
   }
