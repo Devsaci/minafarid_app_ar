@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../viewmodel/login_viewmodel.dart';
+
 class LoginView extends StatefulWidget {
   const LoginView({Key? key}) : super(key: key);
 
@@ -15,5 +17,11 @@ class _LoginViewState extends State<LoginView> {
   @override
   Widget build(BuildContext context) {
     return Container();
+  }
+
+@override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
   }
 }
