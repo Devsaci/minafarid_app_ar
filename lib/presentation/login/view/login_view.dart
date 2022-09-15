@@ -23,7 +23,7 @@ class _LoginViewState extends State<LoginView> {
 
   @override
   void initState() {
-    // TODO: implement initState
+    _bind();
     super.initState();
   }
 
