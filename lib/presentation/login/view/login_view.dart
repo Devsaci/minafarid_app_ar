@@ -66,7 +66,8 @@ class _LoginViewState extends State<LoginView> {
                     builder: (context, snapshot) {
                       return const TextField(
                         keyboardType: TextInputType.emailAddress,
-                        controller: _userNameController,//Error
+                        //controller: _userNameController,//Error
+                        decoration: InputDecoration(),
                         //Lecture 74 - Login View UI Continue #65
                       );
                     },
