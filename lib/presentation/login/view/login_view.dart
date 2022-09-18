@@ -55,6 +55,9 @@ class _LoginViewState extends State<LoginView> {
               children: [
                 const Center(
                     child: Image(image: AssetImage(ImageAssets.splashLogo))),
+                const SizedBox(
+                  height: AppSize.s28,
+                ),
               ],
             ),
           ),
