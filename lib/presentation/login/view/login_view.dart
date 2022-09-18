@@ -37,7 +37,11 @@ class _LoginViewState extends State<LoginView> {
   Widget build(BuildContext context) {
     return Container();
   }
+
 // Lecture 73 - Login View UI #64
+  Widget _getContentWidget() {
+    return Scaffold();
+  }
 
   @override
   void dispose() {
