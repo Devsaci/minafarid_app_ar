@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:minafarid_app_ar/presentation/resources/color_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/values_manager.dart';
 
 import '../viewmodel/login_viewmodel.dart';
@@ -44,6 +45,7 @@ class _LoginViewState extends State<LoginView> {
     return Scaffold(
       body: Container(
         padding: const EdgeInsets.only(top: AppPadding.p100),
+        color: ColorManager.white,
       ),
     );
   }
