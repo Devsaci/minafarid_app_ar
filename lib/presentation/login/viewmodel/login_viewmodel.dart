@@ -47,6 +47,10 @@ class LoginViewModel extends BaseViewModel
   Sink get inputUserName => _userNameStreamController.sink;
 
   @override
+  // TODO: implement inputAreAllInputsValid
+  Sink get inputAreAllInputsValid => throw UnimplementedError();
+
+  @override
   setPassword(String password) {
     inputPassword.add(password);
     //Lecture 70 - Usage of Data Classes #61
@@ -79,6 +83,10 @@ class LoginViewModel extends BaseViewModel
   Stream<bool> get outIsPasswordValid => _passwordStreamController.stream
       .map((password) => _isPasswordValid(password));
 
+  @override
+  // TODO: implement outAreAllInputsValid
+  Stream<bool> get outAreAllInputsValid => throw UnimplementedError();
+
   bool _isPasswordValid(String password) {
     return password.isNotEmpty;
   }
@@ -90,16 +98,6 @@ class LoginViewModel extends BaseViewModel
   bool _isUserNameValid(String username) {
     return username.isNotEmpty;
   }
-// Missing concrete implementations of
-// 'getter LoginViewModelInputs.inputAreAllInputsValid' and
-// 'getter LoginViewModelOutputs.outAreAllInputsValid'
-  @override
-  // TODO: implement inputAreAllInputsValid
-  Sink get inputAreAllInputsValid => throw UnimplementedError();
-
-  @override
-  // TODO: implement outAreAllInputsValid
-  Stream<bool> get outAreAllInputsValid => throw UnimplementedError();
 }
 
 abstract class LoginViewModelInputs {
