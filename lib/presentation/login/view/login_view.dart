@@ -49,6 +49,7 @@ class _LoginViewState extends State<LoginView> {
         color: ColorManager.white,
         child: SingleChildScrollView(
           child: Form(
+            key: _formKey,
             child: Column(
               children: [],
             ),
