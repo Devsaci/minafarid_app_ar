@@ -12,6 +12,7 @@ class AppStrings {
   static const passwordError = "Please enter your password";
   static const login = "Login";
   static const forgetPassword = "Forget password";
+  static const registerText = "Not a member ? Sign up";
 
 
 
