@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:minafarid_app_ar/presentation/resources/color_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/values_manager.dart';
@@ -52,11 +54,18 @@ class _LoginViewState extends State<LoginView> {
           child: Form(
             key: _formKey,
             child: Column(
-              children: const [
-                Center(child: Image(image: AssetImage(ImageAssets.splashLogo))),
-                SizedBox(height: AppSize.s28),
+              children: [
+                const Center(
+                    child: Image(image: AssetImage(ImageAssets.splashLogo))),
+                const SizedBox(height: AppSize.s28),
                 Padding(
-                  padding: EdgeInsets.only(left: AppPadding.p28,right: AppPadding.p28),
+                  padding: const EdgeInsets.only(
+                      left: AppPadding.p28, right: AppPadding.p28),
+                  child: StreamBuilder<bool>(
+                    builder: (context, snapshot) {
+                      return const TextField();
+                    },
+                  ),
                 )
               ],
             ),
