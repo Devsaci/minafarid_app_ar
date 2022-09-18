@@ -90,6 +90,16 @@ class LoginViewModel extends BaseViewModel
   bool _isUserNameValid(String username) {
     return username.isNotEmpty;
   }
+// Missing concrete implementations of
+// 'getter LoginViewModelInputs.inputAreAllInputsValid' and
+// 'getter LoginViewModelOutputs.outAreAllInputsValid'
+  @override
+  // TODO: implement inputAreAllInputsValid
+  Sink get inputAreAllInputsValid => throw UnimplementedError();
+
+  @override
+  // TODO: implement outAreAllInputsValid
+  Stream<bool> get outAreAllInputsValid => throw UnimplementedError();
 }
 
 abstract class LoginViewModelInputs {
@@ -110,4 +120,6 @@ abstract class LoginViewModelOutputs {
   Stream<bool> get outIsUserNameValid;
 
   Stream<bool> get outIsPasswordValid;
+
+  Stream<bool> get outAreAllInputsValid;
 }
