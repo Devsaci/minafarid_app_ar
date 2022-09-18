@@ -56,8 +56,10 @@ class _LoginViewState extends State<LoginView> {
             key: _formKey,
             child: Column(
               children: [
+                // Image splashLogo
                 const Center(
                     child: Image(image: AssetImage(ImageAssets.splashLogo))),
+                // TextField username
                 const SizedBox(height: AppSize.s28),
                 Padding(
                   padding: const EdgeInsets.only(
@@ -79,7 +81,31 @@ class _LoginViewState extends State<LoginView> {
                       );
                     },
                   ),
-                )
+                ),
+                // TextField password
+                const SizedBox(height: AppSize.s28),
+                Padding(
+                  padding: const EdgeInsets.only(
+                      left: AppPadding.p28, right: AppPadding.p28),
+                  child: StreamBuilder<bool> (
+                    stream: _viewModel.outIsPasswordValid,
+                    builder: (context, snapshot) {
+                      return  TextField(
+                        keyboardType: TextInputType.visiblePassword,
+                        controller: _userPasswordController,
+                        decoration: InputDecoration(
+                          hintText: AppStrings.password,
+                          labelText: AppStrings.password,
+                          errorText: (snapshot.data ?? true)
+                              ? null
+                              :AppStrings.passwordError,
+                        ),
+                        //Lecture 74 - Login View UI Continue #65
+                      );
+                    },
+                  ),
+                ),
+
               ],
             ),
           ),
