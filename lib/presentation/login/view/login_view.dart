@@ -46,6 +46,7 @@ class _LoginViewState extends State<LoginView> {
       body: Container(
         padding: const EdgeInsets.only(top: AppPadding.p100),
         color: ColorManager.white,
+        child: SingleChildScrollView(),
       ),
     );
   }
