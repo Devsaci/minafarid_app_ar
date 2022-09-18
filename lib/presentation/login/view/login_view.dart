@@ -20,6 +20,7 @@ class _LoginViewState extends State<LoginView> {
   // ERROR : _loginUseCase Solution Injection dependence
   final TextEditingController _userNameController = TextEditingController();
   final TextEditingController _userPasswordController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
 
   _bind() {
     _viewModel.start(); // tell viewmodel, start ur job
@@ -47,7 +48,11 @@ class _LoginViewState extends State<LoginView> {
         padding: const EdgeInsets.only(top: AppPadding.p100),
         color: ColorManager.white,
         child: SingleChildScrollView(
-          child: Form(child: Column()),
+          child: Form(
+            child: Column(
+              children: [],
+            ),
+          ),
         ),
       ),
     );
