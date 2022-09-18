@@ -10,6 +10,7 @@ class AppStrings {
   static const password = "Password";
   static const usernameError = "Please enter your userName";
   static const passwordError = "Please enter your password";
+  static const login = "Login";
 
 
 
