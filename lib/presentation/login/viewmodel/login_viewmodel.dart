@@ -16,6 +16,8 @@ class LoginViewModel extends BaseViewModel
       StreamController<String>.broadcast();
 
   //Lecture 76 - Adding Stream Controller For Login Button #67
+  final StreamController _areAllInputsValidStreamController =
+      StreamController<void>.broadcast();
 
   var loginObject = LoginObject("", "");
 
@@ -63,11 +65,11 @@ class LoginViewModel extends BaseViewModel
         .fold(
             (failure) => {
                   // left -> failure (Failure left )
-              print(failure.message)
+                  print(failure.message)
                 },
             (data) => {
                   // right -> data success (Authentication data)
-              print(data.customer?.name)
+                  print(data.customer?.name)
                 });
   }
 
