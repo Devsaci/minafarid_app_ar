@@ -102,6 +102,8 @@ abstract class LoginViewModelInputs {
   Sink get inputUserName;
 
   Sink get inputPassword;
+
+  Sink get inputAreAllInputsValid;
 }
 
 abstract class LoginViewModelOutputs {
