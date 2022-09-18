@@ -70,6 +70,7 @@ class _LoginViewState extends State<LoginView> {
                         //controller: _userNameController,//Error
                         decoration: InputDecoration(
                           hintText: AppStrings.username,
+                          labelText: AppStrings.username,
                         ),
                         //Lecture 74 - Login View UI Continue #65
                       );
