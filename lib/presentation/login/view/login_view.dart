@@ -56,7 +56,7 @@ class _LoginViewState extends State<LoginView> {
                 Center(child: Image(image: AssetImage(ImageAssets.splashLogo))),
                 SizedBox(height: AppSize.s28),
                 Padding(
-                  padding: EdgeInsets.only(left: AppPadding.p28),
+                  padding: EdgeInsets.only(left: AppPadding.p28,right: AppPadding.p28),
                 )
               ],
             ),
