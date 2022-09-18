@@ -62,6 +62,7 @@ class _LoginViewState extends State<LoginView> {
                   padding: const EdgeInsets.only(
                       left: AppPadding.p28, right: AppPadding.p28),
                   child: StreamBuilder<bool>(
+                    stream: _viewModel.outIsUserNameValid,
                     builder: (context, snapshot) {
                       return const TextField();
                     },
