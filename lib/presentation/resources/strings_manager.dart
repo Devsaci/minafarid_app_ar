@@ -8,6 +8,7 @@ class AppStrings {
   static const skip = "skip";
   static const username = "Username";
   static const password = "Password";
+  static const usernameError = "Please enter your userName";
 
 
 
