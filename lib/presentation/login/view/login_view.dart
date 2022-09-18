@@ -5,6 +5,7 @@ import 'package:minafarid_app_ar/presentation/resources/color_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/values_manager.dart';
 
 import '../../resources/assets_manager.dart';
+import '../../resources/strings_manager.dart';
 import '../viewmodel/login_viewmodel.dart';
 
 class LoginView extends StatefulWidget {
@@ -67,7 +68,9 @@ class _LoginViewState extends State<LoginView> {
                       return const TextField(
                         keyboardType: TextInputType.emailAddress,
                         //controller: _userNameController,//Error
-                        decoration: InputDecoration(),
+                        decoration: InputDecoration(
+                          hintText: AppStrings.username,
+                        ),
                         //Lecture 74 - Login View UI Continue #65
                       );
                     },

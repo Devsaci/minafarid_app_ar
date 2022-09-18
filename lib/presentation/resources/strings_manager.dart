@@ -6,6 +6,9 @@ class AppStrings {
   static const onBoardingTitle3 = "SEE THE BEST COURSE #3";
   static const onBoardingTitle4 = "SEE THE BEST COURSE #4";
   static const skip = "skip";
+  static const username = "Username";
+  static const password = "Password";
+
 
 
   static const onBoardingSubTitle1 =
