@@ -64,18 +64,18 @@ class _LoginViewState extends State<LoginView> {
                 Padding(
                   padding: const EdgeInsets.only(
                       left: AppPadding.p28, right: AppPadding.p28),
-                  child: StreamBuilder<bool> (
+                  child: StreamBuilder<bool>(
                     stream: _viewModel.outIsUserNameValid,
                     builder: (context, snapshot) {
-                      return  TextField(
+                      return TextField(
                         keyboardType: TextInputType.emailAddress,
                         controller: _userNameController,
                         decoration: InputDecoration(
                           hintText: AppStrings.username,
                           labelText: AppStrings.username,
                           errorText: (snapshot.data ?? true)
-                          ? null
-                          :AppStrings.usernameError,
+                              ? null
+                              : AppStrings.usernameError,
                         ),
                         //Lecture 74 - Login View UI Continue #65
                       );
@@ -87,10 +87,10 @@ class _LoginViewState extends State<LoginView> {
                 Padding(
                   padding: const EdgeInsets.only(
                       left: AppPadding.p28, right: AppPadding.p28),
-                  child: StreamBuilder<bool> (
+                  child: StreamBuilder<bool>(
                     stream: _viewModel.outIsPasswordValid,
                     builder: (context, snapshot) {
-                      return  TextField(
+                      return TextField(
                         keyboardType: TextInputType.visiblePassword,
                         controller: _userPasswordController,
                         decoration: InputDecoration(
@@ -98,7 +98,7 @@ class _LoginViewState extends State<LoginView> {
                           labelText: AppStrings.password,
                           errorText: (snapshot.data ?? true)
                               ? null
-                              :AppStrings.passwordError,
+                              : AppStrings.passwordError,
                         ),
                         //Lecture 74 - Login View UI Continue #65
                       );
@@ -106,7 +106,21 @@ class _LoginViewState extends State<LoginView> {
                   ),
                 ),
                 //Lecture 75 - Finalising Login UI #66
-
+                // Button login
+                const SizedBox(height: AppSize.s28),
+                Padding(
+                  padding: const EdgeInsets.only(
+                      left: AppPadding.p28, right: AppPadding.p28),
+                  child: StreamBuilder<bool>(
+                    stream: _viewModel.outIsPasswordValid,
+                    builder: (context, snapshot) {
+                      return ElevatedButton(
+                        onPressed: (){},
+                        child: const Text('ElevatedButton'),
+                      );
+                    },
+                  ),
+                ),
               ],
             ),
           ),
