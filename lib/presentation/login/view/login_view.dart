@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:minafarid_app_ar/presentation/resources/color_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/values_manager.dart';
 
+import '../../resources/assets_manager.dart';
 import '../viewmodel/login_viewmodel.dart';
 
 class LoginView extends StatefulWidget {
@@ -51,7 +52,10 @@ class _LoginViewState extends State<LoginView> {
           child: Form(
             key: _formKey,
             child: Column(
-              children: [],
+              children: [
+                const Center(
+                    child: Image(image: AssetImage(ImageAssets.splashLogo))),
+              ],
             ),
           ),
         ),
