@@ -31,7 +31,7 @@ class _LoginViewState extends State<LoginView> {
     _userNameController
         .addListener(() => _viewModel.setUserName(_userNameController.text));
     _userPasswordController.addListener(
-        () => _viewModel.setPassword(_userPasswordController.text));
+            () => _viewModel.setPassword(_userPasswordController.text));
   }
 
   @override
@@ -115,8 +115,8 @@ class _LoginViewState extends State<LoginView> {
                     stream: _viewModel.outIsPasswordValid,
                     builder: (context, snapshot) {
                       return ElevatedButton(
-                        onPressed: (){
-
+                        onPressed: () {
+                          _viewModel.login();
                         },
                         child: const Text(AppStrings.login),
                       );
