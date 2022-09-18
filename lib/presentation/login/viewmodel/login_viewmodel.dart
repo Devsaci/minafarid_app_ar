@@ -15,6 +15,8 @@ class LoginViewModel extends BaseViewModel
   final StreamController _passwordStreamController =
       StreamController<String>.broadcast();
 
+  //Lecture 76 - Adding Stream Controller For Login Button #67
+
   var loginObject = LoginObject("", "");
 
   //Lecture 71 - Adding Login UseCase to Login ViewModel #62
