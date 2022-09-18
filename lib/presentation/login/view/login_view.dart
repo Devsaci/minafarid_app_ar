@@ -62,15 +62,18 @@ class _LoginViewState extends State<LoginView> {
                 Padding(
                   padding: const EdgeInsets.only(
                       left: AppPadding.p28, right: AppPadding.p28),
-                  child: StreamBuilder<bool>(
+                  child: StreamBuilder<bool> (
                     stream: _viewModel.outIsUserNameValid,
                     builder: (context, snapshot) {
-                      return const TextField(
+                      return  TextField(
                         keyboardType: TextInputType.emailAddress,
-                        //controller: _userNameController,//Error
+                        controller: _userNameController,
                         decoration: InputDecoration(
                           hintText: AppStrings.username,
                           labelText: AppStrings.username,
+                          errorText: (snapshot.data ?? true)
+                          ? null
+                          :AppStrings.usernameError,
                         ),
                         //Lecture 74 - Login View UI Continue #65
                       );
