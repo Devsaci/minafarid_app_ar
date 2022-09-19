@@ -88,8 +88,8 @@ class LoginViewModel extends BaseViewModel
       .map((username) => _isUserNameValid(username));
 
   @override
-  // TODO: implement outAreAllInputsValid
-  Stream<bool> get outAreAllInputsValid => throw UnimplementedError();
+  Stream<bool> get outAreAllInputsValid =>
+      _areAllInputsValidStreamController.stream.map((event) => true);
 
   bool _isPasswordValid(String password) {
     return password.isNotEmpty;
