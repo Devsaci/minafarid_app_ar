@@ -99,7 +99,9 @@ class LoginViewModel extends BaseViewModel
     return username.isNotEmpty;
   }
 
-  _areAllInputsValid() {}
+ bool _areAllInputsValid() {
+    return true;
+ }
 }
 
 abstract class LoginViewModelInputs {
