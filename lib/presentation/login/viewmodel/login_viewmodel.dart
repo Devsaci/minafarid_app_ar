@@ -54,6 +54,7 @@ class LoginViewModel extends BaseViewModel
     inputPassword.add(password);
     //Lecture 70 - Usage of Data Classes #61
     loginObject = loginObject.copyWith(password: password);
+    inputAreAllInputsValid.add(null);
   }
 
   @override
