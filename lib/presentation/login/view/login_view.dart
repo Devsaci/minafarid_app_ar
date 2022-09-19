@@ -18,9 +18,9 @@ class LoginView extends StatefulWidget {
 class _LoginViewState extends State<LoginView> {
 // Lecture 72 - Adding Login UseCase to Login ViewModel #63
 // - Binding Login ViewModel to Login View
-  late final LoginViewModel _viewModel;
+//   late final LoginViewModel _viewModel;
 
-  // final LoginViewModel _viewModel = LoginViewModel(_loginUseCase);
+  final LoginViewModel _viewModel = LoginViewModel();
   // ERROR : _loginUseCase Solution Injection dependence
   final TextEditingController _userNameController = TextEditingController();
   final TextEditingController _userPasswordController = TextEditingController();

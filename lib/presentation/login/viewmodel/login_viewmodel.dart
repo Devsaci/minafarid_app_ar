@@ -22,9 +22,10 @@ class LoginViewModel extends BaseViewModel
   var loginObject = LoginObject("", "");
 
   //Lecture 71 - Adding Login UseCase to Login ViewModel #62
-  final LoginUseCase _loginUseCase;
+  // final LoginUseCase _loginUseCase;
 
-  LoginViewModel(this._loginUseCase);
+  // LoginViewModel(this._loginUseCase);
+  LoginViewModel();
 
   // inputs
 
@@ -66,17 +67,17 @@ class LoginViewModel extends BaseViewModel
 
   @override
   login() async {
-    (await _loginUseCase.execute(
-            LoginUseCaseInput(loginObject.userName, loginObject.password)))
-        .fold(
-            (failure) => {
-                  // left -> failure (Failure left )
-                  print(failure.message)
-                },
-            (data) => {
-                  // right -> data success (Authentication data)
-                  print(data.customer?.name)
-                });
+    // (await _loginUseCase.execute(
+    //         LoginUseCaseInput(loginObject.userName, loginObject.password)))
+    //     .fold(
+    //         (failure) => {
+    //               // left -> failure (Failure left )
+    //               print(failure.message)
+    //             },
+    //         (data) => {
+    //               // right -> data success (Authentication data)
+    //               print(data.customer?.name)
+    //             });
   }
 
   // outputs
