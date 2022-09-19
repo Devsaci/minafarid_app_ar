@@ -61,6 +61,7 @@ class LoginViewModel extends BaseViewModel
   setUserName(String userName) {
     inputUserName.add(userName);
     loginObject = loginObject.copyWith(userName: userName);
+    inputAreAllInputsValid.add(null);
   }
 
   @override
