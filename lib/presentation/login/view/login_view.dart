@@ -1,4 +1,5 @@
-import 'dart:html';
+
+
 
 import 'package:flutter/material.dart';
 import 'package:minafarid_app_ar/presentation/resources/color_manager.dart';
@@ -42,7 +43,7 @@ class _LoginViewState extends State<LoginView> {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return _getContentWidget();
   }
 
 // Lecture 73 - Login View UI #64
