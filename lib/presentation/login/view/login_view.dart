@@ -1,6 +1,3 @@
-
-
-
 import 'package:flutter/material.dart';
 import 'package:minafarid_app_ar/presentation/resources/color_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/values_manager.dart';
@@ -22,6 +19,7 @@ class _LoginViewState extends State<LoginView> {
 //   late final LoginViewModel _viewModel;
 
   final LoginViewModel _viewModel = LoginViewModel();
+
   // ERROR : _loginUseCase Solution Injection dependence
   final TextEditingController _userNameController = TextEditingController();
   final TextEditingController _userPasswordController = TextEditingController();
@@ -118,6 +116,8 @@ class _LoginViewState extends State<LoginView> {
                     stream: _viewModel.outAreAllInputsValid,
                     builder: (context, snapshot) {
                       return SizedBox(
+                        width: double.infinity,
+                        height: AppSize.s40,
                         child: ElevatedButton(
                           onPressed: (snapshot.data ?? false)
                               ? () {
