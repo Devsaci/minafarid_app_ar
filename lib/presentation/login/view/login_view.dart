@@ -49,6 +49,8 @@ class _LoginViewState extends State<LoginView> {
 // Lecture 73 - Login View UI #64
   Widget _getContentWidget() {
     return Scaffold(
+      // Lecture 78 - Adding Forgot Password and Register Texts #69
+      backgroundColor: ColorManager.white,
       body: Container(
         padding: const EdgeInsets.only(top: AppPadding.p100),
         color: ColorManager.white,
