@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:minafarid_app_ar/presentation/resources/color_manager.dart';
+import 'package:minafarid_app_ar/presentation/resources/font_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/values_manager.dart';
 
 import '../../resources/assets_manager.dart';
@@ -136,20 +137,20 @@ class _LoginViewState extends State<LoginView> {
                       right: AppPadding.p20,
                       left: AppPadding.p28),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       TextButton(
                         onPressed: () {},
                         child: Text(
                           AppStrings.forgetPassword,
-                          style: Theme.of(context).textTheme.titleMedium,
+                          style: Theme.of(context).textTheme.titleSmall,
                         ),
                       ),
                       TextButton(
                         onPressed: () {},
                         child: Text(
                           AppStrings.registerText,
-                          style: Theme.of(context).textTheme.titleMedium,
+                          style: Theme.of(context).textTheme.titleSmall,
                         ),
                       ),
                     ],
