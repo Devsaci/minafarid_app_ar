@@ -137,7 +137,8 @@ class _LoginViewState extends State<LoginView> {
                       right: AppPadding.p20,
                       left: AppPadding.p28),
                   child: Row(
-                    children: const [
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
                       Text('forgetPassword'),
                       Text('registerText'),
                     ],
