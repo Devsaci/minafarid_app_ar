@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:minafarid_app_ar/presentation/resources/color_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/values_manager.dart';
@@ -141,7 +140,10 @@ class _LoginViewState extends State<LoginView> {
                     children: [
                       TextButton(
                         onPressed: () {},
-                        child: const Text('forgetPassword'),
+                        child: Text(
+                          AppStrings.forgetPassword,
+                          style: Theme.of(context).textTheme.titleMedium,
+                        ),
                       ),
                       TextButton(
                         onPressed: () {},
