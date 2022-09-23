@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:minafarid_app_ar/presentation/resources/color_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/values_manager.dart';
@@ -135,7 +136,12 @@ class _LoginViewState extends State<LoginView> {
                       top: AppPadding.p8,
                       right: AppPadding.p20,
                       left: AppPadding.p28),
-                  child: Row(),
+                  child: Row(
+                    children: const [
+                      Text('forgetPassword'),
+                      Text('registerText'),
+                    ],
+                  ),
                 ),
               ],
             ),
