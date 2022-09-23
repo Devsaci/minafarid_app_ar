@@ -130,11 +130,12 @@ class _LoginViewState extends State<LoginView> {
                     },
                   ),
                 ),
-                const Padding(
-                  padding: EdgeInsets.only(
+                Padding(
+                  padding: const EdgeInsets.only(
                       top: AppPadding.p8,
                       right: AppPadding.p20,
                       left: AppPadding.p28),
+                  child: Row(),
                 ),
               ],
             ),
