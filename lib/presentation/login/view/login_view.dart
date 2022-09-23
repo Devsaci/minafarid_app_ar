@@ -147,7 +147,10 @@ class _LoginViewState extends State<LoginView> {
                       ),
                       TextButton(
                         onPressed: () {},
-                        child: const Text('registerText'),
+                        child: Text(
+                          AppStrings.registerText,
+                          style: Theme.of(context).textTheme.titleMedium,
+                        ),
                       ),
                     ],
                   ),
