@@ -5,3 +5,5 @@ final instance = GetIt.instance;
 Future<void> initAppModule() async {
   // app module, its a module where we put all generic dependencies
 }
+
+Future<void> initLoginModule() async {}
