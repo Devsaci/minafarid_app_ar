@@ -47,7 +47,7 @@ dependencies:
 #  Lecture 63 Application Layer Adding Application Preferences #54
   shared_preferences: ^2.0.13
   freezed: ^1.1.1
-
+  get_it: ^7.2.0
 
 dev_dependencies:
   flutter_test:
