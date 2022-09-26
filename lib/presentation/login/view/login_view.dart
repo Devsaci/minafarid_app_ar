@@ -19,7 +19,7 @@ class _LoginViewState extends State<LoginView> {
 // - Binding Login ViewModel to Login View
 //   late final LoginViewModel _viewModel;
 
-  final LoginViewModel _viewModel = LoginViewModel();
+  final LoginViewModel _viewModel = LoginViewModel(); // Error : 1 positional argument(s) expected, but 0 found.
 
   // ERROR : _loginUseCase Solution Injection dependence
   final TextEditingController _userNameController = TextEditingController();
