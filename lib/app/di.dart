@@ -7,7 +7,7 @@ Future<void> initAppModule() async {
   // app module, its a module where we put all generic dependencies
 
   // shared prefs instance
-  SharedPreferences.getInstance();
+  final sharedPrefs = await SharedPreferences.getInstance();
 }
 
 Future<void> initLoginModule() async {}
