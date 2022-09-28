@@ -12,6 +12,7 @@ import '../data/network/app_api.dart';
 import '../data/repository/repository_impl.dart';
 import '../domain/repository/repository.dart';
 import '../domain/usecase/login_usecase.dart';
+import '../presentation/login/viewmodel/login_viewmodel.dart';
 
 final instance = GetIt.instance;
 
@@ -50,4 +51,5 @@ Future<void> initAppModule() async {
 Future<void> initLoginModule() async {
   // Lecture 81 - Add Dependency Injection Login Module #72
   instance.registerFactory<LoginUseCase>(() => LoginUseCase(instance()));
+  instance.registerFactory<LoginViewModel>(() => LoginViewModel(instance()));
 }
