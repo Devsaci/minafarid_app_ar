@@ -7,6 +7,7 @@ import 'package:minafarid_app_ar/data/network/dio_factory.dart';
 import 'package:minafarid_app_ar/data/network/network_info.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../data/data_source/remote_data_source.dart';
 import '../data/network/app_api.dart';
 
 final instance = GetIt.instance;
@@ -33,6 +34,10 @@ Future<void> initAppModule() async {
   Dio dio = await instance<DioFactory>().getDio();
   //app service client
   instance.registerLazySingleton<AppServiceClient>(() => AppServiceClient(dio));
+
+  // remote data source
+  instance.registerLazySingleton<RemoteDataSource>(
+      () => RemoteDataSourceImpl(instance<AppServiceClient>()));
 }
 
 Future<void> initLoginModule() async {}
