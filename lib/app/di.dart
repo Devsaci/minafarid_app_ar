@@ -48,7 +48,7 @@ Future<void> initAppModule() async {
       () => RepositoryImpl(instance(), instance()));
 }
 
-Future<void> initLoginModule() async {
+initLoginModule() {
   // Lecture 81 - Add Dependency Injection Login Module #72
   instance.registerFactory<LoginUseCase>(() => LoginUseCase(instance()));
   instance.registerFactory<LoginViewModel>(() => LoginViewModel(instance()));
