@@ -50,7 +50,8 @@ Future<void> initAppModule() async {
 
 initLoginModule() {
   // Lecture 81 - Add Dependency Injection Login Module #72
-  if(!GetIt.I.isRegistered<LoginUseCase>()){}
-  instance.registerFactory<LoginUseCase>(() => LoginUseCase(instance()));
-  instance.registerFactory<LoginViewModel>(() => LoginViewModel(instance()));
+  if (!GetIt.I.isRegistered<LoginUseCase>()) {
+    instance.registerFactory<LoginUseCase>(() => LoginUseCase(instance()));
+    instance.registerFactory<LoginViewModel>(() => LoginViewModel(instance()));
+  }
 }
