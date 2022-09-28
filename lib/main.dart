@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'app/app.dart';
+import 'app/di.dart';
 
-void main() {
+Future<void> main() async {
+  await initLoginModule();
   runApp(MyApp());
 }
