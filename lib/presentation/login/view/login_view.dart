@@ -23,7 +23,6 @@ class _LoginViewState extends State<LoginView> {
 //Lecture 79 - Add dependency injection Instances #70
   final LoginViewModel _viewModel = instance<LoginViewModel>();
   //Lecture 82 - How to Use Instance of Dependency Injection? #73
-  // ERROR : _loginUseCase Solution Injection dependence
   final TextEditingController _userNameController = TextEditingController();
   final TextEditingController _userPasswordController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
