@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:minafarid_app_ar/app/di.dart';
 import 'package:minafarid_app_ar/presentation/resources/color_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/font_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/values_manager.dart';
@@ -20,7 +21,7 @@ class _LoginViewState extends State<LoginView> {
 //   late final LoginViewModel _viewModel;
 
 //Lecture 79 - Add dependency injection Instances #70
-  final LoginViewModel _viewModel = LoginViewModel(_loginUseCase); // Error : 1 positional argument(s) expected, but 0 found.
+  final LoginViewModel _viewModel = instance<LoginViewModel>();
   //Lecture 82 - How to Use Instance of Dependency Injection? #73
   // ERROR : _loginUseCase Solution Injection dependence
   final TextEditingController _userNameController = TextEditingController();
