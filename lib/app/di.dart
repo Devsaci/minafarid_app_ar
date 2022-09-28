@@ -2,6 +2,7 @@
 import 'package:get_it/get_it.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:minafarid_app_ar/app/app_prefs.dart';
+import 'package:minafarid_app_ar/data/network/dio_factory.dart';
 import 'package:minafarid_app_ar/data/network/network_info.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -22,6 +23,9 @@ Future<void> initAppModule() async {
   // network info
   instance.registerLazySingleton<NetworkInfo>(
       () => NetworkInfoImpl(InternetConnectionChecker()));
+
+  // dio factory
+  instance.registerLazySingleton<DioFactory>(() => DioFactory(instance()));
 }
 
 Future<void> initLoginModule() async {}
