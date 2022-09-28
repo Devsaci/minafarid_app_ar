@@ -21,7 +21,7 @@ class _LoginViewState extends State<LoginView> {
 
 //Lecture 79 - Add dependency injection Instances #70
   final LoginViewModel _viewModel = LoginViewModel(_loginUseCase); // Error : 1 positional argument(s) expected, but 0 found.
-
+  //Lecture 82 - How to Use Instance of Dependency Injection? #73
   // ERROR : _loginUseCase Solution Injection dependence
   final TextEditingController _userNameController = TextEditingController();
   final TextEditingController _userPasswordController = TextEditingController();
