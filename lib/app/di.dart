@@ -1,6 +1,4 @@
-//Lecture 79 - Add dependency injection Instances #70
-import 'dart:js_util';
-
+//Lecture 79 - Add dependency injection Instances #7
 import 'package:get_it/get_it.dart';
 import 'package:minafarid_app_ar/app/app_prefs.dart';
 import 'package:shared_preferences/shared_preferences.dart';
