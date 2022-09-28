@@ -1,10 +1,13 @@
 //Lecture 79 - Add dependency injection Instances #7
+import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:minafarid_app_ar/app/app_prefs.dart';
 import 'package:minafarid_app_ar/data/network/dio_factory.dart';
 import 'package:minafarid_app_ar/data/network/network_info.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import '../data/network/app_api.dart';
 
 final instance = GetIt.instance;
 
@@ -26,6 +29,10 @@ Future<void> initAppModule() async {
 
   // dio factory
   instance.registerLazySingleton<DioFactory>(() => DioFactory(instance()));
+
+  Dio dio = await instance<DioFactory>().getDio();
+  //app service client
+  instance.registerLazySingleton<AppServiceClient>(() => AppServiceClient(dio));
 }
 
 Future<void> initLoginModule() async {}
