@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.minafarid_app_ar">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="minafarid_app_ar"
         android:name="${applicationName}"
