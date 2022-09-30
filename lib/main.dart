@@ -4,6 +4,6 @@ import 'app/di.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await initLoginModule();
+  await initAppModule(); // fix bug
   runApp(MyApp());
 }
