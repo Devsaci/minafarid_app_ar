@@ -8,5 +8,5 @@ enum StateRendererType {
   // FULL SCREEN STATED (FULL SCREEN)
   fullScreenLoadingState,
   fullScreenErrorState,
-
+  fullScreenEmptyState,
 }
