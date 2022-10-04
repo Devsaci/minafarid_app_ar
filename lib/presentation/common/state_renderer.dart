@@ -3,5 +3,5 @@
 enum StateRendererType {
   // POPUP STATES (DIALOG)
   popupLoadingState,
-
+  popupErrorState,
 }
