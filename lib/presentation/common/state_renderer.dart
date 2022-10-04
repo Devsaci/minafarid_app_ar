@@ -32,7 +32,7 @@ class StateRenderer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    // Lecture 88 - Adding State Renderer Implementation Part 2 #76
+   return Container();
   }
 }
