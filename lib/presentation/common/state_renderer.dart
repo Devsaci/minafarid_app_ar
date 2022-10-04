@@ -4,4 +4,8 @@ enum StateRendererType {
   // POPUP STATES (DIALOG)
   popupLoadingState,
   popupErrorState,
+
+  // FULL SCREEN STATED (FULL SCREEN)
+  fullScreenLoadingState,
+
 }
