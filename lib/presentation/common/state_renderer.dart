@@ -1,5 +1,7 @@
 //Lecture 87 - Adding State Renderer Implementation #75
 
+import 'package:flutter/material.dart';
+
 enum StateRendererType {
   // POPUP STATES (DIALOG)
   popupLoadingState,
@@ -12,4 +14,12 @@ enum StateRendererType {
 
   // general
   contentState
+}
+
+class StateRenderer extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  }
 }
