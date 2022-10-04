@@ -45,7 +45,7 @@ class StateRenderer extends StatelessWidget {
         // TODO: Handle this case.
         break;
       case StateRendererType.fullScreenLoadingState:
-        // TODO: Handle this case.
+        // Lecture 89 - Adding State Renderer Implementation Part 3 #77
         break;
       case StateRendererType.fullScreenErrorState:
         // TODO: Handle this case.
