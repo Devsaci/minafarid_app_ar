@@ -22,9 +22,12 @@ class StateRenderer extends StatelessWidget {
   String title;
   Function retryActionFunction;
 
-
-  StateRenderer(this.stateRendererType, this.message, this.title,
-      this.retryActionFunction);
+  StateRenderer({
+    required this.stateRendererType,
+    this.message = "",
+    this.title = "",
+    required this.retryActionFunction,
+  });
 
   @override
   Widget build(BuildContext context) {
