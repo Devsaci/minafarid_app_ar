@@ -37,7 +37,26 @@ class StateRenderer extends StatelessWidget {
   }
 
   Widget _getStateWidget() {
-    switch (stateRendererType) {}
+    switch (stateRendererType) {
+      case StateRendererType.popupLoadingState:
+        // TODO: Handle this case.
+        break;
+      case StateRendererType.popupErrorState:
+        // TODO: Handle this case.
+        break;
+      case StateRendererType.fullScreenLoadingState:
+        // TODO: Handle this case.
+        break;
+      case StateRendererType.fullScreenErrorState:
+        // TODO: Handle this case.
+        break;
+      case StateRendererType.fullScreenEmptyState:
+        // TODO: Handle this case.
+        break;
+      case StateRendererType.contentState:
+        // TODO: Handle this case.
+        break;
+    }
     return Container();
   }
 }
