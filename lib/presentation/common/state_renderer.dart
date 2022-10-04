@@ -61,6 +61,9 @@ class StateRenderer extends StatelessWidget {
   }
 
   Widget _getItemsColumn() {
-    return Column();
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [],
+    );
   }
 }
