@@ -59,4 +59,8 @@ class StateRenderer extends StatelessWidget {
     }
     return Container();
   }
+
+  Widget _getItemsColumn() {
+    return Column();
+  }
 }
