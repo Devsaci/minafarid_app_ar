@@ -20,6 +20,7 @@ class StateRenderer extends StatelessWidget {
   late StateRendererType stateRendererType;
   late String message;
   late String title;
+  late Function retryActionFunction;
 
   @override
   Widget build(BuildContext context) {
