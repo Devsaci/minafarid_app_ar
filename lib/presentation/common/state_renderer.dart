@@ -17,10 +17,14 @@ enum StateRendererType {
 }
 
 class StateRenderer extends StatelessWidget {
-  late StateRendererType stateRendererType;
-  late String message;
-  late String title;
-  late Function retryActionFunction;
+  StateRendererType stateRendererType;
+  String message;
+  String title;
+  Function retryActionFunction;
+
+
+  StateRenderer(this.stateRendererType, this.message, this.title,
+      this.retryActionFunction);
 
   @override
   Widget build(BuildContext context) {
