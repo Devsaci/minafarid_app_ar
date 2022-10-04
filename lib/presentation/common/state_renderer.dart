@@ -1,7 +1,10 @@
 //Lecture 87 - Adding State Renderer Implementation #75
 
 import 'package:flutter/material.dart';
+import 'package:minafarid_app_ar/presentation/resources/color_manager.dart';
+import 'package:minafarid_app_ar/presentation/resources/font_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/strings_manager.dart';
+import 'package:minafarid_app_ar/presentation/resources/styles_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/values_manager.dart';
 
 enum StateRendererType {
@@ -49,7 +52,7 @@ class StateRenderer extends StatelessWidget {
         // Lecture 89 - Adding State Renderer Implementation Part 3 #77
         return _getItemsColumn([
           _getAnimatedImage(),
-           _getMessage(message),
+          _getMessage(message),
         ]);
       case StateRendererType.fullScreenErrorState:
         // TODO: Handle this case.
@@ -81,6 +84,12 @@ class StateRenderer extends StatelessWidget {
   }
 
   Widget _getMessage(String message) {
-    return const SizedBox();
+    return Text(
+      message,
+      style: getRegularStyle(
+        color: ColorManager.black,
+        fontSize: FontSize.s18,
+      ),
+    );
   }
 }
