@@ -70,9 +70,10 @@ class StateRenderer extends StatelessWidget {
   }
 
   Widget _getAnimatedImage() {
-    return const SizedBox(
+    return  SizedBox(
       height: AppSize.s100,
       width: AppSize.s100,
+      child: Container(),// todo add json image here
     );
   }
 }
