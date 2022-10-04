@@ -68,5 +68,7 @@ class StateRenderer extends StatelessWidget {
     );
   }
 
-  _getAnimatedImage() {}
+  Widget _getAnimatedImage() {
+    return const SizedBox();
+  }
 }
