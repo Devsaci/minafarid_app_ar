@@ -96,5 +96,7 @@ class StateRenderer extends StatelessWidget {
     );
   }
 
-  _getRetryButton() {}
+  Widget _getRetryButton() {
+    return Text("ElevatedButton");
+  }
 }
