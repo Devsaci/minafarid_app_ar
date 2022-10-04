@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:minafarid_app_ar/presentation/resources/strings_manager.dart';
+import 'package:minafarid_app_ar/presentation/resources/values_manager.dart';
 
 enum StateRendererType {
   // POPUP STATES (DIALOG)
@@ -69,6 +70,9 @@ class StateRenderer extends StatelessWidget {
   }
 
   Widget _getAnimatedImage() {
-    return const SizedBox();
+    return const SizedBox(
+      height: AppSize.s100,
+      width: AppSize.s100,
+    );
   }
 }
