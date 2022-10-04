@@ -49,7 +49,7 @@ class StateRenderer extends StatelessWidget {
         // Lecture 89 - Adding State Renderer Implementation Part 3 #77
         return _getItemsColumn([
           _getAnimatedImage(),
-           _getMessage(),
+           _getMessage(message),
         ]);
       case StateRendererType.fullScreenErrorState:
         // TODO: Handle this case.
@@ -80,7 +80,7 @@ class StateRenderer extends StatelessWidget {
     );
   }
 
-  Widget _getMessage() {
+  Widget _getMessage(String message) {
     return const SizedBox();
   }
 }
