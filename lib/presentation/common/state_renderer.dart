@@ -17,6 +17,8 @@ enum StateRendererType {
 }
 
 class StateRenderer extends StatelessWidget {
+  late StateRendererType stateRendererType;
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
