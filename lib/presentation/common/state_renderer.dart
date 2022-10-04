@@ -58,7 +58,7 @@ class StateRenderer extends StatelessWidget {
         return _getItemsColumn([
           _getAnimatedImage(),
           _getMessage(message),
-          _getRetryButton(),
+          _getRetryButton(AppStrings.retryAgain),
         ]);
       case StateRendererType.fullScreenEmptyState:
         // TODO: Handle this case.
@@ -96,10 +96,10 @@ class StateRenderer extends StatelessWidget {
     );
   }
 
-  Widget _getRetryButton() {
+  Widget _getRetryButton(String buttonTitle) {
     return ElevatedButton(
       onPressed: () {},
-      child: const Text("buttonTitle"),
+      child: Text(buttonTitle),
     );
   }
 }
