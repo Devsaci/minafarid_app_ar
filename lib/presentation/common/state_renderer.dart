@@ -37,6 +37,7 @@ class StateRenderer extends StatelessWidget {
   }
 
   Widget _getStateWidget() {
+    switch (stateRendererType) {}
     return Container();
   }
 }
