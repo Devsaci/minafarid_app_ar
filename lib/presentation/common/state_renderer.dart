@@ -47,7 +47,10 @@ class StateRenderer extends StatelessWidget {
         break;
       case StateRendererType.fullScreenLoadingState:
         // Lecture 89 - Adding State Renderer Implementation Part 3 #77
-        return _getItemsColumn([_getAnimatedImage()]);
+        return _getItemsColumn([
+          _getAnimatedImage(),
+          _getMessage(),
+        ]);
       case StateRendererType.fullScreenErrorState:
         // TODO: Handle this case.
         break;
@@ -70,10 +73,12 @@ class StateRenderer extends StatelessWidget {
   }
 
   Widget _getAnimatedImage() {
-    return  SizedBox(
+    return SizedBox(
       height: AppSize.s100,
       width: AppSize.s100,
-      child: Container(),// todo add json image here
+      child: Container(), // todo add json image here
     );
   }
+
+  _getMessage() {}
 }
