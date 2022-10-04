@@ -18,6 +18,7 @@ enum StateRendererType {
 
 class StateRenderer extends StatelessWidget {
   late StateRendererType stateRendererType;
+  late String message;
 
   @override
   Widget build(BuildContext context) {
