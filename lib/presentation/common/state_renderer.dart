@@ -55,8 +55,11 @@ class StateRenderer extends StatelessWidget {
           _getMessage(message),
         ]);
       case StateRendererType.fullScreenErrorState:
-        // TODO: Handle this case.
-        break;
+        return _getItemsColumn([
+          _getAnimatedImage(),
+          _getMessage(message),
+          _getRetryButton(),
+        ]);
       case StateRendererType.fullScreenEmptyState:
         // TODO: Handle this case.
         break;
@@ -92,4 +95,6 @@ class StateRenderer extends StatelessWidget {
       ),
     );
   }
+
+  _getRetryButton() {}
 }
