@@ -79,6 +79,7 @@ class StateRenderer extends StatelessWidget {
       ),
       elevation: AppSize.s4,
       backgroundColor: Colors.transparent,
+      child: Container(),
     );
   }
 
