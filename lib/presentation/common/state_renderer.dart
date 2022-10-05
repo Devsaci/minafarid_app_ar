@@ -97,9 +97,13 @@ class StateRenderer extends StatelessWidget {
   }
 
   Widget _getRetryButton(String buttonTitle) {
-    return ElevatedButton(
-      onPressed: () {},
-      child: Text(buttonTitle),
+    //Lecture 90 - Adding State Renderer Implementation Part 4 #78
+    return SizedBox(
+      width: double.infinity,
+      child: ElevatedButton(
+        onPressed: () {},
+        child: Text(buttonTitle),
+      ),
     );
   }
 }
