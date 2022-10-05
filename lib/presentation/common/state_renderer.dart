@@ -109,7 +109,10 @@ class StateRenderer extends StatelessWidget {
         child: SizedBox(
           width: double.infinity,
           child: ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              if (stateRendererType ==
+                  StateRendererType.fullScreenErrorState){}
+            },
             child: Text(buttonTitle),
           ),
         ),
