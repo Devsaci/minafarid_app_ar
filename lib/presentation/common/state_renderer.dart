@@ -84,6 +84,7 @@ class StateRenderer extends StatelessWidget {
           color: ColorManager.white,
           shape: BoxShape.rectangle,
           borderRadius: BorderRadius.circular(AppSize.s14),
+            boxShadow: [],
         ),
       ),
     );
