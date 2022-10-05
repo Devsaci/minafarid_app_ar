@@ -87,11 +87,16 @@ class StateRenderer extends StatelessWidget {
   }
 
   Widget _getMessage(String message) {
-    return Text(
-      message,
-      style: getRegularStyle(
-        color: ColorManager.black,
-        fontSize: FontSize.s18,
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(AppSize.s8),
+        child: Text(
+          message,
+          style: getRegularStyle(
+            color: ColorManager.black,
+            fontSize: FontSize.s18,
+          ),
+        ),
       ),
     );
   }
