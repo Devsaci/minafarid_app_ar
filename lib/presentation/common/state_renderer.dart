@@ -72,7 +72,9 @@ class StateRenderer extends StatelessWidget {
   }
 
   Widget _getPopUpDialog(BuildContext context) {
-    return Text('Dialog');
+    return const Dialog(
+      shape: RoundedRectangleBorder(),
+    );
   }
 
   Widget _getItemsColumn(List<Widget> children) {
