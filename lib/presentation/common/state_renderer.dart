@@ -94,7 +94,7 @@ class StateRenderer extends StatelessWidget {
   }
 
   Widget _getDialogContent(BuildContext context) {
-    return Text("_getDialogContent")
+    return const Text("_getDialogContent");
   }
 
   Widget _getItemsColumn(List<Widget> children) {
