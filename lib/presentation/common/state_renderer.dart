@@ -43,7 +43,7 @@ class StateRenderer extends StatelessWidget {
   Widget _getStateWidget(BuildContext context) {
     switch (stateRendererType) {
       case StateRendererType.popupLoadingState:
-        return _getPopUpDialog();
+        return _getPopUpDialog(context);
       case StateRendererType.popupErrorState:
         // TODO: Handle this case.
         break;
@@ -57,7 +57,7 @@ class StateRenderer extends StatelessWidget {
         return _getItemsColumn([
           _getAnimatedImage(),
           _getMessage(message),
-          _getRetryButton(AppStrings.retryAgain,  context),
+          _getRetryButton(AppStrings.retryAgain, context),
         ]);
       case StateRendererType.fullScreenEmptyState:
         // TODO: Handle this case.
@@ -68,6 +68,8 @@ class StateRenderer extends StatelessWidget {
     }
     return Container();
   }
+
+  _getPopUpDialog(context) {}
 
   Widget _getItemsColumn(List<Widget> children) {
     return Column(
@@ -123,6 +125,4 @@ class StateRenderer extends StatelessWidget {
       ),
     );
   }
-
-   _getPopUpDialog() {}
 }
