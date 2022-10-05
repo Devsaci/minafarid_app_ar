@@ -40,7 +40,7 @@ class StateRenderer extends StatelessWidget {
     return Container();
   }
 
-  Widget _getStateWidget() {
+  Widget _getStateWidget(BuildContext context) {
     switch (stateRendererType) {
       case StateRendererType.popupLoadingState:
         // TODO: Handle this case.
@@ -58,7 +58,7 @@ class StateRenderer extends StatelessWidget {
         return _getItemsColumn([
           _getAnimatedImage(),
           _getMessage(message),
-          _getRetryButton(AppStrings.retryAgain),
+          _getRetryButton(AppStrings.retryAgain,  context),
         ]);
       case StateRendererType.fullScreenEmptyState:
         // TODO: Handle this case.
@@ -101,7 +101,7 @@ class StateRenderer extends StatelessWidget {
     );
   }
 
-  Widget _getRetryButton(String buttonTitle) {
+  Widget _getRetryButton(String buttonTitle, BuildContext context) {
     //Lecture 90 - Adding State Renderer Implementation Part 4 #78
     return Center(
       child: Padding(
@@ -113,7 +113,10 @@ class StateRenderer extends StatelessWidget {
               if (stateRendererType == StateRendererType.fullScreenErrorState) {
                 // call retry function
                 retryActionFunction.call();
-              } else {}
+              } else {
+                // popup error state
+                Navigator.of(context).pop();
+              }
             },
             child: Text(buttonTitle),
           ),
