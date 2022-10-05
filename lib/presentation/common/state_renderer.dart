@@ -98,6 +98,7 @@ class StateRenderer extends StatelessWidget {
   Widget _getDialogContent(BuildContext context) {
     return Column(
       mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: MainAxisAlignment.center,
     );
   }
 
