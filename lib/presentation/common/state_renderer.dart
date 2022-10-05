@@ -73,10 +73,12 @@ class StateRenderer extends StatelessWidget {
   }
 
   Widget _getPopUpDialog(BuildContext context) {
-    return  Dialog(
+    return Dialog(
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(AppSize.s14),
       ),
+      elevation: AppSize.s4,
+      backgroundColor: Colors.transparent,
     );
   }
 
