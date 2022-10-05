@@ -1,5 +1,7 @@
 //Lecture 87 - Adding State Renderer Implementation #75
 
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:minafarid_app_ar/presentation/resources/color_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/font_manager.dart';
@@ -69,7 +71,9 @@ class StateRenderer extends StatelessWidget {
     return Container();
   }
 
-  _getPopUpDialog(context) {}
+  Widget _getPopUpDialog(BuildContext context) {
+    return Text('Dialog');
+  }
 
   Widget _getItemsColumn(List<Widget> children) {
     return Column(
