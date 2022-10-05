@@ -88,13 +88,13 @@ class StateRenderer extends StatelessWidget {
               BoxShadow(color: Colors.black26),
             ],
           ),
-          child: _getDialogContent(context),
+          child: _getDialogContent(context,), // Lecture 92 - Adding State Renderer Implementation Part 6 #80
       ),
     );
   }
 
   Widget _getDialogContent(BuildContext context) {
-    return const Text("_getDialogContent");
+    return Column();
   }
 
   Widget _getItemsColumn(List<Widget> children) {
