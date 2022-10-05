@@ -2,6 +2,7 @@
 
 import 'dart:html';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:minafarid_app_ar/presentation/resources/color_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/font_manager.dart';
@@ -72,8 +73,10 @@ class StateRenderer extends StatelessWidget {
   }
 
   Widget _getPopUpDialog(BuildContext context) {
-    return const Dialog(
-      shape: RoundedRectangleBorder(),
+    return  Dialog(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(AppSize.s14),
+      ),
     );
   }
 
