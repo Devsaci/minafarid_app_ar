@@ -43,10 +43,10 @@ class StateRenderer extends StatelessWidget {
     return Container();
   }
 
-  Widget _getStateWidget(BuildContext context) {
+  Widget _getStateWidget(BuildContext context, List<Widget> children) {
     switch (stateRendererType) {
       case StateRendererType.popupLoadingState:
-        return _getPopUpDialog(context);
+        return _getPopUpDialog(context, children);
       case StateRendererType.popupErrorState:
         // TODO: Handle this case.
         break;
@@ -72,7 +72,7 @@ class StateRenderer extends StatelessWidget {
     return Container();
   }
 
-  Widget _getPopUpDialog(BuildContext context) {
+  Widget _getPopUpDialog(BuildContext context, List<Widget> children) {
     return Dialog(
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(AppSize.s14),
@@ -89,17 +89,18 @@ class StateRenderer extends StatelessWidget {
           ],
         ),
         child: _getDialogContent(
-          context,
+          context, children
         ), // Lecture 92 - Adding State Renderer Implementation Part 6 #80
       ),
     );
   }
 
-  Widget _getDialogContent(BuildContext context) {
+  Widget _getDialogContent(BuildContext context,List<Widget> children) {
     return Column(
       mainAxisSize: MainAxisSize.min,
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
+      children: children,
     );
   }
 
