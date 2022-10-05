@@ -48,10 +48,10 @@ class StateRenderer extends StatelessWidget {
       case StateRendererType.popupLoadingState:
         return _getPopUpDialog(context);
       case StateRendererType.popupErrorState:
-      // TODO: Handle this case.
+        // TODO: Handle this case.
         break;
       case StateRendererType.fullScreenLoadingState:
-      // Lecture 89 - Adding State Renderer Implementation Part 3 #77
+        // Lecture 89 - Adding State Renderer Implementation Part 3 #77
         return _getItemsColumn([
           _getAnimatedImage(),
           _getMessage(message),
@@ -63,10 +63,10 @@ class StateRenderer extends StatelessWidget {
           _getRetryButton(AppStrings.retryAgain, context),
         ]);
       case StateRendererType.fullScreenEmptyState:
-      // TODO: Handle this case.
+        // TODO: Handle this case.
         break;
       case StateRendererType.contentState:
-      // TODO: Handle this case.
+        // TODO: Handle this case.
         break;
     }
     return Container();
@@ -80,21 +80,25 @@ class StateRenderer extends StatelessWidget {
       elevation: AppSize.s4,
       backgroundColor: Colors.transparent,
       child: Container(
-          decoration: BoxDecoration(
-            color: ColorManager.white,
-            shape: BoxShape.rectangle,
-            borderRadius: BorderRadius.circular(AppSize.s14),
-            boxShadow: const [
-              BoxShadow(color: Colors.black26),
-            ],
-          ),
-          child: _getDialogContent(context,), // Lecture 92 - Adding State Renderer Implementation Part 6 #80
+        decoration: BoxDecoration(
+          color: ColorManager.white,
+          shape: BoxShape.rectangle,
+          borderRadius: BorderRadius.circular(AppSize.s14),
+          boxShadow: const [
+            BoxShadow(color: Colors.black26),
+          ],
+        ),
+        child: _getDialogContent(
+          context,
+        ), // Lecture 92 - Adding State Renderer Implementation Part 6 #80
       ),
     );
   }
 
   Widget _getDialogContent(BuildContext context) {
-    return Column();
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+    );
   }
 
   Widget _getItemsColumn(List<Widget> children) {
@@ -151,6 +155,4 @@ class StateRenderer extends StatelessWidget {
       ),
     );
   }
-
-
 }
