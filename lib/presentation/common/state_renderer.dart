@@ -80,7 +80,10 @@ class StateRenderer extends StatelessWidget {
       elevation: AppSize.s4,
       backgroundColor: Colors.transparent,
       child: Container(
-        decoration: BoxDecoration(),
+        decoration: BoxDecoration(
+          color: ColorManager.white,
+          shape: BoxShape.rectangle,
+        ),
       ),
     );
   }
