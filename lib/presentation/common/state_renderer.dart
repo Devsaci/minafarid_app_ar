@@ -110,8 +110,10 @@ class StateRenderer extends StatelessWidget {
           width: double.infinity,
           child: ElevatedButton(
             onPressed: () {
-              if (stateRendererType ==
-                  StateRendererType.fullScreenErrorState){}
+              if (stateRendererType == StateRendererType.fullScreenErrorState) {
+                // call retry function
+                retryActionFunction.call();
+              } else {}
             },
             child: Text(buttonTitle),
           ),
