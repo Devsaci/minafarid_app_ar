@@ -43,8 +43,7 @@ class StateRenderer extends StatelessWidget {
   Widget _getStateWidget(BuildContext context) {
     switch (stateRendererType) {
       case StateRendererType.popupLoadingState:
-        // TODO: Handle this case.
-        break;
+        return _getPopUpDialog();
       case StateRendererType.popupErrorState:
         // TODO: Handle this case.
         break;
@@ -124,4 +123,6 @@ class StateRenderer extends StatelessWidget {
       ),
     );
   }
+
+   _getPopUpDialog() {}
 }
