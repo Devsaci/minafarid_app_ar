@@ -67,30 +67,30 @@ class OnBoardingViewModel extends BaseViewModel
     inputSliderViewObject.add(
         SliderViewObject(_list[_currentIndex], _list.length, _currentIndex));
   }
-}
 
-List<SliderObject> _getSliderData() => [
-      SliderObject(
-        AppStrings.onBoardingTitle1,
-        AppStrings.onBoardingSubTitle1,
-        ImageAssets.onboardingLogo1,
-      ),
-      SliderObject(
-        AppStrings.onBoardingTitle2,
-        AppStrings.onBoardingSubTitle2,
-        ImageAssets.onboardingLogo2,
-      ),
-      SliderObject(
-        AppStrings.onBoardingTitle3,
-        AppStrings.onBoardingSubTitle3,
-        ImageAssets.onboardingLogo3,
-      ),
-      SliderObject(
-        AppStrings.onBoardingTitle4,
-        AppStrings.onBoardingSubTitle4,
-        ImageAssets.onboardingLogo4,
-      ),
-    ];
+  List<SliderObject> _getSliderData() => [
+        SliderObject(
+          AppStrings.onBoardingTitle1,
+          AppStrings.onBoardingSubTitle1,
+          ImageAssets.onboardingLogo1,
+        ),
+        SliderObject(
+          AppStrings.onBoardingTitle2,
+          AppStrings.onBoardingSubTitle2,
+          ImageAssets.onboardingLogo2,
+        ),
+        SliderObject(
+          AppStrings.onBoardingTitle3,
+          AppStrings.onBoardingSubTitle3,
+          ImageAssets.onboardingLogo3,
+        ),
+        SliderObject(
+          AppStrings.onBoardingTitle4,
+          AppStrings.onBoardingSubTitle4,
+          ImageAssets.onboardingLogo4,
+        ),
+      ];
+}
 
 // inputs mean that "Orders" that our view model will receive from view
 abstract class OnBoardingViewModelInputs {
