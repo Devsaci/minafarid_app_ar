@@ -14,5 +14,5 @@ class ImageAssets {
 }
 
 class JsonAssets {
-
+  static const String loading = "$jsonPath/loading.json";
 }
