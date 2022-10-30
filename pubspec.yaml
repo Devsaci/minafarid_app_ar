@@ -48,6 +48,8 @@ dependencies:
   shared_preferences: ^2.0.13
   freezed: ^1.1.1
   get_it: ^7.2.0
+#  Lecture 93 - Adding State Renderer Implementation Part 7 #81
+  Lecture 93 - Adding State Renderer Implementation Part 7 #81
 
 dev_dependencies:
   flutter_test:
