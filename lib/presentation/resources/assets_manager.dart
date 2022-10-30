@@ -1,4 +1,5 @@
 const String imagePath = "assets/images";
+const String jsonPath = "assets/json";
 
 class ImageAssets {
   static const String splashLogo = "$imagePath/splash_logo.png";
@@ -12,4 +13,6 @@ class ImageAssets {
   static const String solidCircleIc = "$imagePath/solid_circle_ic.svg";
 }
 
-class JsonAssets {}
+class JsonAssets {
+
+}
