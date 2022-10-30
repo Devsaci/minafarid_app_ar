@@ -49,7 +49,7 @@ dependencies:
   freezed: ^1.1.1
   get_it: ^7.2.0
 #  Lecture 93 - Adding State Renderer Implementation Part 7 #81
-  Lecture 93 - Adding State Renderer Implementation Part 7 #81
+  lottie: ^1.2.2
 
 dev_dependencies:
   flutter_test:
