@@ -35,7 +35,7 @@ class StateRenderer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(); // Lecture 88 - Adding State Renderer Implementation Part 2 #76
+    return _getStateWidget(context); // Lecture 88 - Adding State Renderer Implementation Part 2 #76
   }
 
   Widget _getStateWidget(BuildContext context) {
