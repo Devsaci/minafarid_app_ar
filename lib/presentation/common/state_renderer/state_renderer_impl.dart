@@ -62,10 +62,7 @@ class EmptyState extends FlowState {
   EmptyState(this.message);
 
   @override
-  String getMessage() {
-    // TODO: implement getMessage
-    throw UnimplementedError();
-  }
+  String getMessage() => message;
 
   @override
   StateRendererType getStateRendererType() {
