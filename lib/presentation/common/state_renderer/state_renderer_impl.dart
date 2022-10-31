@@ -23,8 +23,5 @@ class LoadingState extends FlowState {
   String getMessage() => message ?? AppStrings.loading;
 
   @override
-  StateRendererType getStateRendererType() {
-    // TODO: implement getStateRendererType
-    throw UnimplementedError();
-  }
+  StateRendererType getStateRendererType() => stateRendererType;
 }
