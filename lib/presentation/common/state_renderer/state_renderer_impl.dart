@@ -29,3 +29,17 @@ class LoadingState extends FlowState {
 // Lecture 95 - Applying State Renderer - Error State - Empty State - Co… #83
 // error state (POPUP,FULL SCREEN)
 
+class ErrorState extends FlowState {
+  @override
+  String getMessage() {
+    // TODO: implement getMessage
+    throw UnimplementedError();
+  }
+
+  @override
+  StateRendererType getStateRendererType() {
+    // TODO: implement getStateRendererType
+    throw UnimplementedError();
+  }
+}
+
