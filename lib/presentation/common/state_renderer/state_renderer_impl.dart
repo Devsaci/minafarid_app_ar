@@ -4,4 +4,6 @@ import 'package:minafarid_app_ar/presentation/common/state_renderer/state_render
 
 abstract class FlowState {
   StateRendererType getStateRendererType();
+
+  String getMessage();
 }
