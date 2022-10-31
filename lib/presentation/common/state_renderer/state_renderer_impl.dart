@@ -7,3 +7,18 @@ abstract class FlowState {
 
   String getMessage();
 }
+
+// loading state (POPUP,FULL SCREEN)
+class LoadingState extends FlowState {
+  @override
+  String getMessage() {
+    // TODO: implement getMessage
+    throw UnimplementedError();
+  }
+
+  @override
+  StateRendererType getStateRendererType() {
+    // TODO: implement getStateRendererType
+    throw UnimplementedError();
+  }
+}
