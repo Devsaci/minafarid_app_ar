@@ -6,7 +6,7 @@ import 'package:minafarid_app_ar/presentation/resources/strings_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/styles_manager.dart';
 import 'package:minafarid_app_ar/presentation/resources/values_manager.dart';
 
-import '../resources/assets_manager.dart';
+import '../../resources/assets_manager.dart';
 
 enum StateRendererType {
   // POPUP STATES (DIALOG)
