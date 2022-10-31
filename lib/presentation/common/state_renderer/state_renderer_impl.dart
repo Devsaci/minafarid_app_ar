@@ -39,8 +39,5 @@ class ErrorState extends FlowState {
   String getMessage() => message;
 
   @override
-  StateRendererType getStateRendererType() {
-    // TODO: implement getStateRendererType
-    throw UnimplementedError();
-  }
+  StateRendererType getStateRendererType() => stateRendererType;
 }
