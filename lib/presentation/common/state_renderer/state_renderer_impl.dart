@@ -25,3 +25,7 @@ class LoadingState extends FlowState {
   @override
   StateRendererType getStateRendererType() => stateRendererType;
 }
+
+// Lecture 95 - Applying State Renderer - Error State - Empty State - Co… #83
+// error state (POPUP,FULL SCREEN)
+
