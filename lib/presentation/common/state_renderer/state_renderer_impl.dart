@@ -54,3 +54,22 @@ class ContentState extends FlowState {
   @override
   StateRendererType getStateRendererType() => StateRendererType.contentState;
 }
+
+// EMPTY STATE
+class EmptyState extends FlowState {
+  String message;
+
+  EmptyState(this.message);
+
+  @override
+  String getMessage() {
+    // TODO: implement getMessage
+    throw UnimplementedError();
+  }
+
+  @override
+  StateRendererType getStateRendererType() {
+    // TODO: implement getStateRendererType
+    throw UnimplementedError();
+  }
+}
