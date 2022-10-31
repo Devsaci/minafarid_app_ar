@@ -3,6 +3,8 @@
 import 'package:minafarid_app_ar/presentation/common/state_renderer/state_renderer.dart';
 import 'package:minafarid_app_ar/presentation/resources/strings_manager.dart';
 
+import '../../../app/constants.dart';
+
 abstract class FlowState {
   StateRendererType getStateRendererType();
 
@@ -40,4 +42,15 @@ class ErrorState extends FlowState {
 
   @override
   StateRendererType getStateRendererType() => stateRendererType;
+}
+
+// content state
+class ContentState extends FlowState {
+  ContentState();
+
+  @override
+  String getMessage() => Constants.empty;
+
+  @override
+  StateRendererType getStateRendererType() => StateRendererType.contentState;
 }
