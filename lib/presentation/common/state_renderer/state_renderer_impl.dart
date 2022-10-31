@@ -30,6 +30,11 @@ class LoadingState extends FlowState {
 // error state (POPUP,FULL SCREEN)
 
 class ErrorState extends FlowState {
+  StateRendererType stateRendererType;
+  String message;
+
+  ErrorState(this.stateRendererType, this.message);
+
   @override
   String getMessage() {
     // TODO: implement getMessage
@@ -42,4 +47,3 @@ class ErrorState extends FlowState {
     throw UnimplementedError();
   }
 }
-
