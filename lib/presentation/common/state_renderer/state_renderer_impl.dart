@@ -10,6 +10,11 @@ abstract class FlowState {
 
 // loading state (POPUP,FULL SCREEN)
 class LoadingState extends FlowState {
+  StateRendererType stateRendererType;
+  String message;
+
+  LoadingState(this.stateRendererType, this.message);
+
   @override
   String getMessage() {
     // TODO: implement getMessage
