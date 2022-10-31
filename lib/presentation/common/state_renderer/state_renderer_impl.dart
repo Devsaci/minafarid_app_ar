@@ -1,6 +1,7 @@
 // Lecture 94 - Applying State Renderer - Loading State #82
 
 import 'package:minafarid_app_ar/presentation/common/state_renderer/state_renderer.dart';
+import 'package:minafarid_app_ar/presentation/resources/strings_manager.dart';
 
 abstract class FlowState {
   StateRendererType getStateRendererType();
@@ -11,9 +12,12 @@ abstract class FlowState {
 // loading state (POPUP,FULL SCREEN)
 class LoadingState extends FlowState {
   StateRendererType stateRendererType;
-  String message;
+  String? message;
 
-  LoadingState(this.stateRendererType, this.message);
+  LoadingState({
+    required this.stateRendererType,
+    String message = AppStrings.loading,
+  });
 
   @override
   String getMessage() {
