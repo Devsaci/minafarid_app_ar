@@ -68,3 +68,6 @@ class EmptyState extends FlowState {
   StateRendererType getStateRendererType() =>
       StateRendererType.fullScreenEmptyState;
 }
+
+// Lecture 96 - Adding Extension on State Renderer implementer #84
+extension FlowStateExtension on FlowState {}
