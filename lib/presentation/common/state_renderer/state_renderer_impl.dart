@@ -73,7 +73,8 @@ class EmptyState extends FlowState {
 
 // Lecture 96 - Adding Extension on State Renderer implementer #84
 extension FlowStateExtension on FlowState {
-  Widget getScreenWidget() {} //Error
+  Widget getScreenWidget(BuildContext context, Widget contentScreenWidget,
+      Function retryActionFunction) {} //Error
 // The body might complete normally, causing 'null'
 // to be returned, but the return type,
 // 'Widget', is a potentially non-nullable type
