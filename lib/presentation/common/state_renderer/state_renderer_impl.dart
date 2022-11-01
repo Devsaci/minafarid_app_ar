@@ -2,6 +2,8 @@
 
 import 'package:dartz/dartz_streaming.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:minafarid_app_ar/presentation/common/state_renderer/state_renderer.dart';
 import 'package:minafarid_app_ar/presentation/resources/strings_manager.dart';
 
@@ -73,7 +75,10 @@ class EmptyState extends FlowState {
 
 // Lecture 96 - Adding Extension on State Renderer implementer #84
 extension FlowStateExtension on FlowState {
-  Widget getScreenWidget(BuildContext context, Widget contentScreenWidget,//Error
+  Widget getScreenWidget(
+      BuildContext context,
+      Widget contentScreenWidget,
+      //Error
       Function retryActionFunction) {
     switch (runtimeType) {
       //Lecture 97 -Adding Implementation for Loading State Case #85
@@ -81,7 +86,9 @@ extension FlowStateExtension on FlowState {
         {
           if (getStateRendererType() == StateRendererType.popupLoadingState) {
             // show popup loading
+            showPopup(context, getStateRendererType(), getMessage());
             // show content ui of the screen
+            return contentScreenWidget;
           } else {
             // full screen loading state
           }
@@ -104,5 +111,20 @@ extension FlowStateExtension on FlowState {
           break;
         }
     }
+  }
+
+  void showPopup(
+    BuildContext context,
+    StateRendererType stateRendererType,
+    String message,
+  ) {
+    WidgetsBinding.instance?.addPostFrameCallback((_) => showDialog(
+        builder: (BuildContext context) => StateRenderer(
+          stateRendererType: stateRendererType,
+          message: message,
+          retryActionFunction: (){},
+        ),
+        context: context),
+    );
   }
 }
