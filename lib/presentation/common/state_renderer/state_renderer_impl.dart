@@ -91,6 +91,11 @@ extension FlowStateExtension on FlowState {
             return contentScreenWidget;
           } else {
             // full screen loading state
+            return StateRenderer(
+              message: getMessage(),
+              stateRendererType: getStateRendererType(),
+              retryActionFunction: retryActionFunction,
+            );
           }
         }
         break;
@@ -118,13 +123,15 @@ extension FlowStateExtension on FlowState {
     StateRendererType stateRendererType,
     String message,
   ) {
-    WidgetsBinding.instance?.addPostFrameCallback((_) => showDialog(
+    WidgetsBinding.instance?.addPostFrameCallback(
+      (_) => showDialog(
+        context: context,
         builder: (BuildContext context) => StateRenderer(
           stateRendererType: stateRendererType,
           message: message,
-          retryActionFunction: (){},
+          retryActionFunction: () {},
         ),
-        context: context),
+      ),
     );
   }
 }
