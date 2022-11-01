@@ -108,7 +108,7 @@ extension FlowStateExtension on FlowState {
         }
       default:
         {
-          break;
+          return contentScreenWidget;
         }
     }
     throw(ErrorState);
