@@ -76,10 +76,17 @@ extension FlowStateExtension on FlowState {
   Widget getScreenWidget(BuildContext context, Widget contentScreenWidget,//Error
       Function retryActionFunction) {
     switch (runtimeType) {
+      //Lecture 97 -Adding Implementation for Loading State Case #85
       case LoadingState:
         {
-          break;
+          if (getStateRendererType() == StateRendererType.popupLoadingState) {
+            // show popup loading
+            // show content ui of the screen
+          } else {
+            // full screen loading state
+          }
         }
+        break;
       case ErrorState:
         {
           break;
