@@ -93,7 +93,19 @@ extension FlowStateExtension on FlowState {
         }
       case ErrorState:
         {
-          break;
+          if (getStateRendererType() == StateRendererType.popupErrorState) {
+            // show popup Error
+            showPopup(context, getStateRendererType(), getMessage());
+            // show content ui of the screen
+            return contentScreenWidget;
+          } else {
+            // full screen loading state
+            return StateRenderer(
+              message: getMessage(),
+              stateRendererType: getStateRendererType(),
+              retryActionFunction: retryActionFunction,
+            );
+          }
         }
       case EmptyState:
         {
@@ -113,7 +125,6 @@ extension FlowStateExtension on FlowState {
           return contentScreenWidget;
         }
     }
-    throw (ErrorState);
   }
 
   void showPopup(
