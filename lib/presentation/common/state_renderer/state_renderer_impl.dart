@@ -71,9 +71,7 @@ class EmptyState extends FlowState {
 
 // Lecture 96 - Adding Extension on State Renderer implementer #84
 extension FlowStateExtension on FlowState {
-  Widget getScreenWidget(
-      BuildContext context,
-      Widget contentScreenWidget,
+  Widget getScreenWidget(BuildContext context, Widget contentScreenWidget,
       Function retryActionFunction) {
     switch (runtimeType) {
       //Lecture 97 -Adding Implementation for Loading State Case #85
@@ -99,7 +97,11 @@ extension FlowStateExtension on FlowState {
         }
       case EmptyState:
         {
-          break;
+          return StateRenderer(
+            stateRendererType: getStateRendererType(),
+            message: getMessage(),
+            retryActionFunction: () {},
+          );
         }
       case ContentState:
         {
@@ -111,7 +113,7 @@ extension FlowStateExtension on FlowState {
           return contentScreenWidget;
         }
     }
-    throw(ErrorState);
+    throw (ErrorState);
   }
 
   void showPopup(
