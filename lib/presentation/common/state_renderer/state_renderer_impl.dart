@@ -1,9 +1,5 @@
 // Lecture 94 - Applying State Renderer - Loading State #82
-
-import 'package:dartz/dartz_streaming.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:minafarid_app_ar/presentation/common/state_renderer/state_renderer.dart';
 import 'package:minafarid_app_ar/presentation/resources/strings_manager.dart';
 
@@ -78,7 +74,6 @@ extension FlowStateExtension on FlowState {
   Widget getScreenWidget(
       BuildContext context,
       Widget contentScreenWidget,
-      //Error
       Function retryActionFunction) {
     switch (runtimeType) {
       //Lecture 97 -Adding Implementation for Loading State Case #85
@@ -98,7 +93,6 @@ extension FlowStateExtension on FlowState {
             );
           }
         }
-        break;
       case ErrorState:
         {
           break;
@@ -109,13 +103,15 @@ extension FlowStateExtension on FlowState {
         }
       case ContentState:
         {
-          break;
+//Lect 98 Adding Implementation for (Error State-Empty State-Content St… #86
+          return contentScreenWidget;
         }
       default:
         {
           break;
         }
     }
+    throw(ErrorState);
   }
 
   void showPopup(
