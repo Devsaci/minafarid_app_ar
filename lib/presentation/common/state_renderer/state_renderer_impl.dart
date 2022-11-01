@@ -1,5 +1,7 @@
 // Lecture 94 - Applying State Renderer - Loading State #82
 
+import 'package:dartz/dartz_streaming.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:minafarid_app_ar/presentation/common/state_renderer/state_renderer.dart';
 import 'package:minafarid_app_ar/presentation/resources/strings_manager.dart';
 
@@ -70,4 +72,9 @@ class EmptyState extends FlowState {
 }
 
 // Lecture 96 - Adding Extension on State Renderer implementer #84
-extension FlowStateExtension on FlowState {}
+extension FlowStateExtension on FlowState {
+  Widget getScreenWidget() {} //Error
+// The body might complete normally, causing 'null'
+// to be returned, but the return type,
+// 'Widget', is a potentially non-nullable type
+}
