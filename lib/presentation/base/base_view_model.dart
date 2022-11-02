@@ -7,7 +7,13 @@ abstract class BaseViewModel extends BaseViewModelInputs
     with BaseViewModelOutputs {
   // shared variables and function that will be used through any view model.
 //  Lecture 100 - Adding Input Stream Controller Inside Base ViewModel #88
-  final StreamController _inputStreamController = StreamController<FlowState>.broadcast();
+  final StreamController _inputStreamController =
+      StreamController<FlowState>.broadcast();
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+  }
 }
 
 abstract class BaseViewModelInputs {
