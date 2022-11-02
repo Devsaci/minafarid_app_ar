@@ -31,6 +31,7 @@ class LoginViewModel extends BaseViewModel
 
   @override
   void dispose() {
+    super.dispose();
     _userNameStreamController.close();
     _passwordStreamController.close();
     _areAllInputsValidStreamController.close();
