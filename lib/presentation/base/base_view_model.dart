@@ -11,6 +11,10 @@ abstract class BaseViewModel extends BaseViewModelInputs
       StreamController<FlowState>.broadcast();
 
   @override
+  // TODO: implement inputState
+  Sink get inputState => throw UnimplementedError();
+
+  @override
   void dispose() {
     _inputStreamController.close();
   }
