@@ -12,7 +12,7 @@ abstract class BaseViewModel extends BaseViewModelInputs
 
   @override
   void dispose() {
-    // TODO: implement dispose
+    _inputStreamController.close();
   }
 }
 
