@@ -3,6 +3,7 @@
 import 'dart:async';
 
 import 'package:minafarid_app_ar/presentation/base/base_view_model.dart';
+import 'package:minafarid_app_ar/presentation/common/state_renderer/state_renderer_impl.dart';
 
 import '../../../domain/usecase/login_usecase.dart';
 import '../../common/freezed_data_classes.dart';
@@ -25,6 +26,7 @@ class LoginViewModel extends BaseViewModel
   final LoginUseCase _loginUseCase;
 
   LoginViewModel(this._loginUseCase);
+
   // LoginViewModel();
 
   // inputs
@@ -40,6 +42,7 @@ class LoginViewModel extends BaseViewModel
   @override
   void start() {
     // view model should tell view please show content state
+    inputState.add(ContentState());
   }
 
   @override
