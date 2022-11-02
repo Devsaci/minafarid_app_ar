@@ -92,6 +92,7 @@ extension FlowStateExtension on FlowState {
         }
       case ErrorState:
         {
+          dismissDialog(context);
           if (getStateRendererType() == StateRendererType.popupErrorState) {
             // show popup Error
             showPopup(context, getStateRendererType(), getMessage());
@@ -116,6 +117,7 @@ extension FlowStateExtension on FlowState {
         }
       case ContentState:
         {
+          dismissDialog(context);
 //Lect 98 Adding Implementation for (Error State-Empty State-Content St… #86
           return contentScreenWidget;
         }
