@@ -16,10 +16,8 @@ class LoadingState extends FlowState {
   StateRendererType stateRendererType;
   String? message;
 
-  LoadingState({
-    required this.stateRendererType,
-    String message = AppStrings.loading,
-  });
+  LoadingState(
+      {required this.stateRendererType, String message = AppStrings.loading});
 
   @override
   String getMessage() => message ?? AppStrings.loading;
@@ -30,7 +28,6 @@ class LoadingState extends FlowState {
 
 // Lecture 95 - Applying State Renderer - Error State - Empty State - Co… #83
 // error state (POPUP,FULL SCREEN)
-
 class ErrorState extends FlowState {
   StateRendererType stateRendererType;
   String message;
@@ -127,20 +124,15 @@ extension FlowStateExtension on FlowState {
     }
   }
 
-  void showPopup(
-    BuildContext context,
-    StateRendererType stateRendererType,
-    String message,
-  ) {
-    WidgetsBinding.instance?.addPostFrameCallback(
-      (_) => showDialog(
+  // Lecture 99 - Handling showing many popup dialogsState-Content State) … #87
+
+  void showPopup(BuildContext context, StateRendererType stateRendererType,
+      String message) {
+    WidgetsBinding.instance?.addPostFrameCallback((_) => showDialog(
         context: context,
         builder: (BuildContext context) => StateRenderer(
-          stateRendererType: stateRendererType,
-          message: message,
-          retryActionFunction: () {},
-        ),
-      ),
-    );
+            stateRendererType: stateRendererType,
+            message: message,
+            retryActionFunction: () {})));
   }
 }
