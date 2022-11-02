@@ -125,6 +125,8 @@ extension FlowStateExtension on FlowState {
   }
 
   // Lecture 99 - Handling showing many popup dialogsState-Content State) … #87
+  _isCurrentDialogShowing(BuildContext context) =>
+      ModalRoute.of(context)?.isCurrent != true;
 
   void showPopup(BuildContext context, StateRendererType stateRendererType,
       String message) {
