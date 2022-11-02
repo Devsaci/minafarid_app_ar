@@ -121,6 +121,7 @@ extension FlowStateExtension on FlowState {
         }
       default:
         {
+          dismissDialog(context);
           return contentScreenWidget;
         }
     }
@@ -131,7 +132,9 @@ extension FlowStateExtension on FlowState {
       ModalRoute.of(context)?.isCurrent != true;
 
   dismissDialog(BuildContext context) {
-    if (_isCurrentDialogShowing(context)) {}
+    if (_isCurrentDialogShowing(context)) {
+      Navigator.of(context, rootNavigator: true).pop(true);
+    }
   }
 
   void showPopup(BuildContext context, StateRendererType stateRendererType,
