@@ -25,4 +25,5 @@ abstract class BaseViewModelInputs {
 //32. Lecture 32 - Creating Onboarding Screen ViewModel
 abstract class BaseViewModelOutputs {
   // will be implemented later
+  Stream<FlowState> get outputState;
 }
