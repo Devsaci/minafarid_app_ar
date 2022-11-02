@@ -1,9 +1,13 @@
 // 31. Lecture 31 - Creating Base ViewModel
+import 'dart:async';
+
+import 'package:minafarid_app_ar/presentation/common/state_renderer/state_renderer_impl.dart';
+
 abstract class BaseViewModel extends BaseViewModelInputs
     with BaseViewModelOutputs {
   // shared variables and function that will be used through any view model.
 //  Lecture 100 - Adding Input Stream Controller Inside Base ViewModel #88
-
+  StreamController<FlowState>();
 }
 
 abstract class BaseViewModelInputs {
