@@ -1,4 +1,6 @@
 // Lecture 94 - Applying State Renderer - Loading State #82
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 import 'package:minafarid_app_ar/presentation/common/state_renderer/state_renderer.dart';
 import 'package:minafarid_app_ar/presentation/resources/strings_manager.dart';
@@ -127,6 +129,10 @@ extension FlowStateExtension on FlowState {
   // Lecture 99 - Handling showing many popup dialogsState-Content State) … #87
   _isCurrentDialogShowing(BuildContext context) =>
       ModalRoute.of(context)?.isCurrent != true;
+
+  dismissDialog(BuildContext context) {
+    if (_isCurrentDialogShowing(context)) {}
+  }
 
   void showPopup(BuildContext context, StateRendererType stateRendererType,
       String message) {
