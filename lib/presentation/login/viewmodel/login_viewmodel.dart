@@ -39,7 +39,7 @@ class LoginViewModel extends BaseViewModel
 
   @override
   void start() {
-    // TODO: implement start
+    // view model should tell view please show content state
   }
 
   @override
